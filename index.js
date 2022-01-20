@@ -40,8 +40,9 @@ express()
     //res.send("Not logged in");
   } else {
     res.send("Hello world! User logged in");
+    const session = await Shopify.Utils.loadCurrentSession(request, response, isOnline);
     // Load your app skeleton page with App Bridge, and do something amazing!
-    res.end();
+    res.render('index',{session: session});  
   }
 })
 .get('/login', async (req, res) => {
