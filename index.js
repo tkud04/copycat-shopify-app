@@ -10,14 +10,17 @@ const PORT = process.env.PORT || 5000;
 
 const { API_KEY, API_SECRET_KEY, SCOPES, SHOP, HOST } = process.env;
 
-Shopify.Context.initialize({
+let initObject = {
   API_KEY,
   API_SECRET_KEY,
   SCOPES: [SCOPES],
   HOST_NAME: process.env.HOST.replace(/https:\/\//, ""),
   IS_EMBEDDED_APP: false,
   API_VERSION: ApiVersion.version // all supported versions are available, as well as "unstable" and "unversioned"
-});
+};
+console.log("init: ",initObject);
+Shopify.Context.initialize(initObject);
+
 // Storing the currently active shops in memory will force them to re-login when your server restarts. You should
 // persist this object in your app.
 const ACTIVE_SHOPIFY_SHOPS = {};
