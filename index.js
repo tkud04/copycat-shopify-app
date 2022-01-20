@@ -65,6 +65,9 @@ express()
      res.render('customers',{customers: customers});  
    }
  })
+ .get("/copycat", (req, res) => {
+  res.render('copycat');  
+})
 
 //Authentication routes
 .get('/login', async (req, res) => {

@@ -1,0 +1,53 @@
+<%- include('partials/head.ejs') %>
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-md-12">
+         <h2 class="text-success text-center mb-5">Copycat TextClub Forms Design</h2>
+         <div class="row">
+             <div class="col-md-6">
+                
+                 <h4 class="text-center">Birth Capture form</h4>
+                 <form action="https://api.ometria.com/forms/signup" method="post">
+                    <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
+                    <input type="hidden" name="email" value="" autocomplete="off" />
+                    <div style="display:none !important">
+                        <input name="__email" type="email" value="" autocomplete="off" />
+                    </div>
+                    <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+                    <input name="@return_url" type="hidden" value="" />
+                    <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
+
+                    <!-- Form elements go here: Style as you wish -->
+                    <div id="form-body">
+                       <div class="row">
+                         <div class="col-md-7">
+                          <div class="subscribe">
+                            <h2 class="subscribe__title">Let's keep in touch</h2>
+                            <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+                            <div class="form">
+                                <input type="email" class="form__email" placeholder="Enter your email address" />
+                                <button class="form__button">Send</button>
+                            </div>
+                            <div class="notice">
+                                <input type="checkbox">
+                                <span class="notice__copy">I agree to my email address being stored and uses to recieve monthly newsletter.</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="img-fluid" src="img/img1.jpg" style="width: 100px; height: 200px;">
+                        </div>
+                      </div>
+                    </div>
+                 </form>
+            </div>
+             <div class="col-md-6">
+                <h4 class="text-center">SMS Capture form</h4>
+             </div>
+         </div>
+     </div>
+   </div>
+</div>
+
+<%- include('partials/foot.ejs') %>
