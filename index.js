@@ -39,12 +39,32 @@ express()
     res.redirect(`/login`);
     //res.send("Not logged in");
   } else {
-    //res.send("Hello world! User logged in");
-    const session = await Shopify.Utils.loadCurrentSession(req, res);
+   const session = await Shopify.Utils.loadCurrentSession(req, res);
+    current_access_token = session.accessToken;
     // Load your app skeleton page with App Bridge, and do something amazing!
-    res.render('index',{session: session});  
+    res.render('index');  
   }
 })
+.get("/customers", async (req, res) => {
+    // This shop hasn't been seen yet, go through OAuth to create a session
+   if (ACTIVE_SHOPIFY_SHOPS[SHOP] === undefined) {
+      // not logged in, redirect to login
+     res.redirect(`/login`);
+     //res.send("Not logged in");
+   } else {
+     const session = await Shopify.Utils.loadCurrentSession(req, res);
+     const client = new Shopify.Clients.Rest(session.shop, session.accessToken);
+     // Use `client.get` to request the specified Shopify REST API endpoint, in this case `products`.
+     const customers = await client.get({
+       path: 'customers',
+     });
+     console.log("Customers: ",customers);
+     // Load your app skeleton page with App Bridge, and do something amazing!
+     res.render('customers',{customers: customers});  
+   }
+ })
+
+//Authentication routes
 .get('/login', async (req, res) => {
     let authRoute = await Shopify.Auth.beginAuth(
       req,
@@ -53,7 +73,6 @@ express()
       '/auth/callback',
       false,
     );
-    console.log("authRoute: ",authRoute);
     return res.redirect(authRoute);
   })
   .get('/auth/callback', async (req, res) => {
@@ -64,7 +83,6 @@ express()
         req.query,
       ); // req.query must be cast to unkown and then AuthQuery in order to be accepted
       ACTIVE_SHOPIFY_SHOPS[SHOP] = session.scope;
-      console.log("access token: ",session.accessToken);
     } catch (error) {
       console.error(error); // in practice these should be handled more gracefully
     }
