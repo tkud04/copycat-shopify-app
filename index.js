@@ -52,6 +52,7 @@ express()
       '/auth/callback',
       false,
     );
+    console.log("authRoute: ",authRoute);
     return res.redirect(authRoute);
   })
 .listen(PORT, () => {
