@@ -39,7 +39,7 @@ express()
     res.redirect(`/login`);
     //res.send("Not logged in");
   } else {
-    res.send("Hello world!");
+    res.send("Hello world! User logged in");
     // Load your app skeleton page with App Bridge, and do something amazing!
     res.end();
   }
@@ -54,6 +54,20 @@ express()
     );
     console.log("authRoute: ",authRoute);
     return res.redirect(authRoute);
+  })
+  .get('/auth/callback', async (req, res) => {
+    try {
+      const session = await Shopify.Auth.validateAuthCallback(
+        req,
+        res,
+        req.query,
+      ); // req.query must be cast to unkown and then AuthQuery in order to be accepted
+      ACTIVE_SHOPIFY_SHOPS[SHOP] = session.scope;
+      console.log("access token: ",session.accessToken);
+    } catch (error) {
+      console.error(error); // in practice these should be handled more gracefully
+    }
+    return res.redirect(`/?host=${req.query.host}&shop=${req.query.shop}`); // wherever you want your user to end up after OAuth completes
   })
 .listen(PORT, () => {
   console.log(`your app is now listening on port ${PORT}`);
