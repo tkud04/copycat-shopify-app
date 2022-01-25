@@ -1,15 +1,18 @@
-<%- include('partials/head.ejs') %>
+<%- include('partials/head2.ejs', {sms: true}) %>
 
-<div class="container-fluid">
-   <div class="row">
-      <div class="col-md-12">
-         <h2 class="text-success text-center mb-5">Copycat TextClub Forms Design</h2>
-         <div class="row">
-             <div class="col-md-6">
-                
-                 <h4 class="text-center">Birth Capture form</h4>
-                 <form action="https://api.ometria.com/forms/signup" method="post">
-                    <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
+<h2>Copycat Popup Forms Preview</h2>
+
+<div style="display: inline; margin-top: 10px;">
+<button id="subscribe-btn">Show the Subscribe popup</button>
+<button id="birthday-btn">Show the Birthday popup</button>
+<button id="sms-btn">Show the TextClub popup</button>
+</div>
+
+<!-- start SUbscribe form-->
+<div id="subscribe-popup" class="popup">
+  <div class="content">
+    <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+        <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
                     <input type="hidden" name="email" value="" autocomplete="off" />
                     <div style="display:none !important">
                         <input name="__email" type="email" value="" autocomplete="off" />
@@ -17,37 +20,97 @@
                     <input name="@account" type="hidden" value="f7af012b9a5822ff" />
                     <input name="@return_url" type="hidden" value="" />
                     <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
-
+    </form>
                     <!-- Form elements go here: Style as you wish -->
-                    <div id="form-body">
-                       <div class="row">
-                         <div class="col-md-7">
-                          <div class="subscribe">
-                            <h2 class="subscribe__title">Let's keep in touch</h2>
-                            <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
-                            <div class="form">
-                                <input type="email" class="form__email" placeholder="Enter your email address" />
-                                <button class="form__button">Send</button>
-                            </div>
-                            <div class="notice">
-                                <input type="checkbox">
-                                <span class="notice__copy">I agree to my email address being stored and uses to recieve monthly newsletter.</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="img-fluid" src="img/img1.jpg" style="width: 100px; height: 200px;">
-                        </div>
-                      </div>
-                    </div>
-                 </form>
-            </div>
-             <div class="col-md-6">
-                <h4 class="text-center">SMS Capture form</h4>
-             </div>
-         </div>
-     </div>
-   </div>
+    <div class="container">
+      <div class="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+ 
+      </div>
+      
+      <span id="subscribe-close-btn" class="closebtn">x</span>
+      
+      <img src="img/tc-subscribe-2.jpg" alt="Subscribe">
+      
+      <div class="subscribe">
+        <h1>Join our <span>COPYCAT FAMILY</span></h1>
+        <p>Subscribe to our newsletter to get <b>10% off</b> your first purchase. We'll keep you posted with <b>the latest news and exclusive offers</b></p>
+        <form>
+          <input type="email" placeholder="EMAIL ADDRESS">
+          <input type="submit" value="SIGN UP">
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- end of Subscribe form-->
 
-<%- include('partials/foot.ejs') %>
+<!-- start of Birthday form -->
+<div id="birthday-popup" class="popup">
+    <div class="content">
+      <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+          <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
+                      <input type="hidden" name="email" value="" autocomplete="off" />
+                      <div style="display:none !important">
+                          <input name="__email" type="email" value="" autocomplete="off" />
+                      </div>
+                      <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+                      <input name="@return_url" type="hidden" value="" />
+                      <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
+      </form>
+                      <!-- Form elements go here: Style as you wish -->
+      <div class="container">
+        
+        <span id="birthday-close-btn" class="closebtn">x</span>
+        
+        <div class="subscribe">
+          <h1>We have a birthday gift for you</h1>
+          <p>Smell fresh for free on the big day!</p>
+          <form>
+            <input type="text" placeholder="Your birthday (MM/DD)" style="margin-bottom: 5px;">
+            <input type="email" placeholder="Email address">
+            <input type="submit" value="Sign up">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end of Birthday form -->
+
+
+<!-- start of TextClub form -->
+<div id="sms-popup" class="popup">
+    <div class="content">
+      <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+          <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
+                      <input type="hidden" name="email" value="" autocomplete="off" />
+                      <div style="display:none !important">
+                          <input name="__email" type="email" value="" autocomplete="off" />
+                      </div>
+                      <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+                      <input name="@return_url" type="hidden" value="" />
+                      <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
+      </form>
+                      <!-- Form elements go here: Style as you wish -->
+      <div class="container">
+        
+        <span id="sms-close-btn" class="closebtn">x</span>
+        
+        <img src="img/tc-sms.jpg" alt="Send">
+  
+        <div class="subscribe">
+          <h1>Welcome to our Text Club!</h1>
+          <p><b>We'll let you know first-hand about sales and special offers and we will never message you more than twice a month</b></p>
+          <p style="color: #cdcdcd">By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our <a href="javascript:void(0)">Privacy Policy</a> and <a href="javascript:void(0)">Terms of Service.</a></p>
+          <form>
+            <input type="tel" id="phone" style="margin-top: 5px;">
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end of TextClub form -->
+<%- include('partials/foot2.ejs') %>

@@ -1,0 +1,36 @@
+<%- include('partials/head2.ejs') %>
+
+<div class="buttona">
+    <button id="popup-btn"><span>Show popup</span></button>
+</div>
+<div id="popup" class="popup">
+  <div class="content">
+    <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+        <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
+                    <input type="hidden" name="email" value="" autocomplete="off" />
+                    <div style="display:none !important">
+                        <input name="__email" type="email" value="" autocomplete="off" />
+                    </div>
+                    <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+                    <input name="@return_url" type="hidden" value="" />
+                    <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
+    </form>
+                    <!-- Form elements go here: Style as you wish -->
+    <div class="container">
+      
+      <span id="popup-close-btn" class="closebtn">x</span>
+      
+      <div class="subscribe">
+        <h1>We have a birthday gift for you</h1>
+        <p>Smell fresh for free on the big day!</p>
+        <form>
+          <input type="text" placeholder="Your birthday (MM/DD)" style="margin-bottom: 5px;">
+          <input type="email" placeholder="Email address">
+          <input type="submit" value="Sign up">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/foot2.ejs') %>

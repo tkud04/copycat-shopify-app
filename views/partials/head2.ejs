@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Copycat Popup Forms</title>
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <script src="js/mmm.js"></script>
+    <% if(typeof sms !== "undefined" && sms){ %>
+
+      <link rel="stylesheet" href="lib/intl-tel-input/css/intlTelInput.css">
+      <script src="lib/intl-tel-input/js/intlTelInput.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    // any initialisation options go here
+    dropdownContainer: document.body,
+    initialCountry: "gb",
+    utilsScript: "lib/intl-tel-input/js/utils.js"
+  });
+});
+</script>
+
+   <% } %>
+  </head>
+  <body>

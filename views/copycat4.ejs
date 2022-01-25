@@ -1,0 +1,38 @@
+<%- include('partials/head2.ejs',{sms: true}) %>
+
+<div class="buttona">
+    <button id="popup-btn"><span>Show popup</span></button>
+</div>
+<div id="popup" class="popup">
+  <div class="content">
+    <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+        <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
+                    <input type="hidden" name="email" value="" autocomplete="off" />
+                    <div style="display:none !important">
+                        <input name="__email" type="email" value="" autocomplete="off" />
+                    </div>
+                    <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+                    <input name="@return_url" type="hidden" value="" />
+                    <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
+    </form>
+                    <!-- Form elements go here: Style as you wish -->
+    <div class="container">
+      
+      <span id="popup-close-btn" class="closebtn">x</span>
+      
+      <img src="img/tc-sms.jpg" alt="Send">
+
+      <div class="subscribe">
+        <h1>Welcome to our Text Club!</h1>
+        <p><b>We'll let you know first-hand about sales and special offers and we will never message you more than twice a month</b></p>
+        <p style="color: #cdcdcd">By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our <a href="javascript:void(0)">Privacy Policy</a> and <a href="javascript:void(0)">Terms of Service.</a></p>
+        <form>
+          <input type="tel" id="phone" style="margin-top: 5px;">
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/foot2.ejs') %>

@@ -66,7 +66,16 @@ express()
    }
  })
  .get("/copycat", (req, res) => {
-  res.render('copycat');  
+   let v = "copycat";
+
+   if(typeof req.query !== "undefined"){
+      let q = req.query;
+      if(q.type == "subscribe") v = "copycat2";
+      else if(q.type == "sms") v = "copycat4";
+      else if(q.type == "birthday") v = "copycat3";
+   }
+  res.render(v);  
+
 })
 
 //Authentication routes
