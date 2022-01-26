@@ -20,6 +20,7 @@
   "homepage": "https://github.com/tkud04/copycat-shopify-app#readme",
   "dependencies": {
     "@shopify/shopify-api": "^2.0.0",
+    "axios": "^0.25.0",
     "cors": "^2.8.5",
     "dotenv": "^14.2.0",
     "ejs": "^3.1.6",
