@@ -208,19 +208,13 @@ a.popup-link{
   }
 }
  
-@media (min-width: 768px) {
+/**@media (min-width: 768px) {
   .popup .content .container {
     padding: 70px 0px 90px;
     max-width: 520px;
     margin: 0 auto;
   }
-  .popup .content .circles .circle:nth-of-type(1) {
-      top: -190px;
-      right: -190px;
-      width: 380px;
-      height: 380px;
- 
-    }
+  
   .popup .content .subscribe form input[type=email], .popup .content .subscribe form input[type=text] {
       margin-bottom: 0px;
       width: 90%;
@@ -229,16 +223,42 @@ a.popup-link{
   .popup .content .subscribe form input[type=submit] {
       width: 100%;
     }
-  .popup {
-      width: calc(100% - 40px);
-      height: auto;
-      max-width: 900px;
-    }
   
-}
+}**/
 
-@media (min-width: 568px) {
+@media (min-width: 768px) {
+  .popup .content .circles .circle:nth-of-type(1) {
+    top: -190px;
+    right: -190px;
+    width: 380px;
+    height: 380px;
+
+  }
+
+
   .popup .content .closebtn {
+    position: absolute;
     top: 20px;
+    right: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    color: #000;
+    transition: all 0.4s;
+    z-index: 15;
+  }
+  .popup .content .closebtn:hover {
+    cursor: pointer;
+    color: #cca46c;
+  }
+
+  .popup {
+    width: calc(100% - 50px);
+    height: auto;
+    max-width: 700px;
+  }
+
+  .popup .content .container {
+    max-width: 520px;
+    margin: 0 auto;
   }
 }
