@@ -69,12 +69,13 @@
  
 .popup .content .closebtn {
   position: absolute;
-  bottom: 20px;
+  top: 50px;
   right: 20px;
-  font-size: 3.1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.05rem;
-  color: #3e4146;
+  color: #000;
   transition: all 0.4s;
+  z-index: 15;
 }
 .popup .content .closebtn:hover {
   cursor: pointer;
