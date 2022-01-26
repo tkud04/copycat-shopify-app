@@ -156,7 +156,7 @@ a.popup-link{
 .popup .content .subscribe form {
   overflow: hidden;
 }
-.popup .content .subscribe form input {
+.popup .content .subscribe input {
   /**width: 100%;
   float: left;**/
   padding: 15px 20px;
@@ -166,16 +166,16 @@ a.popup-link{
   letter-spacing: 0.05rem;
   outline: 0;
 }
-.popup .content .subscribe form input[type=email], .popup .content .subscribe form input[type=text] {
+.popup .content .subscribe input[type=email], .popup .content .subscribe input[type=text] {
   margin-bottom: 15px;
   border: 1px solid #bec1c5;
   transition: all 0.4s;
 }
  
-.popup .content .subscribe form input[type=email]:focus, .popup .content .subscribe form input[type=text]:focus {
+.popup .content .subscribe input[type=email]:focus, .popup .content .subscribe input[type=text]:focus {
   border-color: #3e4146;
 }
-.popup .content .subscribe form input[type=submit] {
+.popup .content .subscribe input[type=submit] {
   background-color: #cca46c;
   color: #ffffff;
   margin-top: 10px;
@@ -183,7 +183,7 @@ a.popup-link{
   transition: all 0.4s;
 }
  
-.popup .content .subscribe form input[type=submit]:hover {
+.popup .content .subscribe input[type=submit]:hover {
   cursor: pointer;
   background-color: #ffbf00;
   border-color:#ffbf00
@@ -215,12 +215,12 @@ a.popup-link{
     margin: 0 auto;
   }
   
-  .popup .content .subscribe form input[type=email], .popup .content .subscribe form input[type=text] {
+  .popup .content .subscribe input[type=email], .popup .content .subscribe input[type=text] {
       margin-bottom: 0px;
       width: 90%;
       border-right: 1px solid #bec1c5;
     }
-  .popup .content .subscribe form input[type=submit] {
+  .popup .content .subscribe input[type=submit] {
       width: 100%;
     }
   
