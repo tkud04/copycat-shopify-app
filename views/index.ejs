@@ -3,8 +3,46 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-12">
-<h2 class="text-success text-center mb-5">Shopify App for Copycat Fragrances</h2>
-<h4>Login successful. Here are some tasks you can carry out:</h4>
+<h2 class="text-success text-center mb-5">Subscription Data for Copycat Fragrances</h2>
+<% if(errors){ %>
+    <h4 class="text-danger"><%=errors%></h4>
+<% 
+ }
+ else if(dt2)
+ {
+     let customers = dt2.customers;
+ %> 
+  <table class="table">
+      <thead>
+          <tr>
+              <th>Customer name</th>
+              <th>Email address</th>
+              <th>Number of subscriptions</th>
+              <th>Number of active subscriptions</th>
+              <th>Analytics data</th>
+          </tr>
+      </thead>
+      <tbody>
+          <%
+           for(let c of customers){
+          %>
+          <tr>
+              <td><%= `${c.first_name} ${c.last_name}` %></td>
+              <td><%= c.email %></td>
+              <td><%= c.number_subscriptions %></td>
+              <td><%= c.number_active_subscriptions %> </td>
+              <td><%= JSON.stringify(c.analytics_data) %></td>
+          </tr>
+          <%
+          }
+          %>
+      </tbody>
+  </table>
+ <%
+ }
+ %>
+
+
 <a href="customers" class="btn btn-primary">View customers</a>
 </div>
 </div>
