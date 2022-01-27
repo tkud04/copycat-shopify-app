@@ -135,7 +135,7 @@ express()
     });
     if(dt.status == "200"){
       //dt2 = dt.data;
-      console.log("response from testing webhook: ",dt).data;
+      console.log("response from testing webhook: ",dt);
       
     }
     else{
@@ -165,6 +165,7 @@ express()
 /******** WEBHOOKS CALLBACK ********/
 .post("/webhook", async (req,res) => {
   console.log("Webhook headers:",req.headers);
+  res.sendStatus(200);
 })
 .listen(PORT, () => {
   console.log(`your app is now listening on port ${PORT}`);
