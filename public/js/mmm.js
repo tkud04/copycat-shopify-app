@@ -38,8 +38,8 @@ async function submitForm2(){
 }
 
  function submitForm(formID){
-   let rr =  ometria.ajaxFormSubmit(formID);
-   console.log("rr: ",rr);
+   ometria.ajaxFormSubmit(formID);
+   return "ok";
 }
 
 const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length ) // source (2018-03-11): https://github.com/jquery/jquery/blob/master/src/css/hiddenVisibleSelectors.js 
