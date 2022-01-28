@@ -18,16 +18,15 @@ const { RECHARGE_API_TOKEN,
         OMETRIA_API_KEY
       } = process.env;
 
+
 // the rest of the example code goes here
 
 express()
 .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .use(cors({
-    origin: "*",
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  }))
+  .use(cors())
+  
   /** Loads the paginated list of all customers on Recharge  **/
   .get("/", async (req, res) => {
     let errors = null, dt2 = null, nc = null, pc = null, 

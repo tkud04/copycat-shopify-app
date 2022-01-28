@@ -28,11 +28,18 @@ function hideOnClickOutside(selector) {
     document.addEventListener('click', outsideClickListener);
 }
 
-async function submitForm(url,fd){
+async function submitForm2(){
 	const req = new Request(url,{method: 'POST', body: fd});
-    const r = await fetch(req);
-    let res = r.json();
-    console.log("res: ",res);
+    const r = await fetch(req,{
+       // mode: "no-cors"
+    });
+    //let res = r.html();
+    console.log("res: ",r);
+}
+
+ function submitForm(formID){
+   let rr =  ometria.ajaxFormSubmit(formID);
+   console.log("rr: ",rr);
 }
 
 const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length ) // source (2018-03-11): https://github.com/jquery/jquery/blob/master/src/css/hiddenVisibleSelectors.js 
@@ -67,27 +74,19 @@ for(let a of arr){
 
 
 //Form buttons
-document.querySelector('#ometria-tc-subscribe-form').addEventListener("submit", e => {
+document.querySelector('#subscribe-form-submit').addEventListener("click", async (e) => {
     e.preventDefault();
-    let ue = document.querySelector("#subscribe-email").value, uu = "https://api.ometria.com/forms/signup";
+    let ue = document.querySelector("#subscribe-email").value;
     hideElem("#subscribe-form-error");
     
     if(ue == ""){
      showElem("#subscribe-form-error");
     }
     else{
-       //Populate the form data
-       let fd = new FormData();
-       fd.append("__form_id","914da260f9b6543487067473b43d6b03");
-       fd.append("email","");
-       fd.append("__email","");
-       fd.append("@account","f7af012b9a5822ff");
-       fd.append("@return_url","");
-       fd.append("@subscription_status","SUBSCRIBED");
-       fd.append("properties.sign_up_source","Subscription Form");
-       fd.append("ue",ue);
-
-       submitForm(uu,fd);
+       let rr = await submitForm("#ometria-tc-subscribe-form");
+       if(rr == "ok"){
+           //move to s
+       }
     }
 });
 
