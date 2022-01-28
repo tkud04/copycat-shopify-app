@@ -84,10 +84,11 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", async
      showElem("#subscribe-form-error");
     }
     else{
-       let rr = await submitForm("#ometria-tc-subscribe-form");
-       if(rr == "ok"){
+        console.log(`Email: ${ue}. Submitting form..`);
+        submitForm("#ometria-tc-subscribe-form");
+       //if(rr == "ok"){
            //move to s
-       }
+       //}
     }
 });
 
