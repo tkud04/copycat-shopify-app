@@ -28,7 +28,7 @@ function hideOnClickOutside(selector) {
     document.addEventListener('click', outsideClickListener);
 }
 
-async function submitForm2(fd){
+async function submitForm2(url,fd){
 	const req = new Request(url,{
         method: 'POST', 
         body: fd,
@@ -96,7 +96,7 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", async
         fd.append("@subscription_status","SUBSCRIBED");
         fd.append("ue",ue);
         fd.append("properties.sign_up_source","Subscription Form");
-        submitForm2("#ometria-tc-subscribe-form");
+        submitForm2("https://api.ometria.com/forms/signup","#ometria-tc-subscribe-form");
        //if(rr == "ok"){
            //move to s
        //}
