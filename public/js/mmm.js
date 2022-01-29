@@ -60,6 +60,7 @@ async function submitForm2(url,fd){
     });
     //let res = r.html();
     console.log("res: ",r);
+    return "ok";
 }
 
  function submitForm(formID){
@@ -118,14 +119,13 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", async
         fd.append("@subscription_status","SUBSCRIBED");
         fd.append("ue",ue);
         fd.append("properties.sign_up_source","Subscription Form");
-        submitForm2("https://api.ometria.com/forms/signup","#ometria-tc-subscribe-form");
+        let rr = submitForm2("https://api.ometria.com/forms/signup","#ometria-tc-subscribe-form");
 
-         
-        //Test opaque request
 
-       //if(rr == "ok"){
-           //move to s
-       //}
+       if(rr == "ok"){
+           hideElem(['#subscribe-popup', '#sms-popup']);
+           showElem(['#birthday-popup']);
+       }
 
     }
 });
