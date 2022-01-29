@@ -33,11 +33,12 @@ async function submitForm2(url,fd){
         method: 'POST', 
         body: fd,
         headers: {
-            "Content-type": "application/x-www-form-urlencoded"
+            "Content-type": "application/x-www-form-urlencoded",
+            "Access-Control-Allow-Origin":"*"
          }
     });
     const r = await fetch(req,{
-        mode: "no-cors"
+       // mode: "no-cors"
     });
     //let res = r.html();
     console.log("res: ",r);
