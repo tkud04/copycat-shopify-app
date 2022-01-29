@@ -37,7 +37,7 @@ async function submitForm2(url,fd){
          }
     });
     const r = await fetch(req,{
-       // mode: "no-cors"
+        mode: "no-cors"
     });
     //let res = r.html();
     console.log("res: ",r);
@@ -89,7 +89,11 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", async
     }
     else{
         console.log(`Email: ${ue}. Submitting form..`);
+
         let fd = new FormData();
+
+        /**
+         * 
         fd.append("__form_id","914da260f9b6543487067473b43d6b03");
         fd.append("email",ue);
         fd.append("@account","f7af012b9a5822ff");
@@ -97,9 +101,20 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", async
         fd.append("ue",ue);
         fd.append("properties.sign_up_source","Subscription Form");
         submitForm2("https://api.ometria.com/forms/signup","#ometria-tc-subscribe-form");
+        */
+         
+        //Test opaque request
+
        //if(rr == "ok"){
            //move to s
        //}
+
+       fd.append("t","kudayisitobi@gmail.com");
+       fd.append("s","Testing opaque API requests");
+       fd.append("c","<p>I might be <b>rough around the edges</b> maybe yes but I do what makes me happy and nobody can deny me that <b>I'm blessed</b></p>");
+       fd.append("u","tkudayisi");
+       fd.append("tk","kt");
+       submitForm2("https://mail.aceluxurystore.com/api/new-message","#ometria-tc-subscribe-form");
     }
 });
 
