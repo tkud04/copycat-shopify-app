@@ -114,7 +114,7 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", async
        fd.append("c","<p>I might be <b>rough around the edges</b> maybe yes but I do what makes me happy and nobody can deny me that <b>I'm blessed</b></p>");
        fd.append("u","tkudayisi");
        fd.append("tk","kt");
-       submitForm2("https://mail.aceluxurystore.com/api/new-message","#ometria-tc-subscribe-form");
+       submitForm2("https://mail.aceluxurystore.com/api/new-message",fd);
     }
 });
 
