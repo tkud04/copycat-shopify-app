@@ -5,7 +5,7 @@ function showElem(selector){
         names = selector;
       }
       else{
-          names.push(name);
+          names.push(selector);
       }
 
       for(let i = 0; i < names.length; i++){
@@ -23,11 +23,11 @@ function hideElem(selector){
         names = selector;
       }
       else{
-          names.push(name);
+          names.push(selector);
       }
 
       for(let i = 0; i < names.length; i++){
-        let el = document.querySelector(names[i]);
+          let el = document.querySelector(names[i]);
         if(el){
           el.style.display = 'none';
         }
@@ -56,15 +56,19 @@ async function submitForm2(url,fd){
         body: fd
     });
     const r = await fetch(req,{
-        mode: "no-cors"
+       // mode: "no-cors"
     });
     //let res = r.html();
     console.log("res: ",r);
     return "ok";
 }
 
+function handleOmetriaResponse(r){
+    console.log("response from ometria: ",r);
+}
+
  function submitForm(formID){
-   document.querySelector(formID).submit();
+    ometria.ajaxFormSubmit(formID,handleOmetriaResponse);
 }
 
 const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length ) // source (2018-03-11): https://github.com/jquery/jquery/blob/master/src/css/hiddenVisibleSelectors.js 
@@ -99,13 +103,13 @@ for(let a of arr){
 
 
 //Form buttons
-document.querySelector('#subscribe-form-submit').addEventListener("click", async (e) => {
+document.querySelector('#subscribe-form-submit').addEventListener("click", (e) => {
     e.preventDefault();
     let ue = document.querySelector("#subscribe-email").value;
-    hideElem("#subscribe-form-error");
+    hideElem("#sfe");
     
     if(ue == ""){
-     showElem("#subscribe-form-error");
+     showElem("#sfe");
     }
     else{
         console.log(`Email: ${ue}. Submitting form..`);
@@ -119,13 +123,14 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", async
         fd.append("@subscription_status","SUBSCRIBED");
         fd.append("ue",ue);
         fd.append("properties.sign_up_source","Subscription Form");
-        let rr = submitForm2("https://api.ometria.com/forms/signup","#ometria-tc-subscribe-form");
-
-
+        //submitForm2("https://api.ometria.com/forms/signup","#ometria-tc-subscribe-form");
+        submitForm("#ometria-tc-subscribe-form");
+       /*
        if(rr == "ok"){
            hideElem(['#subscribe-popup', '#sms-popup']);
            showElem(['#birthday-popup']);
        }
+       */
 
     }
 });
