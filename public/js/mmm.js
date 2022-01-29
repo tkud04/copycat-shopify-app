@@ -57,7 +57,7 @@ function _urlEncode(dt){
     return fd;
 }
 
-async function submitForm2(url,fd){
+async function submitForm(url,fd){
 	const req = new Request(url,{
         method: 'POST', 
         headers: {
@@ -69,17 +69,9 @@ async function submitForm2(url,fd){
        // mode: "no-cors"
     });
     let res = await r.json();
-    console.log("res: ",res);
-    return "ok";
+   return res;
 }
 
-function handleOmetriaResponse(r){
-    console.log("response from ometria: ",r);
-}
-
- function submitForm(formID){
-    ometria.ajaxFormSubmit(formID,handleOmetriaResponse);
-}
 
 const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length ) // source (2018-03-11): https://github.com/jquery/jquery/blob/master/src/css/hiddenVisibleSelectors.js 
 
@@ -92,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
     birthdayBtn = document.querySelector('#birthday-btn'), birthdayPopup = document.querySelector('#birthday-popup'), birthdayClose = document.querySelector('#birthday-close-btn'),
     smsBtn = document.querySelector('#sms-btn'), smsPopup = document.querySelector('#sms-popup'), smsClose = document.querySelector('#sms-close-btn');
 
-  hideElem(['#birthday-popup','#sms-popup']);
+  hideElem(['#birthday-popup','#sms-popup','#subscribe-loading','#birthday-loading','#sms-loading']);
 
 let arr = [
     {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose}
@@ -113,7 +105,7 @@ for(let a of arr){
 
 
 //Form buttons
-document.querySelector('#subscribe-form-submit').addEventListener("click", (e) => {
+document.querySelector('#subscribe-form-submit').addEventListener("click",async (e) => {
     e.preventDefault();
     let ue = document.querySelector("#subscribe-email").value;
     hideElem("#sfe");
@@ -122,7 +114,9 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", (e) =
      showElem("#sfe");
     }
     else{
-        console.log(`Email: ${ue}. Submitting form..`);
+        localStorage.setItem("ue",ue);
+        console.log(`Email: ${localStorage.getItem("ue")}. Submitting form..`);
+        showElem("#subscribe-loading");
 
         let fd = {
             "__form_id": "914da260f9b6543487067473b43d6b03",
@@ -133,16 +127,54 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", (e) =
             "properties.sign_up_source": "Subscription Form"
         };
 
-        submitForm2("https://api.ometria.com/forms/signup/ajax",fd);
-        //submitForm("#ometria-tc-subscribe-form");
-       /*
-       if(rr == "ok"){
+        let rr = await submitForm("https://api.ometria.com/forms/signup/ajax",fd);
+        
+        if(rr.ok){
            hideElem(['#subscribe-popup', '#sms-popup']);
            showElem(['#birthday-popup']);
        }
-       */
+       else{
+           alert("An error occured, please check the logs for details");
+           console.log("Errors: ",rr.errors)
+       }
 
     }
 });
 
-  });
+document.querySelector('#birthday-form-submit').addEventListener("click",async (e) => {
+    e.preventDefault();
+    let ue = localStorage.getItem("ue"), dob = document.querySelector("#birthday-dob").value;
+    hideElem("#bde");
+    
+    if(ue == "" || dob == ""){
+     showElem("#bde");
+    }
+    else{
+        console.log(`Email: ${ue}. Submitting form..`);
+        showElem('#birthday-loading');
+
+        let fd = {
+            "__form_id": "e451ea9cc5bedc9ac5d5f8e80b51fcc5",
+            "email": ue,
+            "__email": ue,
+            "date_of_birth": dob,
+            "@account": "f7af012b9a5822ff",
+            "@subscription_status": "SUBSCRIBED",
+            "properties.sign_up_source": "Birthday Form"
+        };
+        
+        let rr = await submitForm("https://api.ometria.com/forms/signup/ajax",fd);
+        
+        if(rr.ok){
+           hideElem(['#subscribe-popup', '#birthday-popup']);
+           showElem(['#sms-popup']);
+       }
+       else{
+           alert("An error occured, please check the logs for details");
+           console.log("Errors: ",rr.errors)
+       }
+
+    }
+});
+
+});
