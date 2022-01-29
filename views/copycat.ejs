@@ -3,17 +3,16 @@
 <h2>Copycat Popup Forms Preview</h2>
 
 <div style="display: inline; margin-top: 10px;">
-<button id="subscribe-btn">Show the Subscribe popup</button>
-<button id="birthday-btn">Show the Birthday popup</button>
-<button id="sms-btn">Show the TextClub popup</button>
+<button id="subscribe-btn">Start the popup journey</button>
 </div>
 
 <!-- start SUbscribe form-->
-<div id="subscribe-popup" class="popup">
+<div id="popup-container" class="popup">
   <div class="content">
-       <!-- Ometria AJAX forms-->
-       <script src="//cdn.ometria.com/tags/f7af012b9a5822ff.js"></script>
-    <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+<!-- start slide 1-->
+<div id="subscribe-popup">
+  
+       <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
       <input type="hidden" name="__form_id" value="914da260f9b6543487067473b43d6b03" />
       <input type="hidden" name="email" value="" autocomplete="off" />
       <div style="display:none !important">
@@ -46,13 +45,11 @@
       </div>
     </div>
   </form>
-  </div>
 </div>
-<!-- end of Subscribe form-->
+<!-- end of slide 1-->
 
-<!-- start of Birthday form -->
-<div id="birthday-popup" class="popup">
-    <div class="content">
+<!-- start of slide 2-->
+<div id="birthday-popup">
       <form id="ometria-tc-birthday-form" action="https://api.ometria.com/forms/signup" method="post">
           <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
                       <input type="hidden" name="email" value="" autocomplete="off" />
@@ -78,14 +75,12 @@
         </div>
       </div>
     </form>
-    </div>
   </div>
-<!-- end of Birthday form -->
+<!-- end of slide 2 -->
 
 
-<!-- start of TextClub form -->
-<div id="sms-popup" class="popup">
-    <div class="content">
+<!-- start of slide 3 -->
+<div id="sms-popup">
       <form id="ometria-tc-sms-form" action="https://api.ometria.com/forms/signup" method="post">
           <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
                       <input type="hidden" name="email" value="" autocomplete="off" />
@@ -115,7 +110,8 @@
         </div>
       </div>
     </form>
-    </div>
   </div>
-<!-- end of TextClub form -->
+<!-- end of slide 3 -->
+</div>
+</div>
 <%- include('partials/foot2.ejs') %>
