@@ -50,16 +50,26 @@ function hideOnClickOutside(selector) {
     document.addEventListener('click', outsideClickListener);
 }
 
+function _urlEncode(dt){
+    const fd = Object.entries(dt).map(
+        ([k,v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`
+    ).join("&");
+    return fd;
+}
+
 async function submitForm2(url,fd){
 	const req = new Request(url,{
         method: 'POST', 
-        body: fd
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: _urlEncode(fd)
     });
     const r = await fetch(req,{
        // mode: "no-cors"
     });
-    //let res = r.html();
-    console.log("res: ",r);
+    let res = await r.json();
+    console.log("res: ",res);
     return "ok";
 }
 
@@ -114,17 +124,17 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", (e) =
     else{
         console.log(`Email: ${ue}. Submitting form..`);
 
-        let fd = new FormData();
+        let fd = {
+            "__form_id": "914da260f9b6543487067473b43d6b03",
+            "email": ue,
+            "__email": ue,
+            "@account": "f7af012b9a5822ff",
+            "@subscription_status": "SUBSCRIBED",
+            "properties.sign_up_source": "Subscription Form"
+        };
 
-        fd.append("__form_id","914da260f9b6543487067473b43d6b03");
-        fd.append("email",ue);
-        fd.append("__email",ue);
-        fd.append("@account","f7af012b9a5822ff");
-        fd.append("@subscription_status","SUBSCRIBED");
-        fd.append("ue",ue);
-        fd.append("properties.sign_up_source","Subscription Form");
-        //submitForm2("https://api.ometria.com/forms/signup","#ometria-tc-subscribe-form");
-        submitForm("#ometria-tc-subscribe-form");
+        submitForm2("https://api.ometria.com/forms/signup/ajax",fd);
+        //submitForm("#ometria-tc-subscribe-form");
        /*
        if(rr == "ok"){
            hideElem(['#subscribe-popup', '#sms-popup']);
