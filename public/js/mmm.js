@@ -80,7 +80,7 @@ const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight ||
 //Event handlers
 
 document.addEventListener("DOMContentLoaded", function() {
-    let subscribeBtn = document.querySelector('#subscribe-btn'), subscribePopup = document.querySelector('#popup-container'), subscribeClose = document.querySelector('#subscribe-close-btn'),
+    let subscribeBtn = document.querySelector('#subscribe-btn'), subscribePopup = document.querySelector('#popup-container'), subscribeClose = document.querySelector('.closebtn'),
     birthdayBtn = document.querySelector('#birthday-btn'), birthdayPopup = document.querySelector('#birthday-popup'), birthdayClose = document.querySelector('#birthday-close-btn'),
     smsBtn = document.querySelector('#sms-btn'), smsPopup = document.querySelector('#sms-popup'), smsClose = document.querySelector('#sms-close-btn');
 
@@ -150,7 +150,7 @@ document.querySelector('#birthday-form-submit').addEventListener("click",async (
      showElem("#bde");
     }
     else{
-        console.log(`Email: ${ue}. Submitting form..`);
+        console.log(`DOB: ${dob}. Submitting form..`);
         showElem('#birthday-loading');
 
         let fd = {
