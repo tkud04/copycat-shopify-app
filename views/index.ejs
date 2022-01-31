@@ -19,7 +19,7 @@
           <tr>
               <th>Customer name</th>
               <th>Email address</th>
-              <th>Number of subscriptions</th>
+              <th>Total number of subscriptions</th>
               <th>Number of active subscriptions</th>
               <th>Analytics data</th>
           </tr>
@@ -31,8 +31,8 @@
           <tr>
               <td><%= `${c.first_name} ${c.last_name}` %></td>
               <td><%= c.email %></td>
-              <td><%= c.subscriptions_active_count %></td>
               <td><%= c.subscriptions_total_count %> </td>
+              <td><%= c.subscriptions_active_count %></td>
               <td><%= JSON.stringify(c.analytics_data) %></td>
           </tr>
           <%
