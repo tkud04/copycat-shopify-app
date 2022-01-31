@@ -223,7 +223,7 @@ document.querySelector('#forms-complete-submit').addEventListener("click",async 
     e.preventDefault();
     subscribePopup.classList.remove('open');
     hideElem(['#forms-complete-popup','#birthday-popup', '#sms-popup']);
-    showElem(['#subscribe-popup', '#birthday-popup', '#sms-popup']);
+    showElem(['#subscribe-popup']);
 });
 
 });
