@@ -222,6 +222,8 @@ document.querySelector('#sms-form-submit').addEventListener("click",async (e) =>
 document.querySelector('#forms-complete-submit').addEventListener("click",async (e) => {
     e.preventDefault();
     subscribePopup.classList.remove('open');
+    hideElem(['#forms-complete-popup','#birthday-popup', '#sms-popup']);
+    showElem(['#subscribe-popup', '#birthday-popup', '#sms-popup']);
 });
 
 });
