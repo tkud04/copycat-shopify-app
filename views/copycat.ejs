@@ -32,8 +32,6 @@
  
       </div>
       
-      <span id="subscribe-close-btn" class="closebtn">x</span>
-      
       <img src="img/tc-subscribe-2.jpg" alt="Subscribe">
       
       <div class="subscribe">
@@ -90,14 +88,13 @@
                       <div style="display:none !important">
                           <input name="__email" type="email" value="" autocomplete="off" />
                       </div>
-                      <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+                      <input name="@account" type="hidden" value="fc1b7571419c68be1aa983757e981218" />
                       <input name="@return_url" type="hidden" value="" />
                       <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
 
                       <!-- Form elements go here: Style as you wish -->
       <div class="container" style="padding: 0px !important; margin-bottom: 10px !important;">
         
-        <span id="sms-close-btn" class="closebtn" style="top: 30px !important;">x</span>
         
         <img src="img/tc-sms.jpg" alt="Send">
   
@@ -108,13 +105,27 @@
             By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel.
             View our <a class="popup-link" href="javascript:void(0)">Privacy Policy</a> and <a class = "popup-link" href="javascript:void(0)">Terms of Service.</a>
           </p>
-            <input type="tel" id="phone" style="margin-top: 5px;">
-            <input type="submit" value="Submit">
+            <input type="tel" id="sms-phone" style="margin-top: 5px;">
+            <input id="sms-form-submit" type="submit" value="Submit">
         </div>
       </div>
     </form>
   </div>
 <!-- end of slide 3 -->
+
+<!-- start of slide 4 -->
+<div id="forms-complete-popup">
+  <form id="forms-complete-form" action="https://api.ometria.com/forms/signup" method="post">
+  <div class="container">
+    <span id="forms-complete-close" class="closebtn" style="top: 30px !important;">x</span>
+    <div class="subscribe">
+      <h1>Thank you for subscribing!</h1>
+      <input id="forms-complete-submit" type="submit" value="Finish">
+    </div>
+  </div>
+  </form>
+</div>
+<!-- end of slide 4 -->
 </div>
 </div>
 <%- include('partials/foot2.ejs') %>
