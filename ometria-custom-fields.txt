@@ -1,0 +1,18 @@
+Field title: Has active scent subscription
+Field ID: has_active_scent_subscription
+Data type: String
+Field title: Had subscription (lapsed/cancelled)
+Field ID: had_subscription
+Data type: String
+Field title: Never had subscription
+Field ID: never_had_subscription
+Data type: String
+Field title: Number of consecutive months with an active subscription
+Field ID: consecutive_months_subscription_active
+Data type: Integer
+Field title: Lifetime number of subscriptions
+Field ID: total_subscriptions
+Data type: Integer
+Field title: Source the contact was acquired from
+Field ID: contact_acquisition_source
+Data type: String
