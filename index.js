@@ -7,6 +7,13 @@ const axios = require('axios');
 const { Console } = require('console');
 // helpers = require('./Helpers');
 
+const getNextURL = responseData => {
+  let ret = "javascript:void(0)";
+  if(typeof responseData.next_cursor != "undefined"){
+    ret = `${RECHARGE_API}/customers?limit=250&page_info=${responseData.next_cursor}`;
+  }
+};
+
 const PORT = process.env.PORT || 5000;
 
 const { RECHARGE_API_TOKEN,
@@ -118,50 +125,53 @@ express()
 
 })
 /** Gets all customer data from Recharge API **/
-.post("/all-customers", async (req, res) => {
-  let q = null, ret = {status: "error", message: "nothing happened"};
+.get("/all-customers", async (req, res) => {
+  let errors = null, dt2 = null, nc = null, pc = null, customers = [],
+  vv = "javascript:void(0)", isRemaining = true;
+  customersURL = `${RECHARGE_API}/customers?limit=250`;
 
-  if(typeof req.body != "undefined"){
-    q = req.body;
-  }
- 
-  let payload = [{
-    "@type": "contact",
-    "@merge": true,
-    id: q.customer_id,
-    email: q.customer_email,
-    properties: q.fields
-  }];
+  while(isRemaining){
   try{
-
     let dt = await axios({
-      method: "post",
-      url: `${OMETRIA_API}/push`,
-      headers: {'X-Ometria-Auth': OMETRIA_API_KEY},
-      data: payload
+      method: "get",
+      url: customersURL,
+      headers: {
+        'X-Recharge-Access-Token': RECHARGE_API_TOKEN,
+        'X-Recharge-Version': '2021-11'
+      }
     });
-    if(dt.status == "200" || dt.status == "202"){
+    
+    if(dt.status == "200"){
       dt2 = dt.data;
-      console.log("response from Ometria API: ",dt2);
-      ret = {status: "ok", message: "Contact updated"}
+      let tc = dt2.customers;
+      for(let c of tc){
+        customers.push(c);
+      }
+      
+      //Reiterate using the cursor to get all data
+      pc = dt2.previous_cursor, nc = dt2.next_cursor;
+      console.log("nc: ",nc);
+
+      if(!nc){
+        //All records retrieved, break out of the loop
+        isRemaining = false;
+      }
+      
     }
     else{
-      console.log("error response from Ometria API: ",dt);
+      console.log("error response from Recharge API: ",dt);
       errors = "An error occured, please check the application logs";
-      ret.status = errors;
+      isRemaining = false;
     }
   }
   catch(e){
-    let bigError = `An error occured: ${e})`;
-    console.log(bigError); 
-    res.status = bigError;
+    console.log("An error occured: ",e); 
+    errors = "An error occured, please check the application logs";
+    isRemaining = false;
   }
-  finally
-  {
-    res.send(ret);
-  }
- 
-
+ }
+ console.log("customers.length: ",customers.length);
+res.sendStatus(200);
 })
 /** Creates a webhook on Recharge  **/
 .get('/create-webhook', async (req,res) => {
