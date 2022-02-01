@@ -117,6 +117,52 @@ express()
  
 
 })
+/** Gets all customer data from Recharge API **/
+.post("/all-customers", async (req, res) => {
+  let q = null, ret = {status: "error", message: "nothing happened"};
+
+  if(typeof req.body != "undefined"){
+    q = req.body;
+  }
+ 
+  let payload = [{
+    "@type": "contact",
+    "@merge": true,
+    id: q.customer_id,
+    email: q.customer_email,
+    properties: q.fields
+  }];
+  try{
+
+    let dt = await axios({
+      method: "post",
+      url: `${OMETRIA_API}/push`,
+      headers: {'X-Ometria-Auth': OMETRIA_API_KEY},
+      data: payload
+    });
+    if(dt.status == "200" || dt.status == "202"){
+      dt2 = dt.data;
+      console.log("response from Ometria API: ",dt2);
+      ret = {status: "ok", message: "Contact updated"}
+    }
+    else{
+      console.log("error response from Ometria API: ",dt);
+      errors = "An error occured, please check the application logs";
+      ret.status = errors;
+    }
+  }
+  catch(e){
+    let bigError = `An error occured: ${e})`;
+    console.log(bigError); 
+    res.status = bigError;
+  }
+  finally
+  {
+    res.send(ret);
+  }
+ 
+
+})
 /** Creates a webhook on Recharge  **/
 .get('/create-webhook', async (req,res) => {
   let errors = null, dt = null;

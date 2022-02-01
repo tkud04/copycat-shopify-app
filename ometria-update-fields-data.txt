@@ -1,0 +1,4 @@
+has_active_scent_subscription=no
+never_had_subscription=no
+total_subscriptions=1
+had_subscription=yes

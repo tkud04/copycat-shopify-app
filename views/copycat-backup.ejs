@@ -3,17 +3,17 @@
 <h2>Copycat Popup Forms Preview</h2>
 
 <div style="display: inline; margin-top: 10px;">
-<button id="subscribe-btn">Show the Subscribe popup</button>
-<button id="birthday-btn">Show the Birthday popup</button>
-<button id="sms-btn">Show the TextClub popup</button>
+<button id="subscribe-btn">Start the popup journey</button>
 </div>
 
 <!-- start SUbscribe form-->
-<div id="subscribe-popup" class="popup">
+<div id="popup-container" class="popup">
   <div class="content">
-       <!-- Ometria AJAX forms-->
-       <script src="//cdn.ometria.com/tags/f7af012b9a5822ff.js"></script>
-    <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+<!-- start slide 1-->
+<div id="subscribe-popup">
+      <!-- Ometria AJAX forms-->
+      <script src="//cdn.ometria.com/tags/f7af012b9a5822ff.js"></script>
+       <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
       <input type="hidden" name="__form_id" value="914da260f9b6543487067473b43d6b03" />
       <input type="hidden" name="email" value="" autocomplete="off" />
       <div style="display:none !important">
@@ -32,27 +32,24 @@
  
       </div>
       
-      <span id="subscribe-close-btn" class="closebtn">x</span>
-      
       <img src="img/tc-subscribe-2.jpg" alt="Subscribe">
       
       <div class="subscribe">
-        <h1>Join our <span>COPYCAT FAMILY</span></h1>
+        <h1>Join our <span>Copycat Family</span></h1>
         <p>Subscribe to our newsletter to get <b>10% off</b> your first purchase. We'll keep you posted with <b>the latest news and exclusive offers</b></p>
        
           <input type="email" id="subscribe-email" placeholder="EMAIL ADDRESS">
-          <p style="color: red; font-weight: bold; display: none;" id="subscribe-form-error">Please fill in your email address</p>
-          <input id="subscribe-form-submit" type="submit" value="SIGN UP">
+          <p style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
+          <marquee id="subscribe-loading">Please wait..</marquee>
+          <input id="subscribe-form-submit" type="submit" value="Next">
       </div>
     </div>
   </form>
-  </div>
 </div>
-<!-- end of Subscribe form-->
+<!-- end of slide 1-->
 
-<!-- start of Birthday form -->
-<div id="birthday-popup" class="popup">
-    <div class="content">
+<!-- start of slide 2-->
+<div id="birthday-popup">
       <form id="ometria-tc-birthday-form" action="https://api.ometria.com/forms/signup" method="post">
           <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
                       <input type="hidden" name="email" value="" autocomplete="off" />
@@ -72,34 +69,32 @@
           <h1>We have a birthday gift for you</h1>
           <p>Smell fresh for free on the big day!</p>
          
-            <input type="text" placeholder="Your birthday (MM/DD)" style="margin-bottom: 5px;">
-            <input type="email" placeholder="Email address">
-            <input type="submit" value="Sign up">
+            <input type="date" id="birthday-dob" placeholder="Your birthday" style="margin-bottom: 5px;">
+            <p style="color: red; font-weight: bold; display: none;" id="bde">Please fill in your date of birth</p>
+            <marquee id="birthday-loading">Please wait..</marquee>
+            <input id="birthday-form-submit" type="submit" value="Next">
         </div>
       </div>
     </form>
-    </div>
   </div>
-<!-- end of Birthday form -->
+<!-- end of slide 2 -->
 
 
-<!-- start of TextClub form -->
-<div id="sms-popup" class="popup">
-    <div class="content">
+<!-- start of slide 3 -->
+<div id="sms-popup">
       <form id="ometria-tc-sms-form" action="https://api.ometria.com/forms/signup" method="post">
           <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
                       <input type="hidden" name="email" value="" autocomplete="off" />
                       <div style="display:none !important">
                           <input name="__email" type="email" value="" autocomplete="off" />
                       </div>
-                      <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+                      <input name="@account" type="hidden" value="fc1b7571419c68be1aa983757e981218" />
                       <input name="@return_url" type="hidden" value="" />
                       <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
 
                       <!-- Form elements go here: Style as you wish -->
       <div class="container" style="padding: 0px !important; margin-bottom: 10px !important;">
         
-        <span id="sms-close-btn" class="closebtn" style="top: 30px !important;">x</span>
         
         <img src="img/tc-sms.jpg" alt="Send">
   
@@ -110,12 +105,27 @@
             By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel.
             View our <a class="popup-link" href="javascript:void(0)">Privacy Policy</a> and <a class = "popup-link" href="javascript:void(0)">Terms of Service.</a>
           </p>
-            <input type="tel" id="phone" style="margin-top: 5px;">
-            <input type="submit" value="Send">
+            <input type="tel" id="sms-phone" style="margin-top: 5px;">
+            <input id="sms-form-submit" type="submit" value="Submit">
         </div>
       </div>
     </form>
+  </div>
+<!-- end of slide 3 -->
+
+<!-- start of slide 4 -->
+<div id="forms-complete-popup">
+  <form id="forms-complete-form" action="https://api.ometria.com/forms/signup" method="post">
+  <div class="container">
+    <span id="forms-complete-close" class="closebtn" style="top: 30px !important;">x</span>
+    <div class="subscribe">
+      <h1>Thank you for subscribing!</h1>
+      <input id="forms-complete-submit" type="submit" value="Finish">
     </div>
   </div>
-<!-- end of TextClub form -->
+  </form>
+</div>
+<!-- end of slide 4 -->
+</div>
+</div>
 <%- include('partials/foot2.ejs') %>
