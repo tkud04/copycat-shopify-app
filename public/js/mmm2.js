@@ -47,6 +47,7 @@ $(document).ready(() => {
             '#ometria-id-error','#ometria-email-error','#ometria-fields-error'
            ]);
         console.log("Submitting..");
+        
         let o_id = $('#ometria-id').val(), o_email = $('#ometria-email').val(), o_fields = $('#ometria-fields').val(), custom_fields = {};
 
         if(o_id == "" || o_email == "" || o_fields == ""){
@@ -55,6 +56,7 @@ $(document).ready(() => {
            if(o_fields == "") showElem("#ometria-fields-error");
         }
         else{
+            showElem("#update-form-loading");
             let cf = o_fields.split("\n");
             
             for(let field of cf){
@@ -76,6 +78,16 @@ $(document).ready(() => {
             const send = await fetch(req);
             const response = await send.json();
             console.log("Response: ",response);
+            hideElem("#update-form-loading");
+            if(response.status == "ok"){
+                hideElem("#update-form-loading");
+                $("#update-form-status").html(response.message);
+                showElem("#update-form-status");
+                setTimeout(() => {
+                    hideElem("#update-form-status");
+                    $('#ometria-id').val(""); $('#ometria-email').val("");
+                },1000);
+            }
         }
     });
 });
