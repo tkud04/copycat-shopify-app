@@ -1,0 +1,45 @@
+<%- include('partials/head.ejs') %>
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+    <h2 class="text-success text-center mb-5">Manual Data Updates for Ometria Custom Fields</h2>
+   <form id="update-form">
+       <div class="row">
+           <div class="col-md-6">
+                <div class="form-group">
+                    <label for="ometria-id">Ometria ID</label>
+                    <input type="text" class="form-control" id="ometria-id" placeholder="Ometria ID for customer">
+                    <p class="text-danger" id="ometria-id-error">This field is required</p>
+                </div>
+           </div>
+           <div class="col-md-6">
+            <div class="form-group">
+                <label for="ometria-email">Email address</label>
+                <input type="text" class="form-control" id="ometria-email" placeholder="Customer email address">
+                <p class="text-danger" id="ometria-email-error">This field is required</p>
+            </div>
+           </div>
+           <div class="col-md-12 mt-5">
+            <div class="form-group">
+                <label for="ometria-fields">Cutom fields to update</label><br>
+                <b>NOTE: each custom field must be of the format: field_name=value</b>
+                <textarea class="form-control" rows="15" id="ometria-fields" placeholder="Custom fields to update (one per line)"></textarea>
+                <p class="text-danger" id="ometria-fields-error">This field is required</p>
+            </div>
+           </div>
+       </div>
+       <button type="submit" class="btn btn-primary mt-2 mb-2">Submit</button>
+       <div class="row">
+           <div class="col-md-12">
+             <p class="text-primary" id="update-form-status">Status</p>
+             <p id="update-form-loading"><img src="img/loading.gif" style="width: 50px; height: 50px;"></p>
+           </div>
+       </div>
+     
+   </form>
+</div>
+</div>
+</div>
+
+<%- include('partials/foot.ejs') %>

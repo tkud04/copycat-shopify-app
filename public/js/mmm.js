@@ -84,9 +84,11 @@ document.addEventListener("DOMContentLoaded", function() {
     birthdayBtn = document.querySelector('#birthday-btn'), birthdayPopup = document.querySelector('#birthday-popup'), birthdayClose = document.querySelector('#birthday-close-btn'),
     smsBtn = document.querySelector('#sms-btn'), smsPopup = document.querySelector('#sms-popup'), smsClose = document.querySelector('#sms-close-btn');
 
+ //Copycat forms
   hideElem([
       '#birthday-popup','#sms-popup','#forms-complete-popup',
       '#subscribe-loading','#birthday-loading','#sms-loading']);
+
 
 let arr = [
     {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose}

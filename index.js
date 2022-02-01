@@ -26,6 +26,8 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .use(cors())
+  .use(express.urlencoded({extended: true}))
+  .use(express.json())
   
   /** Loads the paginated list of all customers on Recharge  **/
   .get("/", async (req, res) => {
@@ -65,20 +67,27 @@ express()
   res.render('index',{dt2,errors,prevURL,nextURL});  
 })
 /** Updates custom fields about a customer (from Recharge) on Ometria  **/
-.get("/update-ometria", async (req, res) => {
+.get("/manual-updates", async (req, res) => {
   let errors = null, dt2 = null;
+  res.render('manual-updates');
+})
+/** Updates custom fields about a customer (from Recharge) on Ometria  **/
+.post("/update-ometria", async (req, res) => {
+  let q = null, ret = {status: "error", message: "nothing happened"};
+
+  if(typeof req.body != "undefined"){
+    q = req.body;
+  }
+ 
   let payload = [{
     "@type": "contact",
     "@merge": true,
-    id: "5716756693188",
-    email: "tobi@esoftresponse.com",
-    properties: {
-      has_active_scent_subscription: "yes",
-      never_had_subscription: "yes",
-      total_subscriptions: 0
-    }
+    id: q.customer_id,
+    email: q.customer_email,
+    properties: q.fields
   }];
   try{
+
     let dt = await axios({
       method: "post",
       url: `${OMETRIA_API}/push`,
@@ -88,19 +97,24 @@ express()
     if(dt.status == "200" || dt.status == "202"){
       dt2 = dt.data;
       console.log("response from Ometria API: ",dt2);
-      res.sendStatus(200);
+      ret = {status: "ok", message: "Contact updated"}
     }
     else{
       console.log("error response from Ometria API: ",dt);
       errors = "An error occured, please check the application logs";
-      res.send(errors);
+      ret.status = errors;
     }
   }
   catch(e){
-    console.log("An error occured: ",e); 
-    errors = "An error occured, please check the application logs";
-    res.send(errors);
+    let bigError = `An error occured: ${e})`;
+    console.log(bigError); 
+    res.status = bigError;
   }
+  finally
+  {
+    res.send(ret);
+  }
+ 
 
 })
 /** Creates a webhook on Recharge  **/
