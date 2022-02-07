@@ -10,7 +10,7 @@
 <div id="popup-container" class="popup">
   <div class="content">
 <!-- start slide 1-->
-<div id="subscribe-popup">
+<div id="subscribe-popup"  style="background-image:url('img/tc-subscribe.jpg'); background-size: cover; background-repeat: no-repeat;">
       <!-- Ometria AJAX forms-->
       <script src="//cdn.ometria.com/tags/f7af012b9a5822ff.js"></script>
        <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
@@ -26,11 +26,10 @@
                     <!-- Form elements go here: Style as you wish -->
     <div class="container">
       
-      <img src="img/tc-subscribe-2.jpg" alt="Subscribe" style="width: 220px; height: 145px;">
       
-      <div class="subscribe">
-        <h1>Join our <span>Copycat Family</span></h1>
-        <p>Subscribe to our newsletter to get <b>10% off</b> your first purchase. We'll keep you posted with <b>the latest news and exclusive offers</b></p>
+      <div class="subscribe sliding-text">
+        <h1 style="color: #fff">Join our <span>Copycat Family</span></h1>
+        <p style="color: #fff"> Subscribe to our newsletter to get <b>10% off</b> your first purchase. We'll keep you posted with <b>the latest news and exclusive offers</b></p>
        
           <input type="email" id="subscribe-email" placeholder="EMAIL ADDRESS">
           <p style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
@@ -43,7 +42,7 @@
 <!-- end of slide 1-->
 
 <!-- start of slide 2-->
-<div id="birthday-popup" style="background-image:url('img/bday3.jpg'); background-size: cover; background-repeat: no-repeat;">
+<div id="birthday-popup" style="background-image:url('img/bday4.jpg'); background-size: contain;">
       <form id="ometria-tc-birthday-form" action="https://api.ometria.com/forms/signup" method="post">
           <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
                       <input type="hidden" name="email" value="" autocomplete="off" />
@@ -60,8 +59,8 @@
         <span id="birthday-close-btn" class="closebtn">x</span>
         
         <div class="subscribe">
-          <h1>We have a birthday gift for you</h1>
-          <p>Smell fresh for free on the big day!</p>
+          <h1 class="white-text">We have a birthday gift for you</h1>
+          <p class="white-text"> Smell fresh for free on the big day!</p>
          
             <input type="date" id="birthday-dob" placeholder="Your birthday" style="margin-bottom: 5px;">
             <p style="color: red; font-weight: bold; display: none;" id="bde">Please fill in your date of birth</p>
@@ -88,21 +87,24 @@
 
                       <!-- Form elements go here: Style as you wish -->
       <div class="container" style="padding: 0px !important; margin-bottom: 10px !important;">
-        
-        
-        <img src="img/tc-sms.jpg" alt="Send" style="max-width: 100%; height: 145px;">
-  
-        <div class="subscribe">
-          <h1>Welcome to our Text Club!</h1>
-          <p><b>We'll let you know first-hand about sales and special offers and we will never message you more than twice a month</b></p>
-          <p style="color: #aaa">
+        <div class="flex-container">
+        <div class="inline-item">
+            <img src="img/tc-sms-3.jpg" alt="Send" style="max-width: 100%;">
+         </div>
+          <div class="inline-item" style="padding: 5px;">
+<div class="subscribe">
+          <h1 style="font-size: 1.4rem !important; margin-bottom: 10%;">Welcome to our Text Club!</h1>
+          <p style="font-size: 0.8rem !important; margin-bottom: 10%;"><b>We'll let you know first-hand about sales and special offers and we will never message you more than twice a month</b></p>
+          <p style="color: #aaa; font-size: 0.8rem !important; margin-bottom: 10%;">
             By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel.
             View our <a class="popup-link" href="javascript:void(0)">Privacy Policy</a> and <a class = "popup-link" href="javascript:void(0)">Terms of Service.</a>
           </p>
             <input type="tel" id="sms-phone" style="margin-top: 5px;">
             <input id="sms-form-submit" type="submit" value="Submit">
         </div>
-      </div>
+          </div>
+          </div>
+        </div>
     </form>
   </div>
 <!-- end of slide 3 -->

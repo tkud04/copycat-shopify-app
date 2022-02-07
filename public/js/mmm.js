@@ -81,8 +81,7 @@ const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight ||
 
 document.addEventListener("DOMContentLoaded", function() {
     let subscribeBtn = document.querySelector('#subscribe-btn'), subscribePopup = document.querySelector('#popup-container'), subscribeClose = document.querySelector('.closebtn'),
-    birthdayBtn = document.querySelector('#birthday-btn'), birthdayPopup = document.querySelector('#birthday-popup'), birthdayClose = document.querySelector('#birthday-close-btn'),
-    smsBtn = document.querySelector('#sms-btn'), smsPopup = document.querySelector('#sms-popup'), smsClose = document.querySelector('#sms-close-btn');
+    debugBtn = document.querySelector('#debug-btn'), debugPopup = document.querySelector('#sms-popup');
 
  //Copycat forms
   hideElem([
@@ -91,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 let arr = [
-    {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose}
+    {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose},
 ];
 
 
@@ -173,6 +172,7 @@ document.querySelector('#birthday-form-submit').addEventListener("click",async (
         
         if(rr.ok){
            hideElem(['#subscribe-popup', '#birthday-popup']);
+           document.querySelector('#popup-container').style.backgroundColor = "#F4F7F8";
            showElem(['#sms-popup']);
        }
        else{
@@ -224,6 +224,7 @@ document.querySelector('#sms-form-submit').addEventListener("click",async (e) =>
 document.querySelector('#forms-complete-submit').addEventListener("click",async (e) => {
     e.preventDefault();
     subscribePopup.classList.remove('open');
+    document.querySelector('#popup-container').style.backgroundColor = "#fff";
     hideElem(['#forms-complete-popup','#birthday-popup', '#sms-popup']);
     showElem(['#subscribe-popup']);
 });

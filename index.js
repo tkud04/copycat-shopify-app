@@ -131,6 +131,7 @@ express()
   customersURL = `${RECHARGE_API}/customers?limit=250`;
 
   while(isRemaining){
+  
   try{
     let dt = await axios({
       method: "get",
@@ -151,12 +152,16 @@ express()
       //Reiterate using the cursor to get all data
       pc = dt2.previous_cursor, nc = dt2.next_cursor;
       console.log("nc: ",nc);
-
+      
       if(!nc){
         //All records retrieved, break out of the loop
         isRemaining = false;
+        break;
       }
       
+      setTimeout( () => {
+        console.log("waiting..");
+      },100);
     }
     else{
       console.log("error response from Recharge API: ",dt);
