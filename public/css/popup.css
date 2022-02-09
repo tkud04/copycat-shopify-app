@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Lexend Tera";
+  src: url("../fonts/LexendTera-VariableFont_wght.ttf") format("ttf"),
+}
+
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lexend Tera', sans-serif;
+
 }
 
 a.popup-link{
