@@ -148,12 +148,12 @@ a.popup-link{
   backface-visibility: hidden;
 }
  
-.popup .content .subscribe h1 {
+.popup .content .subscribe h3 {
   font-size: 1.5rem;
   color: #3e4146;
   line-height: 130%;
   letter-spacing: 0.07rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /**
@@ -196,14 +196,18 @@ a.popup-link{
   overflow: hidden;
 }
 .popup .content .subscribe input {
-  /**width: 100%;
+  /**
   float: left;**/
+  width: 80% !important;
   padding: 15px 20px;
   text-align: center;
   font-family: inherit;
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
   outline: 0;
+}
+div.iti{
+  width: 100% !important;
 }
 .popup .content .subscribe input[type=email], .popup .content .subscribe input[type=text] {
   margin-bottom: 15px;

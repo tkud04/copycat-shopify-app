@@ -10,7 +10,7 @@
 <div id="popup-container" class="popup">
   <div class="content">
 <!-- start slide 1-->
-<div id="subscribe-popup"  style="background-color: #222;">
+<div id="subscribe-popup"  style="background-image:url('img/tc-subscribe-4.jpg'); background-size: cover; background-repeat: no-repeat;">
       <!-- Ometria AJAX forms-->
       <script src="//cdn.ometria.com/tags/f7af012b9a5822ff.js"></script>
        <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
@@ -28,23 +28,17 @@
       
       
       <div class="subscribe sliding-text">
-        <img src="img/copycat-logo-white.png" style="height: 80px;"/>
-        <h3 style="color: #fff">Join our <span>Copycat Family</span></h3>
+        <h1 style="color: #fff">Join our <span>Copycat Family</span></h1>
         <p style="color: #fff"> Subscribe to our newsletter to get <b>10% off</b> your first purchase. <br> We'll keep you posted with <span style="font-weight:bolder !important;">the latest news and exclusive offers</span></p>
-        <input type="email" id="subscribe-email" name ="ue" placeholder="Email address">
-        <p style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
-        <p style="color: #fff">Smell fresh on your day! Tell us your birthday, we just might have a special gift for you!</p>
-        <input type="date" id="subscribe-bday" name ="date_of_birth" placeholder="Date of birth">
         <p style="color: #fff">
-           By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer.<br> Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies.<br> Reply HELP for help or STOP to cancel.
+          By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel.
           View our <a class="popup-link" href="javascript:void(0)">Privacy Policy</a> and <a class = "popup-link" href="javascript:void(0)">Terms of Service.</a>
         </p>
-         <div style="width: 100%"> 
+          <input type="email" id="subscribe-email" name ="ue" placeholder="Email address">
+          <p style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
           <input type="number" id="subscribe-phone" name ="phone_number" placeholder="Phone number">
           <p style="color: red; font-weight: bold; display: none;" id="sfp">Please fill in your phone number</p>
-        </div>
-         
-          
+          <input type="date" id="subscribe-phone" name ="date_of_birth" placeholder="Date of birth">
           <input id="subscribe-form-submit" type="submit" value="Submit">
       </div>
     </div>
