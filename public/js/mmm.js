@@ -100,133 +100,29 @@ for(let a of arr){
         a.popup.classList.add('open');
        });
 
-    a.close.addEventListener("click",e => {
+   /* a.close.addEventListener("click",e => {
         e.preventDefault();
         a.popup.classList.remove('open');
-    });
+    }); */
 }
 
 
 //Form buttons
-document.querySelector('#subscribe-form-submit').addEventListener("click",async (e) => {
+document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
     e.preventDefault();
-    let ue = document.querySelector("#subscribe-email").value;
-    hideElem("#sfe");
-    
-    if(ue == ""){
-     showElem("#sfe");
-    }
-    else{
-        localStorage.setItem("ue",ue);
-        console.log(`Email: ${localStorage.getItem("ue")}. Submitting form..`);
-        showElem("#subscribe-loading");
+    let ue = document.querySelector("#subscribe-email").value, phone = document.querySelector("#subscribe-phone").value;
+    hideElem(["#sfe","#sfp"]);
+    console.log("[ue, phone]: ",[ue, phone]);
 
-        let fd = {
-            "__form_id": "914da260f9b6543487067473b43d6b03",
-            "email": ue,
-            "__email": ue,
-            "ue": ue,
-            "@account": "f7af012b9a5822ff",
-            "@subscription_status": "SUBSCRIBED",
-            "properties.sign_up_source": "Subscription Form"
-        };
-
-        let rr = await submitForm("https://api.ometria.com/forms/signup/ajax",fd);
-        
-        if(rr.ok){
-           hideElem(['#subscribe-popup', '#sms-popup']);
-           showElem(['#birthday-popup']);
-       }
-       else{
-           alert("An error occured, please check the logs for details");
-           console.log("Errors: ",rr.errors)
-       }
-
-    }
-});
-
-document.querySelector('#birthday-form-submit').addEventListener("click",async (e) => {
-    e.preventDefault();
-    let ue = localStorage.getItem("ue"), dob = document.querySelector("#birthday-dob").value;
-    hideElem("#bde");
-    
-    if(ue == "" || dob == ""){
-     showElem("#bde");
-    }
-    else{
-        console.log(`DOB: ${dob}. Submitting form..`);
-        showElem('#birthday-loading');
-
-        let fd = {
-            "__form_id": "e451ea9cc5bedc9ac5d5f8e80b51fcc5",
-            "email": ue,
-            "__email": ue,
-            "ue": ue,
-            "date_of_birth": dob,
-            "@account": "f7af012b9a5822ff",
-            "@subscription_status": "SUBSCRIBED",
-            "properties.sign_up_source": "Birthday Form"
-        };
-        
-        let rr = await submitForm("https://api.ometria.com/forms/signup/ajax",fd);
-        
-        if(rr.ok){
-           hideElem(['#subscribe-popup', '#birthday-popup']);
-           document.querySelector('#popup-container').style.backgroundColor = "#F4F7F8";
-           showElem(['#sms-popup']);
-       }
-       else{
-           alert("An error occured, please check the logs for details");
-           console.log("Errors: ",rr.errors)
-       }
-
-    }
-});
-
-
-document.querySelector('#sms-form-submit').addEventListener("click",async (e) => {
-    e.preventDefault();
-    let ue = localStorage.getItem("ue"), phone = document.querySelector("#sms-phone").value;
-    hideElem("#tce");
-    
     if(ue == "" || phone == ""){
-     showElem("#tce");
+     if(ue == "") showElem("#sfe");
+     if(phone == "") showElem("#sfp");
     }
     else{
-        console.log(`Phone number: ${phone}. Submitting form..`);
-        showElem('#sms-loading');
-
-        let fd = {
-            "__form_id": "fc1b7571419c68be1aa983757e981218",
-            "email": ue,
-            "ue": ue,
-            "__email": ue,
-            "phone_number": phone,
-            "@account": "f7af012b9a5822ff",
-            "@subscription_status": "SUBSCRIBED",
-            "properties.sign_up_source": "Birthday Form"
-        };
-        
-        let rr = await submitForm("https://api.ometria.com/forms/signup/ajax",fd);
-        
-        if(rr.ok){
-           hideElem(['#subscribe-popup', '#birthday-popup', '#sms-popup']);
-           showElem(['#forms-complete-popup']);
-       }
-       else{
-           alert("An error occured, please check the logs for details");
-           console.log("Errors: ",rr.errors)
-       }
-
+        document.querySelector('#ometria-tc-subscribe-form').submit();
     }
 });
 
-document.querySelector('#forms-complete-submit').addEventListener("click",async (e) => {
-    e.preventDefault();
-    subscribePopup.classList.remove('open');
-    document.querySelector('#popup-container').style.backgroundColor = "#fff";
-    hideElem(['#forms-complete-popup','#birthday-popup', '#sms-popup']);
-    showElem(['#subscribe-popup']);
-});
+
 
 });
