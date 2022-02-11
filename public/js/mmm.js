@@ -110,13 +110,13 @@ for(let a of arr){
 //Form buttons
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
     e.preventDefault();
-    let ue = document.querySelector("#subscribe-email").value, phone = document.querySelector("#subscribe-phone").value;
+    let ue = document.querySelector("#subscribe-email").value; //phone = document.querySelector("#subscribe-phone").value;
     hideElem(["#sfe","#sfp"]);
-    console.log("[ue, phone]: ",[ue, phone]);
+    //console.log("[ue, phone]: ",[ue, phone]);
 
-    if(ue == "" || phone == ""){
+    if(ue == ""){
      if(ue == "") showElem("#sfe");
-     if(phone == "") showElem("#sfp");
+    // if(phone == "") showElem("#sfp");
     }
     else{
         document.querySelector('#ometria-tc-subscribe-form').submit();
