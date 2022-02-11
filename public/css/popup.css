@@ -77,14 +77,13 @@ a.popup-link{
  
 .popup .content {
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   overflow: hidden;
-  text-align: center;
   position: relative;
   min-height: 100vh;
 }
 .popup .content .container {
-  padding: 100px 20px 140px;
+  padding: 20px 10px 50px;
 }
  
 .popup .content .closebtn {
@@ -148,7 +147,7 @@ a.popup-link{
   backface-visibility: hidden;
 }
  
-.popup .content .subscribe h3 {
+.popup .content .subscribe h6 {
   font-size: 1.5rem;
   color: #3e4146;
   line-height: 130%;
@@ -247,7 +246,7 @@ div.iti{
     min-height: inherit;
   }
   .popup .content .container {
-    padding: 50px 20px 80px;
+    /*padding: 50px 20px 80px;*/
   }
 }
  
