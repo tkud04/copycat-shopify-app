@@ -1,10 +1,15 @@
 @font-face {
   font-family: "Lexend Tera";
-  src: url("../fonts/LexendTera-VariableFont_wght.ttf") format("ttf"),
+  src: url("../fonts/Lexend_Tera/LexendTera-VariableFont_wght.ttf") format("ttf"),
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/Nunito_Sans/NunitoSans-Light.ttf") format("ttf"),
 }
 
+
 body{
-  font-family: 'Lexend Tera', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 
 }
 
