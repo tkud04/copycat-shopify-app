@@ -209,7 +209,7 @@ a.popup-link{
   float: left;**/
   width: 90% !important;
   padding: 15px 20px;
-  text-align: center;
+  /*text-align: center;*/
   font-family: inherit;
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
