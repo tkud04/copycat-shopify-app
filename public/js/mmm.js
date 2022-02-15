@@ -106,6 +106,13 @@ for(let a of arr){
     }); */
 }
 
+let ages = [], text = "";
+for(let i = 18; i < 100; i++) ages.push(i);
+ages.map((v,i) => {
+  text += "\n" +  `<Picker.Item key="age-${i}" label="${v}" value="${v}" />`;
+});
+console.log("text: ",text);
+
 
 //Form buttons
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
