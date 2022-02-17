@@ -41,7 +41,7 @@
           <input type="date" id="subscribe-bday" name ="date_of_birth" placeholder="Date of birth">
           <p style="color: red; font-weight: bold; display: none;" id="sfdb">Please fill in your email address</p>
           <p style="color: #fff; margin-top: 10px;">Phone number:</p>
-          <input type="tel" id="subscribe-phone" name ="phone_number" placeholder="Phone number">
+          <input type="tel" id="subscribe-phone" name ="phone_number" pattern="/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/" placeholder="Phone number">
           <p style="color: red; font-weight: bold; display: none;" id="sfp">Please fill in your phone number</p>
         </div>
         <div style="margin-top: 20px; margin-bottom: 20px; padding-bottom: 40px;"">

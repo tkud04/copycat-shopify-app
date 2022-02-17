@@ -106,27 +106,50 @@ for(let a of arr){
     }); */
 }
 
-let ages = [], text = "";
-for(let i = 18; i < 100; i++) ages.push(i);
-ages.map((v,i) => {
-  text += "\n" +  `<Picker.Item key="age-${i}" label="${v}" value="${v}" />`;
-});
-console.log("text: ",text);
-
 
 //Form buttons
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
     e.preventDefault();
     let ue = document.querySelector("#subscribe-email").value, phone = document.querySelector("#subscribe-phone").value;
+    let phoneValidation = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/, emailValidation = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/;
     hideElem(["#sfe","#sfp"]);
-    //console.log("[ue, phone]: ",[ue, phone]);
+    let emailValidationTest = emailValidation.test(ue), phoneValidationTest = phoneValidation.test(phone);
+    let debug = {
+        ue: ue,
+        phone: phone,
+        phoneValidation: phoneValidationTest,
+        emailValidation: emailValidationTest
+    };
+    console.log("debug: ",debug);
 
-    if(ue == "" || phone == ""){
-     if(ue == "") showElem("#sfe");
-     if(phone == "") showElem("#sfp");
+    let sfe = document.querySelector('#sfe'), sfp = document.querySelector('#sfp');
+    
+    if((ue == "" || !emailValidationTest) || (phone == "" || !phoneValidationTest)){
+    if(ue == "" || !emailValidationTest){
+     if(ue == ""){
+         sfe.innerHTML = "Please fill in your email address";
+         showElem("#sfe");
+     }
+     if(!emailValidationTest){
+        sfe.innerHTML = "A valid email address is required";
+        showElem("#sfe");
+     }
+    
     }
+    if(phone == "" || !phoneValidationTest){
+        if(phone == ""){
+            sfp.innerHTML = "Please fill in your phone number";
+            showElem("#sfp");
+         } 
+         if(!phoneValidationTest){
+            sfp.innerHTML = "A valid phone number is required";
+            showElem("#sfp");
+         } 
+    }
+  }
     else{
-        document.querySelector('#ometria-tc-subscribe-form').submit();
+          document.querySelector('#ometria-tc-subscribe-form').submit();
+        
     }
 });
 
