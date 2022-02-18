@@ -117,7 +117,7 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", e => 
     let debug = {
         ue: ue,
         phone: phone,
-        phoneValidation: phoneValidationTest2,
+        phoneValidation: phoneValidationTest,
         emailValidation: emailValidationTest
     };
     console.log("debug: ",debug);
@@ -136,12 +136,12 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", e => 
      }
     
     }
-    if(phone == "" || !phoneValidationTest2){
+    if(phone == "" || !phoneValidationTest){
         if(phone == ""){
             sfp.innerHTML = "Please fill in your phone number";
             showElem("#sfp");
          } 
-         if(!phoneValidationTest2){
+         if(!phoneValidationTest){
             sfp.innerHTML = "A valid UK phone number is required";
             showElem("#sfp");
          } 
