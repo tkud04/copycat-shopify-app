@@ -111,13 +111,13 @@ for(let a of arr){
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
     e.preventDefault();
     let ue = document.querySelector("#subscribe-email").value, phone = document.querySelector("#subscribe-phone").value;
-    let phoneValidation = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/, emailValidation = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/;
+    let phoneValidation = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/, phoneValidationTest2 = /^((\+44)|(0)) ?\d{4} ?\d{6}$/, emailValidation = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/;
     hideElem(["#sfe","#sfp"]);
-    let emailValidationTest = emailValidation.test(ue), phoneValidationTest = phoneValidation.test(phone);
+    let emailValidationTest = emailValidation.test(ue), phoneValidationTest = phoneValidation2.test(phone);
     let debug = {
         ue: ue,
         phone: phone,
-        phoneValidation: phoneValidationTest,
+        phoneValidation: phoneValidationTest2,
         emailValidation: emailValidationTest
     };
     console.log("debug: ",debug);
@@ -136,13 +136,13 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", e => 
      }
     
     }
-    if(phone == "" || !phoneValidationTest){
+    if(phone == "" || !phoneValidationTest2){
         if(phone == ""){
             sfp.innerHTML = "Please fill in your phone number";
             showElem("#sfp");
          } 
-         if(!phoneValidationTest){
-            sfp.innerHTML = "A valid phone number is required";
+         if(!phoneValidationTest2){
+            sfp.innerHTML = "A valid UK phone number is required";
             showElem("#sfp");
          } 
     }
