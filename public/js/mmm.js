@@ -149,6 +149,7 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", e => 
     }
   }
     else{
+          localStorage.setItem("copycat_ometria_form_filled","yes");
           document.querySelector('#ometria-tc-subscribe-form').submit();
         
     }
