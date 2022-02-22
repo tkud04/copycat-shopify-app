@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
       '#birthday-popup','#sms-popup','#forms-complete-popup',
       '#subscribe-loading','#birthday-loading','#sms-loading']);
 
-/* 
+
 let arr = [
     {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose},
 ];
@@ -106,7 +106,7 @@ for(let a of arr){
         a.popup.classList.remove('open');
     }); 
 }
-*/
+
 
 //Form buttons
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
