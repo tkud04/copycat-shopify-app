@@ -1,4 +1,4 @@
-let subscribePopup = document.querySelector('#popup-container'), subscribeClose = document.querySelector('.closebtn');
+
 
 function showElem(selector){
     let names = [];
@@ -83,6 +83,10 @@ const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight ||
 
 document.addEventListener("DOMContentLoaded", function() {
    // debugBtn = document.querySelector('#debug-btn'), debugPopup = document.querySelector('#sms-popup');
+
+   let subscribePopup = document.querySelector('#popup-container'),
+   subscribeBtn = document.querySelector('#subscribe-btn'),
+  subscribeClose = document.querySelector('.closebtn');
 
  //Copycat forms
   hideElem([
