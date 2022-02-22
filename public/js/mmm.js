@@ -1,3 +1,5 @@
+let subscribePopup = document.querySelector('#popup-container'), subscribeClose = document.querySelector('.closebtn');
+
 function showElem(selector){
     let names = [];
 
@@ -80,15 +82,14 @@ const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight ||
 //Event handlers
 
 document.addEventListener("DOMContentLoaded", function() {
-    let subscribeBtn = document.querySelector('#subscribe-btn'), subscribePopup = document.querySelector('#popup-container'), subscribeClose = document.querySelector('.closebtn'),
-    debugBtn = document.querySelector('#debug-btn'), debugPopup = document.querySelector('#sms-popup');
+   // debugBtn = document.querySelector('#debug-btn'), debugPopup = document.querySelector('#sms-popup');
 
  //Copycat forms
   hideElem([
       '#birthday-popup','#sms-popup','#forms-complete-popup',
       '#subscribe-loading','#birthday-loading','#sms-loading']);
 
-
+/* 
 let arr = [
     {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose},
 ];
@@ -100,12 +101,12 @@ for(let a of arr){
         a.popup.classList.add('open');
        });
 
-   /* a.close.addEventListener("click",e => {
+   a.close.addEventListener("click",e => {
         e.preventDefault();
         a.popup.classList.remove('open');
-    }); */
+    }); 
 }
-
+*/
 
 //Form buttons
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
