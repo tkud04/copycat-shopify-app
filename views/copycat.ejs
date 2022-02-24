@@ -7,56 +7,35 @@
 </div>
 
 <!-- start SUbscribe form-->
-<div id="popup-container" class="popup">
-  <div class="content">
-<!-- start slide 1-->
-<div id="subscribe-popup"  style="background-color: #000;">
-      <!-- Ometria AJAX forms-->
-      <script src="//cdn.ometria.com/tags/f7af012b9a5822ff.js"></script>
-       <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
-        <input type="hidden" name="__form_id" value="914da260f9b6543487067473b43d6b03" />
-        <input type="hidden" name="email" value="" autocomplete="off" />
-        <div style="display:none !important">
-          <input name="__email" type="email" value="" autocomplete="off" />
-        </div>
-        <input name="@account" type="hidden" value="f7af012b9a5822ff" />
-        <input name="@return_url" type="hidden" value="" />
-        <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
-
-                    <!-- Form elements go here: Style as you wish -->
-    <div class="container">
-      
-      
-      <div class="subscribe sliding-text" style="padding: 50px 0px 10px 0px;">
-        <center><img src="img/rsz_mlogo.jpg" style="margin-top: 55px; height: 150px;"/></center>
-        <div style="border-bottom: 1px solid #fff; text-align: start !important; padding-bottom: 20px; margin-top: 20px;">
-        <h6 style="color: #fff; margin-top: 10px;">Thank you being part of the <span>Copycat family</span></h6>
-        <p style="color: #fff; line-height: 20px;">Please take few moments to share a few details with us to enjoy 10% off your first purchase AND a special treat on your birthday &#x1F680;.</p>
-        </div>
-        <div style="border-bottom: 1px solid #fff; text-align: start; margin-top: 20px; margin-bottom: 20px; padding-bottom: 40px;">
-        <p style="color: #fff; ">Email address:</p>
-        <input type="email" id="subscribe-email" name ="ue" placeholder="e.g example@example.com">
-        <p style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
-        <p style="color: #fff; margin-top: 10px;">Date of birth:</p>
-          <input type="date" id="subscribe-bday" name ="date_of_birth" placeholder="Date of birth">
-          <p style="color: red; font-weight: bold; display: none;" id="sfdb">Please fill in your email address</p>
-          <p style="color: #fff; margin-top: 10px;">Phone number:</p>
-          <input type="tel" id="subscribe-phone" name ="phone_number" pattern="/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/" placeholder="e.g 07954756645">
-          <p style="color: red; font-weight: bold; display: none;" id="sfp">Please fill in your phone number</p>
-        </div>
-        <div style="margin-top: 20px; margin-bottom: 20px; padding-bottom: 40px;"">
-          <input id="subscribe-form-submit" type="submit" style="width: 100% !important;" value="Submit">
-        </div>
-         
-          
-        
-      </div>
-    </div>
-  </form>
-</div>
-<!-- end of slide 1-->
-
-
-</div>
-</div>
+<form id="ometria-tc-subscribe-form" style="display: none;" action="https://api.ometria.com/forms/signup" method="post">
+  <input type="hidden" name="__form_id" value="914da260f9b6543487067473b43d6b03" />
+  <input type="hidden" name="email" value="" autocomplete="off" />
+  <div style="display:none !important">
+    <input name="__email" type="email" value="" autocomplete="off" />
+  </div>
+  <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+  <input name="@return_url" type="hidden" value="" />
+  <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
+ 
+ 
+ <div class="npopup-container">
+   <a class="npopup-close" id="closebtn" href="javascript:void(0)">X</a>
+   <div class="npopup-logo"> nhjhjhj</div>
+ 
+   <p class="npopup-title-text">Thank you for being part of the Copycat family</p>
+   <p class="npopup-subtitle-text">Please take a moment to share a few details with us to enjoy 10% off your first purchase. You can also look forward to a special treat on your birthday &#x1F381;.</p>
+ 
+   <p class="npopup-input-label" id="email-label">Email address</p>
+   <input class="npopup-input" type="text" name="ue" id="subscribe-email" style="margin-top: 20px; margin-bottom: 20px;color: #fff;" placeholder="e.g example@example.com"/>
+   <p style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
+ 
+   <p class="npopup-input-label" id="bday-label">Birth date</p>
+   <input class="npopup-input" type="date" name="date_of_birth" id="bday-input" style="margin-top: 10px; color: #fff;" placeholder=""/>
+ 
+   <p class="npopup-input-label" id="phone-label">Phone number</p>
+   <input class="npopup-input" type="text" name="phone_number" id="subscribe-phone" style="margin-top: 10px; color: #fff;" placeholder="e.g 07911123456"/>
+   <p style="color: red; font-weight: bold; display: none;" id="sfp">Please fill in your phone number</p>
+   <button class="npopup-submit" id="subscribe-form-submit">SUBMIT</button>
+ </div>
+ </form>
 <%- include('partials/foot2.ejs') %>
