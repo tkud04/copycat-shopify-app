@@ -99,20 +99,21 @@ let arr = [
     {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose},
 ];
 
-
+ /*
 for(let a of arr){
     
     a.btn.addEventListener("click",e => {
         e.preventDefault();
         window.location = "#ometria-modal";
        });
-   /*
+  
    a.close.addEventListener("click",e => {
         e.preventDefault();
        a.popup.style.display = "none";
     }); 
-    */
+   
 }
+ */
 
 let hasFilledForm = localStorage.getItem("copycat_hff");
 
