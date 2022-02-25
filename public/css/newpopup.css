@@ -16,7 +16,7 @@ height: 65px;
 left: 236px;
 top: 20px;
 z-index: 5;
-
+color: #020202;
 background: url(../img/rsz_mlogo.jpg);
 background-size: cover;
 }
@@ -129,12 +129,12 @@ border-radius: 10px;
 
 #bday-label{
     left: 40px;
-    top: 304px;
+    top: 294px;
 }
 
 #bday-input{
     left: 40px;
-    top: 327px;
+    top: 317px;
 }
 
 #phone-label{
