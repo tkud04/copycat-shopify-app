@@ -118,7 +118,7 @@ let hasFilledForm = localStorage.getItem("copycat_hff");
 if(!hasFilledForm){
   setTimeout(() => {
       arr[0].popup.style.display = "block";
-  });
+  },5000);
 }
 
 
