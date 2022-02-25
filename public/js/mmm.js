@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 let arr = [
-    {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose},
+    {btn: null, popup: subscribePopup, close: subscribeClose},
 ];
 
 
