@@ -122,6 +122,18 @@ if(!hasFilledForm){
 }
 
 
+//Birthday input color
+document.querySelector('#bday-input').addEventListener("change", e => {
+    e.preventDefault();
+   let bdayLength = document.querySelector('#bday-input').value.length, color = "#fff";
+
+   if(bdayLength == 0){
+     color = "#666";
+   }
+
+   document.querySelector('#bday-input').style.color = color;
+
+});
 
 //Form buttons
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
