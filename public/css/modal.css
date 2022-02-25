@@ -25,9 +25,11 @@
 .modal {
 	margin: 100px auto;
 	padding: 20px;
-	background: #fff;
+	background: #020202;
+    border-radius: 10px;
 	border: 1px solid #666;
-	width: 300px;
+	width: 600px;
+    height: 600px;
 	border-radius:6px;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 	position: relative;

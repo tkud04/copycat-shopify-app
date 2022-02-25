@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
    
    let subscribePopup = document.querySelector('#ometria-tc-subscribe-form'),
-  // subscribeBtn = document.querySelector('#subscribe-btn'),
+   subscribeBtn = document.querySelector('#subscribe-btn'),
   subscribeClose = document.querySelector('#closebtn');
   
  //Copycat forms
@@ -96,29 +96,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 let arr = [
-    {btn: null, popup: subscribePopup, close: subscribeClose},
+    {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose},
 ];
 
 
 for(let a of arr){
-    /*
+    
     a.btn.addEventListener("click",e => {
         e.preventDefault();
-        a.popup.style.display = "block";
+        window.location = "#ometria-modal";
        });
-   */
+   /*
    a.close.addEventListener("click",e => {
         e.preventDefault();
        a.popup.style.display = "none";
     }); 
+    */
 }
 
 let hasFilledForm = localStorage.getItem("copycat_hff");
 
 if(!hasFilledForm){
   setTimeout(() => {
-      arr[0].popup.style.display = "block";
-  },5000);
+     // arr[0].popup.style.display = "block";
+     window.location = "#ometria-modal";
+  });
 }
 
 
