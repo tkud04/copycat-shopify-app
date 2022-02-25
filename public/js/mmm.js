@@ -84,10 +84,11 @@ const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight ||
 document.addEventListener("DOMContentLoaded", function() {
    // debugBtn = document.querySelector('#debug-btn'), debugPopup = document.querySelector('#sms-popup');
 
+   
    let subscribePopup = document.querySelector('#ometria-tc-subscribe-form'),
-   subscribeBtn = document.querySelector('#subscribe-btn'),
+  // subscribeBtn = document.querySelector('#subscribe-btn'),
   subscribeClose = document.querySelector('#closebtn');
-
+  
  //Copycat forms
   hideElem([
       '#birthday-popup','#sms-popup','#forms-complete-popup',
@@ -100,15 +101,24 @@ let arr = [
 
 
 for(let a of arr){
+    /*
     a.btn.addEventListener("click",e => {
         e.preventDefault();
         a.popup.style.display = "block";
        });
-
+   */
    a.close.addEventListener("click",e => {
         e.preventDefault();
        a.popup.style.display = "none";
     }); 
+}
+
+let hasFilledForm = localStorage.getItem("copycat_hff");
+
+if(!hasFilledForm){
+  setTimeout(() => {
+      arr[0].popup.style.display = "block";
+  });
 }
 
 
@@ -154,7 +164,7 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", e => 
     }
   }
     else{
-          localStorage.setItem("copycat_ometria_form_filled","yes");
+          localStorage.setItem("copycat_hff","yes");
           document.querySelector('#ometria-tc-subscribe-form').submit();
         
     }
