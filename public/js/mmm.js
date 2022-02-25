@@ -121,7 +121,7 @@ if(!hasFilledForm){
   setTimeout(() => {
      // arr[0].popup.style.display = "block";
      window.location = "#ometria-modal";
-  });
+  },6000);
 }
 
 
