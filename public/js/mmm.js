@@ -131,7 +131,7 @@ document.querySelector('#bday-input').addEventListener("change", e => {
    let bdayLength = document.querySelector('#bday-input').value.length, color = "#fff";
 
    if(bdayLength == 0){
-     color = "#666";
+     color = "#fff";
    }
 
    document.querySelector('#bday-input').style.color = color;
