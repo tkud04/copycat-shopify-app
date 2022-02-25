@@ -1,5 +1,5 @@
 .npopup-container{
-    position: absolute;
+  /*  position: absolute; */
 width: 600px;
 height: 620px;
 left: 350px;
@@ -9,12 +9,16 @@ background: #020202;
 border-radius: 10px;
 }
 
+.m-auto{
+    margin: auto;
+}
+
 .npopup-logo{
-    position: absolute;
+    /*position: absolute;*/
 width: 127px;
 height: 65px;
-left: 236px;
-top: 20px;
+/*left: 236px; */
+/*top: 20px;*/
 z-index: 5;
 color: #020202;
 background: url(../img/rsz_mlogo.jpg);
@@ -22,11 +26,13 @@ background-size: cover;
 }
 
 .npopup-close{
-    position: absolute;
+/*position: absolute;*/
 width: 30px;
 height: 30px;
-left: 530px;
-top: 40px;
+/*left: 530px;
+top: 40px;*/
+float: right;
+margin-top: 20px;
 color: #fff;
 text-decoration: none;
 font-family: Montserrat;
@@ -38,11 +44,11 @@ font-family: Montserrat;
   }
 
 .npopup-title-text{
-position: absolute;
+/*position: absolute;
+left: 40px;
+top: 105px;*/
 width: 514px;
 height: 26px;
-left: 40px;
-top: 105px;
 
 /* Title text */
 
@@ -60,11 +66,13 @@ color: #FFFFFF;
 }
 
 .npopup-subtitle-text{
+/*
     position: absolute;
+    left: 40px;
+top: 141px;
+*/
 width: 527px;
 height: 30px;
-left: 40px;
-top: 141px;
 margin-top: 20px;
 /* Subtitle text */
 
@@ -80,7 +88,7 @@ color: #FFFFFF;
 }
 
 .npopup-input-label{
-    position: absolute;
+    /*position: absolute;*/
 
 /* Subtitle text */
 
@@ -99,7 +107,7 @@ color: #FFFFFF;
 }
 
 .npopup-input{
-    position: absolute;
+   /* position: absolute; */
     width: 520px;
     height: 50px;
 background: #222121;
@@ -112,54 +120,20 @@ border-radius: 10px;
     margin-top: 20px;
     width: 86px;
     height: 15px;
-    left: 40px;
-    top: 191px;
+    /*left: 40px;
+    top: 191px;*/
 }
 
-#subscribe-email{
-    left: 40px;
-    top: 214px;
-}
-
-#sfe{
-    position: absolute;
-    left: 40px;
-    top: 274px;
-}
-
-#bday-label{
-    left: 40px;
-    top: 294px;
-}
-
-#bday-input{
-    left: 40px;
-    top: 317px;
-}
-
-#phone-label{
-    left: 40px;
-    top: 387px;
-}
-
-#subscribe-phone{
-    left: 40px;
-    top: 407px;
-}
-
-#sfp{
-    position: absolute;
-    left: 40px;
-    top: 457px;
-}
 
 
 .npopup-submit{
-    position: absolute;
-width: 520px;
-height: 50px;
+/*
+position: absolute;
 left: 40px;
 top: 500px;
+*/
+width: 520px;
+height: 50px;
 
 background: #FFB3C7;
 border-radius: 10px;
