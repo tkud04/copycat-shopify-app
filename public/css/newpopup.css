@@ -84,6 +84,10 @@ align-items: center;
 color: #FFFFFF;
 }
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 .npopup-input-label{
     /*position: absolute;*/
 
