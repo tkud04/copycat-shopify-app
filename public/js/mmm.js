@@ -76,44 +76,13 @@ async function submitForm(url,fd){
 
 
 const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length ) // source (2018-03-11): https://github.com/jquery/jquery/blob/master/src/css/hiddenVisibleSelectors.js 
-
+let phoneValidation = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4,5})$/, emailValidation = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/;
 
 
 //Event handlers
 
 document.addEventListener("DOMContentLoaded", function() {
    // debugBtn = document.querySelector('#debug-btn'), debugPopup = document.querySelector('#sms-popup');
-
-   
-   let subscribePopup = document.querySelector('#ometria-tc-subscribe-form'),
-   subscribeBtn = document.querySelector('#subscribe-btn'),
-  subscribeClose = document.querySelector('#closebtn');
-  
- //Copycat forms
-  hideElem([
-      '#birthday-popup','#sms-popup','#forms-complete-popup',
-      '#subscribe-loading','#birthday-loading','#sms-loading']);
-
-
-let arr = [
-    {btn: subscribeBtn, popup: subscribePopup, close: subscribeClose},
-];
-
- /*
-for(let a of arr){
-    
-    a.btn.addEventListener("click",e => {
-        e.preventDefault();
-        window.location = "#ometria-modal";
-       });
-  
-   a.close.addEventListener("click",e => {
-        e.preventDefault();
-       a.popup.style.display = "none";
-    }); 
-   
-}
- */
 
 let hasFilledForm = localStorage.getItem("copycat_hff");
 
@@ -126,25 +95,59 @@ if(!hasFilledForm){
 
 
 //Birthday input color
-document.querySelector('#bday-input').addEventListener("change", e => {
+document.querySelector('#date_of_birth').addEventListener("change", e => {
     e.preventDefault();
-   let bdayLength = document.querySelector('#bday-input').value.length, color = "#fff";
+   let bdayLength = document.querySelector('#date_of_birth').value.length, color = "#fff";
 
    if(bdayLength == 0){
      color = "#fff";
    }
 
-   document.querySelector('#bday-input').style.color = color;
+   document.querySelector('#date_of_birth').style.color = color;
 
 });
 
-//Form buttons
+//Form validation
+document.querySelector('#phone_number').addEventListener("change", e => {
+    e.preventDefault();
+  let phone = document.querySelector("#phone_number").value, phoneValidationTest = phoneValidation.test(phone);
+   hideElem(["#sfp"]);
+   if(phone == "" || !phoneValidationTest){
+     
+    if(phone == ""){
+        sfp.innerHTML = "Please fill in your phone number";
+        showElem("#sfp");
+     } 
+     if(!phoneValidationTest){
+        sfp.innerHTML = "A valid phone number is required";
+        showElem("#sfp");
+     } 
+   }
+});
+
+document.querySelector('#ue').addEventListener("change", e => {
+    e.preventDefault();
+    let ue = document.querySelector("#ue").value, emailValidationTest = emailValidation.test(ue)
+    hideElem(["#sfe"]);
+    if(ue == "" || !emailValidationTest){
+        if(ue == ""){
+            sfe.innerHTML = "Please fill in your email address";
+            showElem("#sfe");
+        }
+        if(!emailValidationTest){
+           sfe.innerHTML = "A valid email address is required";
+           showElem("#sfe");
+        }
+       
+       }
+});
+
+/*
 document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
     e.preventDefault();
-    let ue = document.querySelector("#subscribe-email").value, phone = document.querySelector("#subscribe-phone").value;
-    let phoneValidation = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4,5})$/, emailValidation = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/;
+    
     hideElem(["#sfe","#sfp"]);
-    let emailValidationTest = emailValidation.test(ue), phoneValidationTest = phoneValidation.test(phone);
+    let , phoneValidationTest = phoneValidation.test(phone);
     let debug = {
         ue: ue,
         phone: phone,
@@ -156,27 +159,8 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", e => 
     let sfe = document.querySelector('#sfe'), sfp = document.querySelector('#sfp');
     
     if((ue == "" || !emailValidationTest) || (phone == "" || !phoneValidationTest)){
-    if(ue == "" || !emailValidationTest){
-     if(ue == ""){
-         sfe.innerHTML = "Please fill in your email address";
-         showElem("#sfe");
-     }
-     if(!emailValidationTest){
-        sfe.innerHTML = "A valid email address is required";
-        showElem("#sfe");
-     }
     
-    }
-    if(phone == "" || !phoneValidationTest){
-        if(phone == ""){
-            sfp.innerHTML = "Please fill in your phone number";
-            showElem("#sfp");
-         } 
-         if(!phoneValidationTest){
-            sfp.innerHTML = "A valid phone number is required";
-            showElem("#sfp");
-         } 
-    }
+    
   }
     else{
           localStorage.setItem("copycat_hff","yes");
@@ -184,7 +168,7 @@ document.querySelector('#subscribe-form-submit').addEventListener("click", e => 
         
     }
 });
-
+*/
 
 
 });

@@ -10,7 +10,7 @@
 <div class="overlay" id="ometria-modal">
   <a class="cancel" href="#"></a>
   <div class="modal">
-<form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
+<form action="https://api.ometria.com/forms/signup" method="post">
   <input type="hidden" name="__form_id" value="914da260f9b6543487067473b43d6b03" />
   <input type="hidden" name="email" value="" autocomplete="off" />
   <div style="display:none !important">
@@ -28,16 +28,16 @@
    <p class="npopup-subtitle-text m-auto">Please take a moment to share a few details with us to enjoy 10% off your first purchase. You can also look forward to a special treat on your birthday &#x1F381;.</p>
  
    <p class="npopup-input-label" id="email-label">Email address</p>
-   <input class="npopup-input m-auto" type="text" name="ue" id="subscribe-email" style="color: #fff;" placeholder="e.g example@example.com"/>
+   <input class="npopup-input m-auto" type="text" name="ue" id="ue" style="color: #fff;" placeholder="e.g example@example.com"/>
    <p class="m-auto" style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
  
    <p class="npopup-input-label" id="bday-label" style="margin-top: 10px;">Birth date</p>
-   <input class="npopup-input" type="date" name="date_of_birth" id="bday-input" style="color: #666;" placeholder=""/>
+   <input class="npopup-input" type="date" name="date_of_birth" id="date_of_birth" style="color: #666;" placeholder=""/>
  
    <p class="npopup-input-label" id="phone-label" style="margin-top: 10px;">Phone number</p>
-   <input class="npopup-input" type="text" name="phone_number" id="subscribe-phone" style="color: #fff;" placeholder="e.g 07911123456"/>
+   <input class="npopup-input" type="text" name="phone_number" id="phone_number" style="color: #fff;" placeholder="e.g 07911123456"/>
    <p style="color: red; font-weight: bold; display: none;" id="sfp">Please fill in your phone number</p>
-   <button class="npopup-submit" id="subscribe-form-submit" style="margin-top: 40px;">SUBMIT</button>
+   <input type="submit" class="npopup-submit" name="submit" id="subscribe-form-submit" style="margin-top: 40px;" value="Submit"/>
  </div>
 </div>
  </form>
