@@ -99,14 +99,16 @@ document.querySelector('#modal-close').addEventListener("click", e => {
     modalElem.classList.add("close");
 });
 
-/*
+
 if(!hasFilledForm){
   setTimeout(() => {
      // arr[0].popup.style.display = "block";
-     window.location = "#ometria-modal";
+     modalElem.classList.remove("close");
+    modalElem.classList.add("open");
+    localStorage.setItem("copycat_hff","yes");
   },6000);
 }
-*/
+
 
 //Birthday input color
 document.querySelector('#date_of_birth').addEventListener("change", e => {
