@@ -86,6 +86,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let hasFilledForm = localStorage.getItem("copycat_hff");
 
+
+document.querySelector('#subscribe-btn').addEventListener("click", e => {
+    e.preventDefault();
+    window.location = "#ometria-modal";
+});
+
 /*
 if(!hasFilledForm){
   setTimeout(() => {
