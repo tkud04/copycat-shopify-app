@@ -23,6 +23,16 @@
 	opacity: 1;
 }
 
+.open {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+.close {
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
+
 .modal {
 	margin: 100px auto;
 	padding: 20px;

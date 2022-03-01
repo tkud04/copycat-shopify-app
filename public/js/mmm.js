@@ -84,12 +84,19 @@ let phoneValidation = /^\(?[4]{0,2}?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4,
 document.addEventListener("DOMContentLoaded", function() {
    // debugBtn = document.querySelector('#debug-btn'), debugPopup = document.querySelector('#sms-popup');
 
-let hasFilledForm = localStorage.getItem("copycat_hff");
+let hasFilledForm = localStorage.getItem("copycat_hsf"), modalElem = document.querySelector("#ometria-modal");
 
 let launchBtn = document.querySelector('#subscribe-btn');
 launchBtn?.addEventListener("click", e => {
     e.preventDefault();
-    window.location = "#ometria-modal";
+    modalElem.classList.remove("close");
+    modalElem.classList.add("open");
+});
+
+document.querySelector('#modal-close').addEventListener("click", e => {
+    e.preventDefault();
+    modalElem.classList.remove("open");
+    modalElem.classList.add("close");
 });
 
 /*
