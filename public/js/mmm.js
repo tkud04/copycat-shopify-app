@@ -145,7 +145,6 @@ document.querySelector('#phone_number').addEventListener("change", e => {
     else{
        phone = "+44" + phone.substr(1);
     }
-    console.log(phone);
     document.querySelector("#phone_number").value = phone;
 } 
 });
