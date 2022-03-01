@@ -135,6 +135,6 @@ top: 500px;
 width: 100%;
 height: 50px;
 color: #fff;
-background: #FFB3C7;
-border-radius: 10px;
+background: #FFB3C7 !important;
+border-radius: 10px !important;
 }
