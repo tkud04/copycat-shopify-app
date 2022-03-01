@@ -286,7 +286,7 @@ res.sendStatus(200);
    let v = "copycat";
    if(typeof req.query !== "undefined"){
       let q = req.query;
-      if(q.type == "subscribe") v = "copycat2";
+      if(q.type == "original") v = "copycat5";
       else if(q.type == "sms") v = "copycat4";
       else if(q.type == "birthday") v = "copycat3";
    }
