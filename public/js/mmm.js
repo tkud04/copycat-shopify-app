@@ -105,7 +105,7 @@ if(!hasFilledForm){
      // arr[0].popup.style.display = "block";
      modalElem.classList.remove("close");
     modalElem.classList.add("open");
-    localStorage.setItem("copycat_hff","yes");
+    localStorage.setItem("copycat_hsf","yes");
   },6000);
 }
 
