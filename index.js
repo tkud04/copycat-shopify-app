@@ -37,7 +37,7 @@ express()
   .use(express.json())
   
   /** Loads the paginated list of all customers on Recharge  **/
-  .get("/", async (req, res) => {
+  .get("custom-fields", async (req, res) => {
     let errors = null, dt2 = null, nc = null, pc = null, 
        vv = "javascript:void(0)", prevURL = vv, nextURL = vv,
     customersURL = `${RECHARGE_API}/customers?limit=250`;
@@ -282,7 +282,7 @@ res.sendStatus(200);
   else res.sendStatus(200);
 })
 /** Copycat html forms  **/
- .get("/copycat", (req, res) => {
+ .get("/", (req, res) => {
    let v = "copycat";
    if(typeof req.query !== "undefined"){
       let q = req.query;
