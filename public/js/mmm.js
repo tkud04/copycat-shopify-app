@@ -97,13 +97,15 @@ if(!hasFilledForm){
 //Birthday input color
 document.querySelector('#date_of_birth').addEventListener("change", e => {
     e.preventDefault();
-   let bdayLength = document.querySelector('#date_of_birth').value.length, color = "#fff";
+   let bdayLength = document.querySelector('#date_of_birth').value.length, color = "#000", background="rgb(232, 240, 254)";
 
    if(bdayLength == 0){
      color = "#888";
+     background = "#222121";
    }
 
    document.querySelector('#date_of_birth').style.color = color;
+   document.querySelector('#date_of_birth').style.background = background;
 
 });
 
