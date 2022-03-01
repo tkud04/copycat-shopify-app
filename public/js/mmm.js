@@ -86,13 +86,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let hasFilledForm = localStorage.getItem("copycat_hff");
 
+/*
 if(!hasFilledForm){
   setTimeout(() => {
      // arr[0].popup.style.display = "block";
      window.location = "#ometria-modal";
   },6000);
 }
-
+*/
 
 //Birthday input color
 document.querySelector('#date_of_birth').addEventListener("change", e => {
