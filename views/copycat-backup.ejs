@@ -6,137 +6,41 @@
 <button id="subscribe-btn">Start the popup journey</button>
 </div>
 
-<!-- start SUbscribe form-->
-<div id="popup-container" class="popup">
-  <div class="content">
-<!-- start slide 1-->
-<div id="subscribe-popup"  style="background-image:url('img/tc-subscribe-4.jpg'); background-size: cover; background-repeat: no-repeat;">
-      <!-- Ometria AJAX forms-->
-      <script src="//cdn.ometria.com/tags/f7af012b9a5822ff.js"></script>
-       <form id="ometria-tc-subscribe-form" action="https://api.ometria.com/forms/signup" method="post">
-      <input type="hidden" name="__form_id" value="914da260f9b6543487067473b43d6b03" />
-      <input type="hidden" name="email" value="" autocomplete="off" />
-      <div style="display:none !important">
-        <input name="__email" type="email" value="" autocomplete="off" />
-      </div>
-      <input name="@account" type="hidden" value="f7af012b9a5822ff" />
-      <input name="@return_url" type="hidden" value="" />
-      <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
-
-                    <!-- Form elements go here: Style as you wish -->
-    <div class="container">
-      
-      
-      <div class="subscribe sliding-text">
-        <h1 style="color: #fff">Join our <span>Copycat Family</span></h1>
-        <p style="color: #fff"> Subscribe to our newsletter to get <b>10% off</b> your first purchase. <br> We'll keep you posted with <span style="font-weight:bolder !important;">the latest news and exclusive offers</span></p>
-       
-          <input type="email" id="subscribe-email" placeholder="EMAIL ADDRESS">
-          <p style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
-          <marquee id="subscribe-loading">Please wait..</marquee>
-          <input id="subscribe-form-submit" type="submit" value="Next">
-      </div>
-    </div>
-  </form>
-</div>
-<!-- end of slide 1-->
-
-<!-- start of slide 2-->
-<div id="birthday-popup" style="background-image:url('img/bday4.jpg'); background-size: contain;">
-      <form id="ometria-tc-birthday-form" action="https://api.ometria.com/forms/signup" method="post">
-          <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
-                      <input type="hidden" name="email" value="" autocomplete="off" />
-                      <div style="display:none !important">
-                          <input name="__email" type="email" value="" autocomplete="off" />
-                      </div>
-                      <input name="@account" type="hidden" value="f7af012b9a5822ff" />
-                      <input name="@return_url" type="hidden" value="" />
-                      <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
-      
-                      <!-- Form elements go here: Style as you wish -->
-      <div class="container">
-        
-        <span id="birthday-close-btn" class="closebtn">x</span>
-        
-        <div class="subscribe">
-          <h1 class="white-text">We have a birthday gift for you</h1>
-          <p class="white-text"> Smell fresh for free on the big day!</p>
-         
-            <input type="date" id="birthday-dob" placeholder="Your birthday" style="margin-bottom: 5px;">
-            <p style="color: red; font-weight: bold; display: none;" id="bde">Please fill in your date of birth</p>
-            <marquee id="birthday-loading">Please wait..</marquee>
-            <input id="birthday-form-submit" type="submit" value="Next">
-        </div>
-      </div>
-    </form>
+<!-- start SUbscribe form--> 
+<div class="overlay" id="ometria-modal">
+  <a class="cancel" href="#"></a>
+  <div class="modal">
+<form action="https://api.ometria.com/forms/signup" method="post">
+  <input type="hidden" name="__form_id" value="914da260f9b6543487067473b43d6b03" />
+  <input type="hidden" name="email" value="" autocomplete="off" />
+  <div style="display:none !important">
+    <input name="__email" type="email" value="" autocomplete="off" />
   </div>
-<!-- end of slide 2 -->
+  <input name="@account" type="hidden" value="f7af012b9a5822ff" />
+  <input name="@return_url" type="hidden" value="" />
+  <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
+ 
 
-
-<!-- start of slide 3 -->
-<div id="sms-popup">
-      <form id="ometria-tc-sms-form" action="https://api.ometria.com/forms/signup" method="post">
-          <input type="hidden" name="__form_id" value="fc1b7571419c68be1aa983757e981218" />
-                      <input type="hidden" name="email" value="" autocomplete="off" />
-                      <div style="display:none !important">
-                          <input name="__email" type="email" value="" autocomplete="off" />
-                      </div>
-                      <input name="@account" type="hidden" value="fc1b7571419c68be1aa983757e981218" />
-                      <input name="@return_url" type="hidden" value="" />
-                      <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
-
-                      <!-- Form elements go here: Style as you wish -->
-      <div class="container" style="padding: 0px !important; margin-bottom: 10px !important;">
-        <div class="flex-container">
-        <div class="inline-item">
-            <img src="img/tc-sms-3.jpg" alt="Send" style="max-width: 100%;">
-         </div>
-          <div class="inline-item" style="padding: 5px;">
-<div class="subscribe">
-          <h1 style="font-size: 1.4rem !important; margin-bottom: 10%;">Welcome to our Text Club!</h1>
-          <p style="font-size: 0.8rem !important; margin-bottom: 10%;"><b>We'll let you know first-hand about sales and special offers and we will never message you more than twice a month</b></p>
-          <p style="color: #aaa; font-size: 0.8rem !important; margin-bottom: 10%;">
-            By submitting this form, you agree to receive occasional marketing text messages from us at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel.
-            View our <a class="popup-link" href="javascript:void(0)">Privacy Policy</a> and <a class = "popup-link" href="javascript:void(0)">Terms of Service.</a>
-          </p>
-            <input type="tel" id="sms-phone" style="margin-top: 5px;">
-            <input id="sms-form-submit" type="submit" value="Submit">
-        </div>
-          </div>
-          </div>
-        </div>
-    </form>
-  </div>
-<!-- end of slide 3 -->
-
-<!-- start of slide 4 -->
-<div id="forms-complete-popup">
-  <form id="forms-complete-form" action="https://api.ometria.com/forms/signup" method="post">
-  <div class="container">
-    <span id="forms-complete-close" class="closebtn" style="top: 30px !important;">x</span>
-    <div class="subscribe">
-      <h1>Thank you for subscribing!</h1>
-      <input id="forms-complete-submit" type="submit" value="Finish">
-    </div>
-  </div>
-  </form>
+ <div class="npopup-container">
+   <div class="npopup-logo m-auto"> nhjhjhj</div>
+ 
+   <p class="npopup-title-text m-auto">Thank you for being part of the Copycat family</p>
+   <p class="npopup-subtitle-text m-auto">Please take a moment to share a few details with us to enjoy 10% off your first purchase. You can also look forward to a special treat on your birthday &#x1F381;.</p>
+ 
+   <p class="npopup-input-label" id="email-label">Email address</p>
+   <input class="npopup-input m-auto" type="text" name="ue" id="ue" style="color: #fff;" placeholder="e.g example@example.com"/>
+   <p class="m-auto" style="color: red; font-weight: bold; display: none;" id="sfe">Please fill in your email address</p>
+ 
+   <p class="npopup-input-label" id="bday-label" style="margin-top: 10px;">Birth date</p>
+   <input class="npopup-input" type="date" name="date_of_birth" id="date_of_birth" style="color: #666;" placeholder=""/>
+ 
+   <p class="npopup-input-label" id="phone-label" style="margin-top: 10px;">Phone number</p>
+   <input class="npopup-input" type="text" name="phone_number" id="phone_number" style="color: #fff;" placeholder="e.g 07911123456"/>
+   <p style="color: red; font-weight: bold; display: none;" id="sfp">Please fill in your phone number</p>
+   <input name="properties.sign_up_source" type="hidden" value="Subscription Form" />
+   <input type="submit" class="npopup-submit" name="submit" id="subscribe-form-submit" style="margin-top: 40px;" value="Submit"/>
+ </div>
 </div>
-<!-- end of slide 4 -->
-</div>
-</div>
-
-<footer id="newsletter-container">
-  <div class="container">
-    <form id="newsletter-form" action="https://api.ometria.com/forms/signup" method="post">
-      <div class="subscribe">
-        <h1 class="white-text">We have a birthday gift for you</h1>
-        <p class="white-text"> Smell fresh for free on the big day!</p>
-       
-          <input type="date" id="birthday-dob" placeholder="Your birthday" style="margin-bottom: 5px;">
-          <p style="color: red; font-weight: bold; display: none;" id="bde">Please fill in your date of birth</p>
-         <input id="birthday-form-submit" type="submit" value="Next">
-      </div>
-    </form>
-  </div>
-</footer>
+ </form>
+ </div>
 <%- include('partials/foot2.ejs') %>

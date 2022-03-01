@@ -100,7 +100,7 @@ document.querySelector('#date_of_birth').addEventListener("change", e => {
    let bdayLength = document.querySelector('#date_of_birth').value.length, color = "#fff";
 
    if(bdayLength == 0){
-     color = "#fff";
+     color = "#888";
    }
 
    document.querySelector('#date_of_birth').style.color = color;
