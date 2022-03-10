@@ -1,10 +1,10 @@
 // src/index.ts
-const express = require('express');
-const ShopifyAPI = require('@shopify/shopify-api');
-const Shopify = ShopifyAPI.Shopify, { ApiVersion, AuthQuery } = ShopifyAPI;
+import express, { static } from 'express';
+import ShopifyAPI, { Shopify as _Shopify } from '@shopify/shopify-api';
+const Shopify = _Shopify, { ApiVersion, AuthQuery } = ShopifyAPI;
 require('dotenv').config();
-const cors = require('cors');
-const path = require('path');
+import cors from 'cors';
+import { join } from 'path';
 
 const PORT = process.env.PORT || 5000;
 
@@ -27,8 +27,8 @@ const ACTIVE_SHOPIFY_SHOPS = {};
 // the rest of the example code goes here
 
 express()
-.use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
+.use(static(join(__dirname, 'public')))
+  .set('views', join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .use(cors({
     origin: "*",

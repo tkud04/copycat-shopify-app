@@ -5,6 +5,10 @@ const cors = require('cors');
 const path = require('path');
 const axios = require('axios');
 const { Console } = require('console');
+
+/** 
+const {ShopifyAPI,Shopify } = require('@shopify/shopify-api');
+const { ApiVersion, AuthQuery } = ShopifyAPI;
 // helpers = require('./Helpers');
 
 const getNextURL = responseData => {
@@ -14,9 +18,11 @@ const getNextURL = responseData => {
   }
 };
 
+*/
 const PORT = process.env.PORT || 5000;
 
-const { RECHARGE_API_TOKEN,
+const { API_KEY, API_SECRET_KEY, SCOPES, SHOP,
+        RECHARGE_API_TOKEN,
         RECHARGE_API,
         HOST,
         RECHARGE_TEST_WEBHOOK_URL,
@@ -25,6 +31,21 @@ const { RECHARGE_API_TOKEN,
         OMETRIA_API_KEY
       } = process.env;
 
+      /*
+      let initObject = {
+        API_KEY,
+        API_SECRET_KEY,
+        SCOPES: [SCOPES],
+        HOST_NAME: process.env.HOST.replace(/https:\/\//, ""),
+        IS_EMBEDDED_APP: false,
+        API_VERSION: ApiVersion.January22 // all supported versions are available, as well as "unstable" and "unversioned"
+      };
+      //Shopify.Context.initialize(initObject);
+      */
+     
+      // Storing the currently active shops in memory will force them to re-login when your server restarts. You should
+      // persist this object in your app.
+      const ACTIVE_SHOPIFY_SHOPS = {};
 
 // the rest of the example code goes here
 
@@ -36,6 +57,32 @@ express()
   .use(express.urlencoded({extended: true}))
   .use(express.json())
   
+  /**Shopify login routes */
+  //Authentication routes
+.get('/shopify-login', async (req, res) => {
+  let authRoute = await Shopify.Auth.beginAuth(
+    req,
+    res,
+    SHOP,
+    '/auth/callback',
+    false,
+  );
+  return res.redirect(authRoute);
+})
+.get('/auth/callback', async (req, res) => {
+  try {
+    const session = await Shopify.Auth.validateAuthCallback(
+      req,
+      res,
+      req.query,
+    ); // req.query must be cast to unkown and then AuthQuery in order to be accepted
+    ACTIVE_SHOPIFY_SHOPS[SHOP] = session.scope;
+  } catch (error) {
+    console.error(error); // in practice these should be handled more gracefully
+  }
+  return res.sendStatus(200); // wherever you want your user to end up after OAuth completes
+})
+
   /** Loads the paginated list of all customers on Recharge  **/
   .get("custom-fields", async (req, res) => {
     let errors = null, dt2 = null, nc = null, pc = null, 
@@ -248,6 +295,24 @@ res.sendStatus(200);
   if(errors) res.send(errors);
   else res.sendStatus(200);
 })
+.get("/shopify-variant-id", async (req, res) => {
+  // This shop hasn't been seen yet, go through OAuth to create a session
+ if (ACTIVE_SHOPIFY_SHOPS[SHOP] === undefined) {
+    // not logged in, redirect to login
+   res.redirect(`/shopify-login`);
+   //res.send("Not logged in");
+ } else {
+   const session = await Shopify.Utils.loadCurrentSession(req, res);
+   const client = new Shopify.Clients.Rest(session.shop, session.accessToken);
+   // Use `client.get` to request the specified Shopify REST API endpoint, in this case `products`.
+   const customers = await client.get({
+     path: 'customers',
+   });
+   console.log("Customers: ",customers);
+   // Load your app skeleton page with App Bridge, and do something amazing!
+   res.render('customers',{customers: customers});  
+ }
+})
 /** Tests a webhook on Recharge  **/
 .get('/test-webhook', async (req,res) => {
   let errors = null, dt = null;
@@ -292,6 +357,71 @@ res.sendStatus(200);
    }
   res.render(v);  
 
+})
+/** Get order data from ometria */
+.get('/ometria-orders', async (req,res) => {
+  let errors = null, dt = null, orders = [];
+
+  try{
+    console.log("start call");
+    let dt = await axios({
+      method: "get",
+      url: `${OMETRIA_API}/orders?limit=1&offset=0`,
+      headers: {
+        'X-Ometria-Auth': OMETRIA_API_KEY,
+        Accept: 'application/json'
+      }
+    });
+    if(dt.status == "200" || dt.status == "202"){
+      dt2 = dt.data;
+      console.log("response from Ometria API: ",dt2[0].lineitems);
+      ret = {status: "ok", message: "Contact updated"}
+    }
+    else{
+      console.log("error response from Ometria API: ",dt);
+      errors = "An error occured, please check the application logs";
+      ret.status = errors;
+    }
+  }
+  catch(e){
+    errors = JSON.stringify(e);
+    console.log("errors: ",e);
+  }
+  res.sendStatus(200);
+  //res.render('ometria-orders',{orders});
+})
+
+/** Get product variant data from shopify */
+.get('/shopify-product-variants', async (req,res) => {
+  let errors = null, dt = null, orders = [];
+
+  try{
+    console.log("start call");
+    let dt = await axios({
+      method: "get",
+      url: `${SHOPIFY}/orders?limit=1&offset=0`,
+      headers: {
+        'X-Ometria-Auth': OMETRIA_API_KEY,
+        Accept: 'application/json'
+      }
+    });
+    if(dt.status == "200" || dt.status == "202"){
+      dt2 = dt.data;
+      console.log("response from Ometria API: ",dt2[0].lineitems);
+      ret = {status: "ok", message: "Contact updated"}
+    }
+    else{
+      console.log("error response from Ometria API: ",dt);
+      errors = "An error occured, please check the application logs";
+      ret.status = errors;
+    }
+  }
+  catch(e){
+    errors = JSON.stringify(e);
+    console.log("errors: ",e);
+  }
+  res.sendStatus(200);
+  //res.render('ometria-orders',{orders});
 })
 
 /******** WEBHOOKS CALLBACK ********/
