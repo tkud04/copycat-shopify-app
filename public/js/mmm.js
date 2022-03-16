@@ -175,33 +175,5 @@ document.querySelector('#ue').addEventListener("change", e => {
        }
 });
 
-/*
-document.querySelector('#subscribe-form-submit').addEventListener("click", e => {
-    e.preventDefault();
-    
-    hideElem(["#sfe","#sfp"]);
-    let , phoneValidationTest = phoneValidation.test(phone);
-    let debug = {
-        ue: ue,
-        phone: phone,
-        phoneValidation: phoneValidationTest,
-        emailValidation: emailValidationTest
-    };
-    console.log("debug: ",debug);
-
-    let sfe = document.querySelector('#sfe'), sfp = document.querySelector('#sfp');
-    
-    if((ue == "" || !emailValidationTest) || (phone == "" || !phoneValidationTest)){
-    
-    
-  }
-    else{
-          localStorage.setItem("copycat_hff","yes");
-          document.querySelector('#ometria-tc-subscribe-form').submit();
-        
-    }
-});
-*/
-
 
 });

@@ -1,0 +1,63 @@
+<%- include('partials/head.ejs') %>
+<script>
+    let pv = [];
+</script>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<h2 class="text-success text-center mb-5">
+    Ometria orders from offset <%= offset%>
+    <a class="btn btn-primary" href="javascript:void(0)" id="updater-btn" onclick="update();">Update customers</a>
+</h2>
+<% if(errors){ %>
+    <h4 class="text-danger"><%=errors%></h4>
+<% 
+ }
+ else if(dt2)
+ {
+     let customers = dt2.customers;
+ %> 
+ 
+ <div class="table-responsive">
+  <table class="table data-table">
+      <thead>
+          <tr>
+              <th>email</th>
+              <th>Details</th>
+          </tr>
+      </thead>
+      <tbody>
+          <%
+           for(let o of orders){
+          %>
+          <tr class="updater-tr">
+          <td><%= o.email %></td>
+          <td>
+          <%
+               for(let l = 0; l < o.items.length; l++){
+                   let ii = o.items[l];
+          %>
+          <script>
+            pv.push({email: "<%= o.email %>",pv: "<%= ii.variant_id%>"});
+        </script>  
+         <p><%= ii.product_id %> || <%= ii.variant_id %></p>
+         <%
+          }
+          %>
+        </td>
+        
+          </tr>
+          <%
+          }
+          %>
+      </tbody>
+  </table>
+  </div>
+ <%
+ }
+ %>
+</div>
+</div>
+</div>
+
+<%- include('partials/foot.ejs') %>

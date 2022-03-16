@@ -21,7 +21,8 @@ const getNextURL = responseData => {
 */
 const PORT = process.env.PORT || 5000;
 
-const { API_KEY, API_SECRET_KEY, SCOPES, SHOP,
+const { SHOPIFY_API,
+        SHOPIFY_API_KEY,
         RECHARGE_API_TOKEN,
         RECHARGE_API,
         HOST,
@@ -360,13 +361,14 @@ res.sendStatus(200);
 })
 /** Get order data from ometria */
 .get('/ometria-orders', async (req,res) => {
-  let errors = null, dt = null, orders = [];
+  let errors = null, dt = null, ret = {status: "error",message: "Unknown error"},
+      q = req.query, offset = q.offset || 0, orders = [];
 
   try{
     console.log("start call");
     let dt = await axios({
       method: "get",
-      url: `${OMETRIA_API}/orders?limit=1&offset=0`,
+      url: `${OMETRIA_API}/orders?limit=250&offset=${offset}`,
       headers: {
         'X-Ometria-Auth': OMETRIA_API_KEY,
         Accept: 'application/json'
@@ -374,9 +376,16 @@ res.sendStatus(200);
     });
     if(dt.status == "200" || dt.status == "202"){
       dt2 = dt.data;
-      console.log("response from Ometria API: ",dt2[0].lineitems);
-      ret = {status: "ok", message: "Contact updated"}
+      //console.log("response from Ometria API: ",dt2[0].lineitems);
+      for(let i = 0; i < dt2.length; i++){
+        let ll = {
+          email: dt2[i].customer.email,
+          items: dt2[i].lineitems
+      };
+      console.log("ll: ",ll);
+        orders.push(ll);
     }
+  }
     else{
       console.log("error response from Ometria API: ",dt);
       errors = "An error occured, please check the application logs";
@@ -387,19 +396,28 @@ res.sendStatus(200);
     errors = JSON.stringify(e);
     console.log("errors: ",e);
   }
-  res.sendStatus(200);
-  //res.render('ometria-orders',{orders});
+  //console.log("orders: ",orders);
+  //res.sendStatus(200);
+  res.render('orders',{orders, errors, offset});
 })
 
-/** Get product variant data from shopify */
-.get('/shopify-product-variants', async (req,res) => {
-  let errors = null, dt = null, orders = [];
+/** Get order data from ometria */
+.get('/orders2', async (req,res) => {
+  
+  res.render('orders2');
+})
+
+/** Get order data from ometria */
+.get('/ometria-get-customer', async (req,res) => {
+  let errors = null, dt = null, ret = {status: "error",message: "Unknown error"},
+      q = req.query;
 
   try{
     console.log("start call");
+    console.log("email: ",q.email);
     let dt = await axios({
       method: "get",
-      url: `${SHOPIFY}/orders?limit=1&offset=0`,
+      url: `${OMETRIA_API}/profiles?email=${encodeURIComponent(q.email)}`,
       headers: {
         'X-Ometria-Auth': OMETRIA_API_KEY,
         Accept: 'application/json'
@@ -407,21 +425,114 @@ res.sendStatus(200);
     });
     if(dt.status == "200" || dt.status == "202"){
       dt2 = dt.data;
-      console.log("response from Ometria API: ",dt2[0].lineitems);
-      ret = {status: "ok", message: "Contact updated"}
-    }
+      console.log("response from Ometria API: ",dt2);
+      ret = {
+        status: "ok",
+        data: {
+          email: dt2[0].email,
+          id: dt2[0].id,
+          properties: dt2[0].properties
+        }
+      };
+  }
     else{
       console.log("error response from Ometria API: ",dt);
       errors = "An error occured, please check the application logs";
-      ret.status = errors;
+      ret.message = errors;
     }
   }
   catch(e){
     errors = JSON.stringify(e);
     console.log("errors: ",e);
+    ret.message = e;
   }
+  //console.log("orders: ",orders);
+  res.send(ret);
+  //res.render('orders',{orders, errors, offset});
+})
+
+/** Get order data from ometria */
+.get('/ometria-update-customer', async (req,res) => {
+  let errors = null, dt = null, ret = {status: "error",message: "Unknown error"},
+      q = req.query;
+ 
+  
+ customers.forEach(v => {
+  try{
+    setTimeout(async () => {
+      let dt = await axios({
+        method: "get",
+        url: `ometria-get-customer?email=${v.email}`,
+      });
+      if(dt.status == "200" || dt.status == "202"){
+        dt2 = dt.data;
+        console.log("response from Ometria API: ",dt2);
+        
+    }
+      else{
+        console.log("error response from Ometria API: ",dt);
+        errors = "An error occured, please check the application logs";
+        ret.status = errors;
+      }
+    },1000);
+  }
+  catch(e){
+    console.log("err: ",e);
+  }
+});
+  
   res.sendStatus(200);
+})
+/** Get product variant data from shopify */
+.get('/shopify-product-variants', async (req,res) => {
+  let errors = null, dt = null, ret = {status: "error",message: "Unknown error"},
+      q = req.query, pvArray = q.pv.split("_");
+ 
+  /*
+https://{shop}.myshopify.com/admin/api/2022-01/products.json \
+-H 'Content-Type: application/json' \
+-H 'X-Shopify-Access-Token: {access_token}'
+ */
+
+  try{
+    console.log("start call");
+    let dt = await axios({
+      method: "get",
+      url: `${SHOPIFY_API}/products/${pvArray[0]}/variants.json`,
+      headers: {
+        'X-Shopify-Access-Token': SHOPIFY_API_KEY,
+        'Content-Type': 'application/json'
+      }
+    });
+    if(dt.status == "200" || dt.status == "202"){
+      dt2 = dt.data;
+      //console.log("response from Shopify API: ",dt2);
+
+      //Extract the variants title from response
+      let variants = [];
+      dt2.variants.forEach(element => {
+        let {id, title} = element;
+        variants.push({id,title});
+      });
+      console.log("Variants: ",variants);
+      ret = {
+        status: "ok",
+        data: variants
+      };
+    }
+    else{
+      console.log("error response from Ometria API: ",dt);
+      ret.message = dt;
+    }
+  }
+  catch(e){
+    console.log("error response from catch: ",dt);
+    ret.message = dt;
+  }
+  
+  res.send(ret);
   //res.render('ometria-orders',{orders});
+
 })
 
 /******** WEBHOOKS CALLBACK ********/
