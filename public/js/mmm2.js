@@ -181,7 +181,7 @@ function update(){
 function updateOmetria(){
 	let x = payloads[updateCounter];
     console.log("x: ",x);
-    #('#update-pv-loading').html(`<b>Updating data for ${x.customer_email}</b>`);
+    $('#update-pv-loading').html(`<b>Updating data for ${x.customer_email}</b>`);
     showElem('#update-pv-loading');
     const req = new Request("/update-ometria",{
                 method: 'POST', 
