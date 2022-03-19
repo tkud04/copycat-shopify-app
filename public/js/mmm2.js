@@ -178,6 +178,33 @@ function update(){
         });
 }
 
+function updateOmetria(){
+	let x = payloads[updateCounter];
+    console.log("x: ",x);
+    #('#update-pv-loading').html(`<b>Updating data for ${x.customer_email}</b>`);
+    showElem('#update-pv-loading');
+    const req = new Request("/update-ometria",{
+                method: 'POST', 
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(x)
+            });
+    fetch(`/update-ometria`)
+    .then(response => response.json())
+    .then(d => {
+        if(d.data){
+          
+            setTimeout(function(){
+                console.log("d.data: ", d.data);
+                hideElem('#update-pv-loading');
+                ++updateCounter; 
+                if(updateCounter < payloads) updateOmetria();
+                },1000);      
+        }
+    });  
+}
+
 
 $(document).ready(() => {
     //Custom fields update
@@ -244,15 +271,30 @@ $(document).ready(() => {
                   
     });
 
-    /*
-    document.querySelector('#filler').addEventListener('click', e => {
+    
+    document.querySelector('#update-pv-btn').addEventListener('click', e => {
         e.preventDefault();
-        let ret = ``;
-        for(let i of customers){
-           ret += `has_bought_${}=`;
-        }
-        document.querySelector('#ometria-fields').value = ret;
+        hideElem([
+            '#update-pv-error','#update-pv-loading'
+           ]);
+           let pv = $('#update-pv-payload').val();
+           
+           if(pv.length < 10){
+           	showElem('#update-pv-error');
+           }
+           else{
+           	try{
+           	 payloads = JSON.parse(pv);
+                
+                updateOmetria();
+               }
+               catch(e){
+               	showElem('#update-pv-error');
+               }
+           	
+           }
+           
                   
     });
-    */
+    
 });
