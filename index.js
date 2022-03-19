@@ -169,8 +169,10 @@ express()
   {
     res.send(ret);
   }
- 
-
+ })
+.get("/updater", async (req, res) => {
+  let errors = null, dt2 = null;
+  res.render('update-ometria');
 })
 /** Gets all customer data from Recharge API **/
 .get("/all-customers", async (req, res) => {
