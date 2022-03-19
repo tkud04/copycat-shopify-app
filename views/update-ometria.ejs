@@ -1,1 +1,29 @@
 
+<%- include('partials/head.ejs') %>
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+    <h2 class="text-success text-center mb-5">Manual Data Updates for Ometria Custom Fields</h2>
+   <form id="update-pv-form">
+       <div class="row">
+           <div class="col-md-12">
+                <div class="form-group">
+                    <label for="update-pv-payload">Payload</label>
+                    <textarea class="form-control" id="update-pv-payload" placeholder="Payload (JSON)">
+                    <p class="text-danger" id="update-pv-error">This field is required and must be in JSON format</p>
+                </div>
+           </div>
+           
+       <ul class="list-inline">
+           <li class="list-inline-item"><button id="update-pv-btn" class="btn btn-primary mt-2 mb-2">Submit</button></li>
+           <li class="list-inline-item"><p class="text-primary" id="update-pv-loading"> </p></li>
+           
+       </ul>
+     
+   </form>
+</div>
+</div>
+</div>
+
+<%- include('partials/foot.ejs') %>
