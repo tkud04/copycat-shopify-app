@@ -126,6 +126,40 @@ express()
   let errors = null, dt2 = null;
   res.render('manual-updates');
 })
+/** Get errors from Ometria Push */
+.get("/update-ometria-errors", async (req, res) => {
+  let ret = {status: "error", message: "nothing happened"};
+  try{
+    let dt = await axios({
+      method: "get",
+      url: `${OMETRIA_API}/push/_errors`,
+      headers: {
+        'X-Ometria-Auth': OMETRIA_API_KEY,
+        'accept': "application/json"
+      }
+    });
+    if(dt.status == "200" || dt.status == "202"){
+      dt2 = dt.data;
+      console.log("response from Ometria API errors: ",dt2);
+     
+      ret = {status: "ok", data: dt2};
+    }
+    else{
+      console.log("error response from calling Ometria API errors: ",dt);
+      errors = "An error occured, please check the application logs";
+      ret.status = errors;
+    }
+  }
+  catch(e){
+    let bigError = `An error occured: ${e})`;
+    console.log(bigError); 
+    res.status = bigError;
+  }
+  finally
+  {
+    res.send(ret);
+  }
+})
 /** Updates custom fields about a customer (from Recharge) on Ometria  **/
 .post("/update-ometria", async (req, res) => {
   let q = null, ret = {status: "error", message: "nothing happened"};
@@ -142,11 +176,15 @@ express()
     properties: q.fields
   }];
   try{
-
+    console.log("payload: ",payload);
     let dt = await axios({
       method: "post",
       url: `${OMETRIA_API}/push`,
-      headers: {'X-Ometria-Auth': OMETRIA_API_KEY},
+      headers: {
+        'X-Ometria-Auth': OMETRIA_API_KEY,
+        'accept': "application/json",
+        'Content-Type': "application/json"
+      },
       data: payload
     });
     if(dt.status == "200" || dt.status == "202"){
