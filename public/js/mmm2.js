@@ -180,29 +180,40 @@ function update(){
 
 function updateOmetria(){
 	let x = payloads[updateCounter];
+    let {payload, toBeUpdated} = x;
     console.log("x: ",x);
-    $('#update-pv-loading').html(`<b>Updating data for ${x.customer_email}</b>`);
+    $('#update-pv-loading').html(`<b>Updating data for ${payload.customer_email}</b>`);
     showElem('#update-pv-loading');
+    if(toBeUpdated){
     const req = new Request("/update-ometria",{
                 method: 'POST', 
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(x)
+                body: JSON.stringify(payload)
             });
-    fetch(`/update-ometria`)
+    
+    fetch(req)
     .then(response => response.json())
     .then(d => {
-        if(d.data){
-          
+        console.log(d);
+        if(d.status == "ok"){
+           
             setTimeout(function(){
-                console.log("d.data: ", d.data);
                 hideElem('#update-pv-loading');
                 ++updateCounter; 
-                if(updateCounter < payloads) updateOmetria();
+                if(updateCounter < payloads.length) updateOmetria();
                 },1000);      
         }
     });  
+   }
+   else{
+    setTimeout(function(){
+        hideElem('#update-pv-loading');
+        ++updateCounter; 
+        if(updateCounter < payloads.length) updateOmetria();
+        },1000);   
+   }
 }
 
 
@@ -210,7 +221,8 @@ $(document).ready(() => {
     //Custom fields update
     hideElem([
          '#update-form-status','#update-form-loading',
-         '#ometria-id-error','#ometria-email-error','#ometria-fields-error'
+         '#ometria-id-error','#ometria-email-error','#ometria-fields-error',
+         '#update-pv-error'
         ]);
 
     $('#update-form').submit(async e => {
@@ -264,13 +276,6 @@ $(document).ready(() => {
     });
 
     
-
-    document.querySelector('#updater2').addEventListener('click', e => {
-        e.preventDefault();
-        bomb2();
-                  
-    });
-
     
     document.querySelector('#update-pv-btn').addEventListener('click', e => {
         e.preventDefault();

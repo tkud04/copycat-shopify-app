@@ -152,6 +152,9 @@ express()
     if(dt.status == "200" || dt.status == "202"){
       dt2 = dt.data;
       console.log("response from Ometria API: ",dt2);
+      if(dt2?.rejected_items){
+        for(let x in dt2?.rejected_items)  console.log("errors from Ometria API: ",dt2);
+      }
       ret = {status: "ok", message: "Contact updated"}
     }
     else{
