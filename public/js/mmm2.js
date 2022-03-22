@@ -90,34 +90,37 @@ function update(){
                           case "5 ml":
                           case "5ml":
                               if(ometriaProperties.has_bought_5ml){
-                                //custom_fields['has_bought_5ml'] = ometriaProperties['has_bought_5ml'] + 1;
+                                custom_fields['has_bought_5ml'] = ometriaProperties['has_bought_5ml'] + 1;
                               }
                               else{
                                 custom_fields['has_bought_5ml'] = 1;
-                                toBeUpdated = true;
+                
                               }
+                              toBeUpdated = true;
                           break;
 
                           case "30 ml":
                           case "30ml":
                               if(ometriaProperties.has_bought_30ml){
-                                //custom_fields['has_bought_30ml'] = ometriaProperties['has_bought_30ml'] + 1;
+                                custom_fields['has_bought_30ml'] = ometriaProperties['has_bought_30ml'] + 1;
                               }
                               else{
                                 custom_fields['has_bought_30ml'] = 1;
                                 toBeUpdated = true;
                               }
+                              toBeUpdated = true;
                           break;
 
                           case "50 ml":
                           case "50ml":
                               if(ometriaProperties.has_bought_50ml){
-                               // custom_fields['has_bought_50ml'] = ometriaProperties['has_bought_50ml'] + 1;
+                                custom_fields['has_bought_50ml'] = ometriaProperties['has_bought_50ml'] + 1;
                               }
                               else{
                                 custom_fields['has_bought_50ml'] = 1;
-                                toBeUpdated = true;
+                                
                               }
+                              toBeUpdated = true;
                           break;
 
                           case "100 ml":
@@ -127,8 +130,9 @@ function update(){
                             }
                             else{
                               custom_fields['has_bought_100ml'] = 1;
-                              toBeUpdated = true;
+                              
                             }
+                            toBeUpdated = true;
                           break;
                         }
 
