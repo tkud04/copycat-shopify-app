@@ -75,6 +75,9 @@ function bomb(){
 function update(){
     let x = pv[updateCounter];
     console.log("x in update(): ", x);
+    hideElem('#loadng-2');
+    $('#loading-span').html(x.email);
+    showElem('#loading-2');
     //Update 
     //Step 1: Fetch the provudct variant data from Shopify
     fetch(`/shopify-product-variants?pv=${x.pv}`)
@@ -162,6 +165,7 @@ function update(){
 
                             setTimeout(function(){
                                 //console.log("d.data: ", d.data);
+                                hideElem('#loading-2');
                                 ++updateCounter; 
                                 if(updateCounter < pv.length) update();
                                 else document.querySelector('#results-textarea').value = JSON.stringify(payloads);
@@ -182,8 +186,8 @@ function updateOmetria(){
 	let x = payloads[updateCounter];
     let {payload, toBeUpdated} = x;
     console.log("x: ",x);
-    $('#update-pv-loading').html(`<b>Updating data for ${payload.customer_email}</b>`);
-    showElem('#update-pv-loading');
+    $('#loading-span').html(payload.customer_email);
+    showElem('#loading-2');
     if(toBeUpdated){
     const req = new Request("/update-ometria",{
                 method: 'POST', 
@@ -200,7 +204,7 @@ function updateOmetria(){
         if(d.status == "ok"){
            
             setTimeout(function(){
-                hideElem('#update-pv-loading');
+                hideElem('#loading-2');
                 ++updateCounter; 
                 if(updateCounter < payloads.length) updateOmetria();
                 },1000);      
@@ -222,7 +226,7 @@ $(document).ready(() => {
     hideElem([
          '#update-form-status','#update-form-loading',
          '#ometria-id-error','#ometria-email-error','#ometria-fields-error',
-         '#update-pv-error'
+         '#update-pv-error', '#loading-2'
         ]);
 
     $('#update-form').submit(async e => {
