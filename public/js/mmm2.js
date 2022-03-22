@@ -146,12 +146,12 @@ function update(){
                         }
 
                          let payload = {
-                            customer_id: selected.id,
+                            customer_id: d.data.id,
                             customer_email: selected.email,
                             fields: custom_fields
                           };
 
-                          console.log("[payload, toBeUpdated]: ",[payload,toBeUpdated]);
+                         // console.log("[payload, toBeUpdated]: ",[payload,toBeUpdated]);
                         
                         //Step 3 - Populate the appropriate custom field and update Ometria
                         payloads.push({
@@ -285,6 +285,7 @@ $(document).ready(() => {
            let pv = $('#update-pv-payload').val();
            
            if(pv.length < 10){
+                  console.log("payload length");
            	showElem('#update-pv-error');
            }
            else{
@@ -294,6 +295,7 @@ $(document).ready(() => {
                 updateOmetria();
                }
                catch(e){
+                 console.log("try catch");
                	showElem('#update-pv-error');
                }
            	

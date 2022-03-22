@@ -456,8 +456,8 @@ res.sendStatus(200);
       q = req.query;
 
   try{
-    console.log("start call");
-    console.log("email: ",q.email);
+   // console.log("start call");
+    //console.log("email: ",q.email);
     let dt = await axios({
       method: "get",
       url: `${OMETRIA_API}/profiles?email=${encodeURIComponent(q.email)}`,
@@ -468,12 +468,12 @@ res.sendStatus(200);
     });
     if(dt.status == "200" || dt.status == "202"){
       dt2 = dt.data;
-      console.log("response from Ometria API: ",dt2);
+      //console.log("response from Ometria API: ",dt2);
       ret = {
         status: "ok",
         data: {
           email: dt2[0].email,
-          id: dt2[0].id,
+          id: dt2[0].customer_id,
           properties: dt2[0].properties
         }
       };
