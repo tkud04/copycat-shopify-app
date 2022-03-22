@@ -55,22 +55,6 @@ function hideElem(selector){
 }
 
 
-function bomb(){
-    let x = customers[counter];
-    console.log("x: ",x);
-    fetch(`/ometria-get-customer?email=${encodeURIComponent(x.email)}`)
-    .then(response => response.json())
-    .then(d => {
-        if(d.data){
-          
-            setTimeout(function(){
-                console.log("d.data: ", d.data);
-                ++counter; 
-                if(counter < customers.length) bomb();
-                },1000);      
-        }
-    });  
- }
 
 function update(){
     let x = pv[updateCounter];
@@ -172,6 +156,9 @@ function update(){
                                 },1000); 
                     }
                 })
+                .catch(e => {
+                    console.log('error from ometria: ',e);
+                });
                 
                }
 
@@ -179,7 +166,10 @@ function update(){
             
             }
             
-        });
+        })
+        .catch(e => {
+            console.log('error from shopify: ',e);
+        });;
 }
 
 function updateOmetria(){
