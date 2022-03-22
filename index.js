@@ -569,7 +569,7 @@ https://{shop}.myshopify.com/admin/api/2022-01/products.json \
     }
   }
   catch(e){
-    console.log("error response from catch: ",dt);
+    console.log("error response from catch: ",e);
     ret.message = dt;
   }
   
