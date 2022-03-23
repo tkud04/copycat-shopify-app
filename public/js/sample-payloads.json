@@ -1,180 +1,10 @@
 [
    {
       "payload":{
-         "customer_id":"5694707597508",
-         "customer_email":"mrutledge10@gmail.com",
+         "customer_id":"2644961558598",
+         "customer_email":"jamie_brannigan@hotmail.com",
          "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"4457772155076",
-         "customer_email":"mwlconsultancy@mail.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1312358662214",
-         "customer_email":"raihaan9@hotmail.com",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2306461499462",
-         "customer_email":"helenjgolding@aol.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"4524160319684",
-         "customer_email":"stevencorrigan@outlook.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5649484972228",
-         "customer_email":"chuckyliverpool420@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5723289092292",
-         "customer_email":"rob@altioram.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5704046215364",
-         "customer_email":"r_colman@sky.com",
-         "fields":{
-            "has_bought_100ml":1,
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5645481738436",
-         "customer_email":"jilly.innocent@gmail.com",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2611080593478",
-         "customer_email":"lay.abatan@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2784517292097",
-         "customer_email":"dannyclements69@hotmail.co.uk",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3299683729473",
-         "customer_email":"brettwwilson@yahoo.co.uk",
-         "fields":{
-            "has_bought_5ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1160932687942",
-         "customer_email":"mel.j.cole@icloud.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3261714399297",
-         "customer_email":"islaallan@hotmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3266953740353",
-         "customer_email":"sophiehadik@hotmail.co.uk",
-         "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2870234251329",
-         "customer_email":"zoha100@hotmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3042683781185",
-         "customer_email":"flavius_t88@yahoo.com",
-         "fields":{
-            "has_bought_100ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2639647572038",
-         "customer_email":"a.hasib407@gmail.com",
-         "fields":{
+            "has_bought_5ml":1,
             "has_bought_30ml":2
          }
       },
@@ -182,99 +12,8 @@
    },
    {
       "payload":{
-         "customer_id":"2109491609670",
-         "customer_email":"jamesrobertcobley@gmail.com",
-         "fields":{
-            "has_bought_5ml":7
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2233756254278",
-         "customer_email":"tracey.seldon123@gmail.com",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1269363769414",
-         "customer_email":"alanshaw7@hotmail.com",
-         "fields":{
-            "has_bought_100ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3194447528001",
-         "customer_email":"tommillican@yahoo.co.uk",
-         "fields":{
-            "has_bought_5ml":5
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2116576575558",
-         "customer_email":"williamtutton@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3003759099969",
-         "customer_email":"charlierope@gmail.com",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1294556594246",
-         "customer_email":"ameenkov_ltd@yahoo.com",
-         "fields":{
-            "has_bought_50ml":3,
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2197525430342",
-         "customer_email":"dommie84@hotmail.com",
-         "fields":{
-            "has_bought_50ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3095000383553",
-         "customer_email":"almagidiameer@gmail.com",
-         "fields":{
-            "has_bought_100ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"954928234566",
-         "customer_email":"foy121@hotmail.com",
+         "customer_id":"5727471272132",
+         "customer_email":"joeygallacher1992@gmail.com",
          "fields":{
             "has_bought_5ml":1
          }
@@ -283,28 +22,8 @@
    },
    {
       "payload":{
-         "customer_id":"3129548701761",
-         "customer_email":"karynae@hotmail.co.uk",
-         "fields":{
-            "has_bought_5ml":6
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1133946110022",
-         "customer_email":"sharoninwood7@gmail.com",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5664303317188",
-         "customer_email":"shuayb@live.co.uk",
+         "customer_id":"3010731442241",
+         "customer_email":"arooke1985@gmail.com",
          "fields":{
             "has_bought_50ml":2
          }
@@ -313,8 +32,8 @@
    },
    {
       "payload":{
-         "customer_id":"1257351512134",
-         "customer_email":"wilson-richard@hotmail.co.uk",
+         "customer_id":"5715952926916",
+         "customer_email":"simone.walden@gmail.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -323,18 +42,39 @@
    },
    {
       "payload":{
-         "customer_id":"2985515876417",
-         "customer_email":"640456@gmail.com",
+         "customer_id":"5469764190404",
+         "customer_email":"josh.j.r@gmail.com",
          "fields":{
-            "has_bought_30ml":1
+            "has_bought_5ml":1
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"2575744729158",
-         "customer_email":"chrisgodfrey@blueyonder.co.uk",
+         "customer_id":"3110015631425",
+         "customer_email":"imranzafeer76@yahoo.co.uk",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5228761383108",
+         "customer_email":"claudia_codres@yahoo.com",
+         "fields":{
+            "has_bought_5ml":1,
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5618255954116",
+         "customer_email":"vfr80060@gmail.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -343,8 +83,8 @@
    },
    {
       "payload":{
-         "customer_id":"1243425701958",
-         "customer_email":"stevestapley@hotmail.com",
+         "customer_id":"5716329136324",
+         "customer_email":"1nicholsonluke@gmail.com",
          "fields":{
             "has_bought_5ml":2
          }
@@ -353,9 +93,10 @@
    },
    {
       "payload":{
-         "customer_id":"2707959545921",
-         "customer_email":"shorland100@yahoo.co.uk",
+         "customer_id":"2061989281862",
+         "customer_email":"williambelchambers@yahoo.co.uk",
          "fields":{
+            "has_bought_5ml":1,
             "has_bought_50ml":1
          }
       },
@@ -363,8 +104,69 @@
    },
    {
       "payload":{
-         "customer_id":"2096598614086",
-         "customer_email":"kevstan58@yahoo.co.uk",
+         "customer_id":"5696991396036",
+         "customer_email":"sarah.harris@dirty-liquor.co.uk",
+         "fields":{
+            "has_bought_30ml":1,
+            "has_bought_5ml":4
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2307664609350",
+         "customer_email":"aroywhite.1990@gmail.com",
+         "fields":{
+            
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"3262538219585",
+         "customer_email":"mmoncikas@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2975965478977",
+         "customer_email":"reillyscaff81@mail.com",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3047003488321",
+         "customer_email":"emma_turner4@hotmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2016769638470",
+         "customer_email":"qasis@hotmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5630584979652",
+         "customer_email":"mckelviealison@yahoo.co.uk",
          "fields":{
             "has_bought_100ml":1
          }
@@ -373,58 +175,38 @@
    },
    {
       "payload":{
-         "customer_id":"3366806585409",
-         "customer_email":"jake.cadle@icloud.com",
-         "fields":{
-            "has_bought_5ml":6
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2003923763270",
-         "customer_email":"mkelshorbagy@yahoo.co.uk",
+         "customer_id":"5719307747524",
+         "customer_email":"hemel_95@hotmail.com",
          "fields":{
             "has_bought_5ml":1
          }
       },
-      "toBeUpdated":true
+      "toBeUpdated":false
    },
    {
       "payload":{
-         "customer_id":"2723761029185",
-         "customer_email":"usama.asif@gmail.com",
+         "customer_id":"2728700248129",
+         "customer_email":"mikec-39@hotmail.co.uk",
          "fields":{
-            "has_bought_5ml":1
+            "has_bought_5ml":4
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"1084399616070",
-         "customer_email":"andynelson825@msn.com",
+         "customer_id":"5701926158532",
+         "customer_email":"samgater@googlemail.com",
          "fields":{
-            "has_bought_30ml":1
+            "has_bought_5ml":3
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"1313108328518",
-         "customer_email":"adamdenley1@googlemail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2308810997830",
-         "customer_email":"ryanconroy@msn.com",
+         "customer_id":"5719825350852",
+         "customer_email":"pgtwpc@gmail.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -433,8 +215,8 @@
    },
    {
       "payload":{
-         "customer_id":"2758245843009",
-         "customer_email":"spanglish.smith@gmail.com",
+         "customer_id":"4505777569988",
+         "customer_email":"emilybainbridge@live.co.uk",
          "fields":{
             "has_bought_30ml":1
          }
@@ -443,38 +225,28 @@
    },
    {
       "payload":{
-         "customer_id":"2738720407617",
-         "customer_email":"moroz171290@gmail.com",
+         "customer_id":"2254913175622",
+         "customer_email":"robbietwilson@icloud.com",
          "fields":{
-            "has_bought_5ml":2
+            "has_bought_30ml":1
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"5682992611524",
-         "customer_email":"ejacobson1982@me.com",
+         "customer_id":"1247032344646",
+         "customer_email":"nubinhussain@outlook.com",
          "fields":{
-            "has_bought_100ml":1
+            "has_bought_30ml":1
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"1168128180294",
-         "customer_email":"jamesdavidthomas@hotmail.com",
-         "fields":{
-            "has_bought_5ml":5
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2255925805126",
-         "customer_email":"shaista.kauser@gmail.com",
+         "customer_id":"5686465298628",
+         "customer_email":"liz-lea94@hotmail.com",
          "fields":{
             "has_bought_30ml":1,
             "has_bought_5ml":1
@@ -484,19 +256,40 @@
    },
    {
       "payload":{
-         "customer_id":"2436859723846",
-         "customer_email":"leesa911@googlemail.com",
+         "customer_id":"3042683781185",
+         "customer_email":"flavius_t88@yahoo.com",
          "fields":{
-            "has_bought_30ml":1
+            "has_bought_100ml":5
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"5724096659652",
-         "customer_email":"emily@emdashpr.com",
+         "customer_id":"5719760142532",
+         "customer_email":"justine@uttridge.co.uk",
          "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2440277065798",
+         "customer_email":"harrysmen@talktalk.net",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2106615758918",
+         "customer_email":"liammarshall1992@hotmail.co.uk",
+         "fields":{
+            "has_bought_30ml":1,
             "has_bought_50ml":1
          }
       },
@@ -504,29 +297,10 @@
    },
    {
       "payload":{
-         "customer_id":"5724291662020",
-         "customer_email":"susanmcluckie@hotmail.com",
+         "customer_id":"5716813611204",
+         "customer_email":"liamnapier124@gmail.com",
          "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5210256605380",
-         "customer_email":"paul_harrison13@hotmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5101547061444",
-         "customer_email":"bowbren72@hotmail.com",
-         "fields":{
+            "has_bought_5ml":1,
             "has_bought_30ml":1
          }
       },
@@ -534,71 +308,8 @@
    },
    {
       "payload":{
-         "customer_id":"1205649014854",
-         "customer_email":"simon_golightly@lineone.net",
-         "fields":{
-            "has_bought_50ml":1,
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5475490988228",
-         "customer_email":"tmm@crystalworks.co.uk",
-         "fields":{
-            "has_bought_5ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2435986161734",
-         "customer_email":"karl.brown7@gmail.com",
-         "fields":{
-            "has_bought_100ml":3,
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5699419766980",
-         "customer_email":"lharris0707@outlook.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2707588644929",
-         "customer_email":"syloooo@gmail.com",
-         "fields":{
-            "has_bought_100ml":1,
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2732802211905",
-         "customer_email":"jakem-c@live.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5725325295812",
-         "customer_email":"john.ducker@ipswichhospital.nhs.uk",
+         "customer_id":"5717401501892",
+         "customer_email":"aligardner11@gmail.com",
          "fields":{
             "has_bought_5ml":2
          }
@@ -607,69 +318,8 @@
    },
    {
       "payload":{
-         "customer_id":"2765831897153",
-         "customer_email":"cherise.hay6@btinternet.com",
-         "fields":{
-            "has_bought_100ml":1,
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2856792326209",
-         "customer_email":"sebburnandrew@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2439702085702",
-         "customer_email":"redlionhorley@icloud.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"2627007709254",
-         "customer_email":"klorrington@hotmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5726617174212",
-         "customer_email":"njjumeaux78@gmail.com",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2232697126982",
-         "customer_email":"adnansabir76@gmail.com",
-         "fields":{
-            "has_bought_100ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2736755671105",
-         "customer_email":"jackmarksthomas@googlemail.com",
+         "customer_id":"4557462995140",
+         "customer_email":"rnguen@gmail.com",
          "fields":{
             "has_bought_50ml":1
          }
@@ -678,18 +328,18 @@
    },
    {
       "payload":{
-         "customer_id":"5723366555844",
-         "customer_email":"alexsaddington@hotmail.com",
+         "customer_id":"3082978754625",
+         "customer_email":"russell.bird@klck-ltd.com",
          "fields":{
-            
+            "has_bought_5ml":10
          }
       },
-      "toBeUpdated":false
+      "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"1133621903430",
-         "customer_email":"pastor.tay@hotmail.com",
+         "customer_id":"1326779138118",
+         "customer_email":"edzhuja@icloud.com",
          "fields":{
             "has_bought_100ml":1,
             "has_bought_30ml":1
@@ -699,8 +349,851 @@
    },
    {
       "payload":{
-         "customer_id":"1315468574790",
-         "customer_email":"timmsy1@hotmail.com",
+         "customer_id":"2673026302017",
+         "customer_email":"alan-wickham@hotmail.co.uk",
+         "fields":{
+            "has_bought_5ml":2,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2446303264838",
+         "customer_email":"garethwildman@yahoo.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5719100162244",
+         "customer_email":"jordanlewalserson@gmaul.com",
+         "fields":{
+            "has_bought_100ml":1,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"887377756230",
+         "customer_email":"lukemathewmawdsley@gmail.com",
+         "fields":{
+            "has_bought_50ml":1,
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5717156757700",
+         "customer_email":"alice.rose.scott@hotmail.co.uk",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2920021229633",
+         "customer_email":"paul.scanlon@btinternet.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5719014310084",
+         "customer_email":"ad4mconway@gmail.com",
+         "fields":{
+            
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"2438147539014",
+         "customer_email":"philadams11@hotmail.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5715040239812",
+         "customer_email":"jessica_slaughter@hotmail.co.uk",
+         "fields":{
+            "has_bought_5ml":4
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"2798603272257",
+         "customer_email":"smcwilton@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2198229942342",
+         "customer_email":"john-coggins@hotmail.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1025210089542",
+         "customer_email":"marty34@live.co.uk",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2867883311169",
+         "customer_email":"paul.challinor@sky.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5695286706372",
+         "customer_email":"pabeech@protonmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5684748910788",
+         "customer_email":"roberttebay22@icloud.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1185325940806",
+         "customer_email":"wllnn67@gmail.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2589706223686",
+         "customer_email":"brookfabling@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3032421826625",
+         "customer_email":"dm_training1@hotmail.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5716032979140",
+         "customer_email":"adamrichman2018@outlook.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5717240742084",
+         "customer_email":"sophiejones021192@hotmail.com",
+         "fields":{
+            "has_bought_50ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4525683900612",
+         "customer_email":"grahamfaulkner@yahoo.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5629831774404",
+         "customer_email":"richgled25@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3299287203905",
+         "customer_email":"dan-harrison93@hotmail.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5716985053380",
+         "customer_email":"alexrdgissel@gmail.com",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5719095410884",
+         "customer_email":"mrwhales4real@gmail.com",
+         "fields":{
+            "has_bought_50ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5674260398276",
+         "customer_email":"oma.roffe@yahoo.com",
+         "fields":{
+            "has_bought_5ml":4
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2437057249350",
+         "customer_email":"mohammed2541@hotmail.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1224921448518",
+         "customer_email":"seangajetdale@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4445093888196",
+         "customer_email":"helenadams88@hotmail.com",
+         "fields":{
+            "has_bought_100ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1155390505030",
+         "customer_email":"rossferguson52@hotmail.com",
+         "fields":{
+            "has_bought_50ml":1,
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2259341738054",
+         "customer_email":"ayazhussain78@yahoo.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2820782161985",
+         "customer_email":"jack4ade@blueyonder.co.uk",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1164407668806",
+         "customer_email":"dazhas@yahoo.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1251736059974",
+         "customer_email":"kennedy_bfw@hotmail.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3081753067585",
+         "customer_email":"nimishkshah@yahoo.com",
+         "fields":{
+            "has_bought_30ml":1,
+            "has_bought_5ml":2,
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4597087535300",
+         "customer_email":"gemmaaustindesign@gmail.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2127217164358",
+         "customer_email":"willieevans@mac.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2812784181313",
+         "customer_email":"moldo71@hotmail.com",
+         "fields":{
+            "has_bought_30ml":1,
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2228865794118",
+         "customer_email":"mbongenimsipha@yahoo.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1210295582790",
+         "customer_email":"s.muldowney@hotmail.com",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1286145245254",
+         "customer_email":"trimer49@yahoo.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1184287391814",
+         "customer_email":"malcolmmeighan86@hotmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3113635250241",
+         "customer_email":"tankcommander12345@yahoo.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722411368644",
+         "customer_email":"zachbaggott@hotmail.co.uk",
+         "fields":{
+            "has_bought_5ml":4,
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"932428480582",
+         "customer_email":"mail@smithandwestonbarbers.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722461569220",
+         "customer_email":"luketownsend18@gmail.com",
+         "fields":{
+            "has_bought_5ml":6
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2090696835142",
+         "customer_email":"liviman71@outlook.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722481262788",
+         "customer_email":"s.thornton95@icloud.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4560319152324",
+         "customer_email":"edwardwharper@gmail.com",
+         "fields":{
+            "has_bought_5ml":3,
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5043024593092",
+         "customer_email":"gracez.10@icloud.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3103646023745",
+         "customer_email":"crawfs81@icloud.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722962428100",
+         "customer_email":"trickstern1@hotmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3275677499457",
+         "customer_email":"a.real@hotmail.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1324263178310",
+         "customer_email":"edleeson100@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3321277513793",
+         "customer_email":"macauley_95@live.com",
+         "fields":{
+            "has_bought_100ml":1,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2214052429894",
+         "customer_email":"keithjarrett@lifeassuredltd.co.uk",
+         "fields":{
+            "has_bought_5ml":7
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5467801911492",
+         "customer_email":"becky@doggyconcepts.com",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3239056605249",
+         "customer_email":"rwestwo1@gmail.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2689604091969",
+         "customer_email":"katiepemberton29@hotmail.co.uk",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4438114631876",
+         "customer_email":"kiranmann@outlook.com",
+         "fields":{
+            "has_bought_5ml":1,
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2720549470273",
+         "customer_email":"graham.cowling@marshall.co.uk",
+         "fields":{
+            "has_bought_100ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2675636109377",
+         "customer_email":"ryangordon.1@hotmail.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5700331503812",
+         "customer_email":"c.adamson1@newcastle.ac.uk",
+         "fields":{
+            "has_bought_5ml":4
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5723028783300",
+         "customer_email":"honeywoodjohn@gmail.com",
+         "fields":{
+            "has_bought_30ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2552467882054",
+         "customer_email":"promiseproperty15@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5723370782916",
+         "customer_email":"paulocostavares@gmail.com",
+         "fields":{
+            "has_bought_5ml":4
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2681258311745",
+         "customer_email":"anthonyleonardmoore@outlook.com",
+         "fields":{
+            
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"3008838795329",
+         "customer_email":"jamieshrive@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5724700639428",
+         "customer_email":"nahsirtenom@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5675828379844",
+         "customer_email":"blindffield@yahoo.com",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3122959220801",
+         "customer_email":"aileenthomas30@gmail.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2792194310209",
+         "customer_email":"gjorao@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2313657548870",
+         "customer_email":"grantturner73@gmail.com",
+         "fields":{
+            "has_bought_30ml":2,
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2448134340678",
+         "customer_email":"hiranga50@yahoo.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5489268293828",
+         "customer_email":"james.king@jacksonsestateagents.com",
+         "fields":{
+            "has_bought_100ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2020271423558",
+         "customer_email":"t.bhachoo@gmail.com",
+         "fields":{
+            "has_bought_30ml":1,
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5542632718532",
+         "customer_email":"jennaday2747@yahoo.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4587992121540",
+         "customer_email":"james.pettigrew@live.co.uk",
+         "fields":{
+            "has_bought_100ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2644604846150",
+         "customer_email":"stamish2006@yahoo.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4504905285828",
+         "customer_email":"janeblackman4@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5717018837188",
+         "customer_email":"gec4578@gmail.com",
+         "fields":{
+            
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"2982847873089",
+         "customer_email":"katyatyler@hotmail.com",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5678562836676",
+         "customer_email":"hotster2@hotmail.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5703600079044",
+         "customer_email":"pradd2010@hotmail.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -719,59 +1212,8 @@
    },
    {
       "payload":{
-         "customer_id":"1257524101190",
-         "customer_email":"amyjayneoneill@gmail.com",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5449795764420",
-         "customer_email":"simon@flory.co.uk",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2683889287233",
-         "customer_email":"pkennedy72@googlemail.com",
-         "fields":{
-            "has_bought_30ml":1,
-            "has_bought_50ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2723805167681",
-         "customer_email":"citycleaningsolutions2@gmail.com",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2288177971270",
-         "customer_email":"no1rob_morris@hotmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5635201466564",
-         "customer_email":"rayparjer9@hotmail.co.uk",
+         "customer_id":"5720083235012",
+         "customer_email":"owengary16@gmail.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -780,18 +1222,39 @@
    },
    {
       "payload":{
-         "customer_id":"1300948942918",
-         "customer_email":"dennisobidegwu@yahoo.com",
+         "customer_id":"5296613294276",
+         "customer_email":"ann4fox@hotmail.co.uk",
          "fields":{
-            "has_bought_100ml":3
+            "has_bought_30ml":1
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"891726561350",
-         "customer_email":"marcoscarpelli74@gmail.com",
+         "customer_id":"1291901468742",
+         "customer_email":"jessmcavoy1991@hotmail.com",
+         "fields":{
+            "has_bought_50ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5721071288516",
+         "customer_email":"cariasoc21@gmail.com",
+         "fields":{
+            "has_bought_30ml":2,
+            "has_bought_50ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5539571925188",
+         "customer_email":"krishorton@hotmail.co.uk",
          "fields":{
             "has_bought_50ml":1
          }
@@ -800,49 +1263,8 @@
    },
    {
       "payload":{
-         "customer_id":"2851654434881",
-         "customer_email":"aj93wba@icloud.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"4444267872452",
-         "customer_email":"ryanlogas@hotmail.co.uk",
-         "fields":{
-            "has_bought_30ml":1,
-            "has_bought_5ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1243391623238",
-         "customer_email":"a.g.cray@hotmail.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"2829209043009",
-         "customer_email":"edsbrand2001@yahoo.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5685393850564",
-         "customer_email":"beth.collins201@gmail.com",
+         "customer_id":"2983165395009",
+         "customer_email":"debbiemacdonald73@yahoo.co.uk",
          "fields":{
             "has_bought_5ml":1
          }
@@ -851,28 +1273,49 @@
    },
    {
       "payload":{
-         "customer_id":"2136613584966",
-         "customer_email":"paulmstone@icloud.com",
+         "customer_id":"3325121396801",
+         "customer_email":"haydencharleskidman@outlook.com",
          "fields":{
-            "has_bought_30ml":2
+            "has_bought_100ml":2
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"3127651958849",
-         "customer_email":"m.bury@ymail.com",
+         "customer_id":"2191642132550",
+         "customer_email":"pomsalaugh@gmail.com",
          "fields":{
-            "has_bought_50ml":4
+            "has_bought_5ml":4
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"5614910374084",
-         "customer_email":"naglis.sid@gmail.com",
+         "customer_id":"2446732165190",
+         "customer_email":"paulmcginley1971@hotmail.co.uk",
+         "fields":{
+            "has_bought_100ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3231670960193",
+         "customer_email":"fmacdonald68@gmail.com",
+         "fields":{
+            "has_bought_50ml":1,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3022725283905",
+         "customer_email":"cdwhitemale88@gmail.com",
          "fields":{
             "has_bought_30ml":1
          }
@@ -881,19 +1324,10 @@
    },
    {
       "payload":{
-         "customer_id":"5723023835332",
-         "customer_email":"samil.u@icloud.com",
+         "customer_id":"5253345542340",
+         "customer_email":"denty182@hotmail.co.uk",
          "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2309779587142",
-         "customer_email":"carlnbex2606@gmail.com",
-         "fields":{
+            "has_bought_100ml":1,
             "has_bought_30ml":1
          }
       },
@@ -901,8 +1335,18 @@
    },
    {
       "payload":{
-         "customer_id":"4662876274884",
-         "customer_email":"sophie_mc_neill@hotmail.com",
+         "customer_id":"1139772260422",
+         "customer_email":"lee.lawrence22@btconnect.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2253083082822",
+         "customer_email":"rebeccalmillard@gmail.com",
          "fields":{
             "has_bought_5ml":3
          }
@@ -911,28 +1355,18 @@
    },
    {
       "payload":{
-         "customer_id":"4496697721028",
-         "customer_email":"livyb18@outlook.com",
+         "customer_id":"2805783035969",
+         "customer_email":"asifpandor@yahoo.co.uk",
          "fields":{
-            "has_bought_100ml":1
+            "has_bought_30ml":3
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"5723149467844",
-         "customer_email":"jackmurton1996@icloud.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3129490669633",
-         "customer_email":"tom_carlill@hotmail.com",
+         "customer_id":"2983588331585",
+         "customer_email":"darrenfallows@gmail.com",
          "fields":{
             "has_bought_30ml":1
          }
@@ -941,494 +1375,8 @@
    },
    {
       "payload":{
-         "customer_id":"5723132199108",
-         "customer_email":"spersand2003@gmail.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"3373452689473",
-         "customer_email":"nolan.johnson89@gmail.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"5723497332932",
-         "customer_email":"amy.philpot@btinternet.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5155579035844",
-         "customer_email":"q-aist@hotmail.com",
-         "fields":{
-            "has_bought_30ml":3,
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2059445010502",
-         "customer_email":"giedrius.macko@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"1192253947974",
-         "customer_email":"saj_rafiq@hotmail.com",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5723928592580",
-         "customer_email":"sales@kosmetikoclinic.co.uk",
-         "fields":{
-            "has_bought_100ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1311160041542",
-         "customer_email":"chris.reitter@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2198255599686",
-         "customer_email":"michaelostc@hotmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2713087246401",
-         "customer_email":"bakerlee@hotmail.co.uk",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1318372704326",
-         "customer_email":"christopherhuntbatch@hotmail.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2972483584065",
-         "customer_email":"millieiphone23@outlook.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"4479950356676",
-         "customer_email":"caz.conboy@virgin.net",
-         "fields":{
-            "has_bought_30ml":2,
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2199423549510",
-         "customer_email":"tomjmacleod@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5201226793156",
-         "customer_email":"lynalilvamp@gmail.com",
-         "fields":{
-            "has_bought_5ml":8
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5507471966404",
-         "customer_email":"deesha25@icloud.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2743949951041",
-         "customer_email":"gavnav@sky.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"2252608143430",
-         "customer_email":"nsthomas1@ntlworld.com",
-         "fields":{
-            "has_bought_50ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5689125994692",
-         "customer_email":"dunmoredevelop@aol.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2812077670465",
-         "customer_email":"r.radecki@wp.pl",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5726932336836",
-         "customer_email":"gareth.rv.thomas@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2724313366593",
-         "customer_email":"aodushola@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5704574402756",
-         "customer_email":"chrisdagger88@gmail.com",
-         "fields":{
-            "has_bought_50ml":1,
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5726947377348",
-         "customer_email":"junsy22@sky.com",
-         "fields":{
-            "has_bought_5ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2218943316038",
-         "customer_email":"aman.aujla@blueyonder.co.uk",
-         "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2094438711366",
-         "customer_email":"cmholder@btinternet.com",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5678666645700",
-         "customer_email":"chris.elderkin@mancity.com",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5710278426820",
-         "customer_email":"jamesmne@gmail.com",
-         "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5680102080708",
-         "customer_email":"zainab.hussain7864@gmail.com",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5695897927876",
-         "customer_email":"tobygribbin@icloud.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2723991584833",
-         "customer_email":"lee.maisey@gmail.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"4457912467652",
-         "customer_email":"lee.bennett@sky.com",
-         "fields":{
-            "has_bought_50ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5022760632516",
-         "customer_email":"callumbradleybarnes@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5263354691780",
-         "customer_email":"jjbeggs@gmail.com",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1160532688966",
-         "customer_email":"josephmorton90@sky.com",
-         "fields":{
-            "has_bought_50ml":1,
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"4451329016004",
-         "customer_email":"peterjamesbristow@hotmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"4665890177220",
-         "customer_email":"looksmart70@yahoo.co.uk",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1199734816838",
-         "customer_email":"emmanuelle@emmanuelleparker.co.uk",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2101652947014",
-         "customer_email":"paul-omara@sky.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"988356804678",
-         "customer_email":"dene.gibson@yahoo.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2794812538945",
-         "customer_email":"saeedamayat@yahoo.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2121795141702",
-         "customer_email":"smccudden@live.com",
-         "fields":{
-            "has_bought_50ml":1,
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1129885597766",
-         "customer_email":"njmetcalfe@googlemail.com",
-         "fields":{
-            "has_bought_5ml":8,
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2135356244038",
-         "customer_email":"braziermichael@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"987310358598",
-         "customer_email":"kyle_hendley@yahoo.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1090567372870",
-         "customer_email":"japasko@hotmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3061468037185",
-         "customer_email":"isabelburns5@aol.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2192883843142",
-         "customer_email":"tar_duik_karsa@hotmail.co.uk",
-         "fields":{
-            "has_bought_50ml":10
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2129878351942",
-         "customer_email":"callum_maher@hotmail.co.uk",
+         "customer_id":"1231009284166",
+         "customer_email":"chrishollinshead@me.com",
          "fields":{
             "has_bought_5ml":2
          }
@@ -1437,98 +1385,8 @@
    },
    {
       "payload":{
-         "customer_id":"1227683037254",
-         "customer_email":"nickjackson123@hotmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5652167721156",
-         "customer_email":"em.fletch@hotmail.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"4513865826500",
-         "customer_email":"emilyjames1@msn.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5722982056132",
-         "customer_email":"info@grantrichards.com",
-         "fields":{
-            "has_bought_5ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5263329165508",
-         "customer_email":"andyjcole63@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2173390061638",
-         "customer_email":"huw_day@hotmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2877902192705",
-         "customer_email":"steven.mitchinson06@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5327518499012",
-         "customer_email":"vdowding11@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5723085832388",
-         "customer_email":"bazsharma999@gmail.com",
-         "fields":{
-            "has_bought_5ml":5
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5033528131780",
-         "customer_email":"jamesparkinson2000@hotmail.co.uk",
+         "customer_id":"4457773990084",
+         "customer_email":"daithi@live.co.uk",
          "fields":{
             "has_bought_100ml":2
          }
@@ -1537,18 +1395,8 @@
    },
    {
       "payload":{
-         "customer_id":"5446337921220",
-         "customer_email":"fairy_moom34@yahoo.com",
-         "fields":{
-            "has_bought_100ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2939923628097",
-         "customer_email":"jacklambert500@hotmail.com",
+         "customer_id":"2846217044033",
+         "customer_email":"djstegsey@hotmail.com",
          "fields":{
             "has_bought_5ml":4
          }
@@ -1557,8 +1405,101 @@
    },
    {
       "payload":{
-         "customer_id":"5723803418820",
-         "customer_email":"sue.trout39@gmail.com",
+         "customer_id":"1243486453830",
+         "customer_email":"scope0023@gmail.com",
+         "fields":{
+            "has_bought_30ml":3,
+            "has_bought_50ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2942418485313",
+         "customer_email":"julian.williams5@gmail.com",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3220764917825",
+         "customer_email":"jonnyburke@gmail.com",
+         "fields":{
+            "has_bought_50ml":1,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5696273547460",
+         "customer_email":"djenkins1@uk.ey.com",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"2160999825478",
+         "customer_email":"kevingreaves426@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2701810040897",
+         "customer_email":"bill.king48@hotmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5690886160580",
+         "customer_email":"guyler@live.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5692882059460",
+         "customer_email":"mrjgreg123@outlook.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"979660537926",
+         "customer_email":"woodworm1@googlemail.com",
+         "fields":{
+            "has_bought_100ml":1,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2169596248134",
+         "customer_email":"heathertorrie53@gmail.com",
          "fields":{
             "has_bought_5ml":1
          }
@@ -1567,40 +1508,10 @@
    },
    {
       "payload":{
-         "customer_id":"3275376656449",
-         "customer_email":"emilyroberts1993@hotmail.co.uk",
+         "customer_id":"2116598825030",
+         "customer_email":"coopiere@gmail.com",
          "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2766648705089",
-         "customer_email":"tommoyid@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2569407725638",
-         "customer_email":"paul.causer11@btinternet.com",
-         "fields":{
-            "has_bought_100ml":2,
-            "has_bought_50ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1230693302342",
-         "customer_email":"paula.thompson@prs-epos.co.uk",
-         "fields":{
+            "has_bought_50ml":1,
             "has_bought_30ml":2
          }
       },
@@ -1608,69 +1519,8 @@
    },
    {
       "payload":{
-         "customer_id":"1188634394694",
-         "customer_email":"t.smith.73@btinternet.com",
-         "fields":{
-            "has_bought_5ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5723571683524",
-         "customer_email":"hannah.shepherr123@hotmail.com",
-         "fields":{
-            "has_bought_100ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2704790257729",
-         "customer_email":"rosskelly1981@yahoo.co.uk",
-         "fields":{
-            "has_bought_30ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2061432127558",
-         "customer_email":"p.a.robinson1@salford.ac.uk",
-         "fields":{
-            "has_bought_50ml":2,
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5215893618884",
-         "customer_email":"samuelcguymer@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2231764779078",
-         "customer_email":"matthewlbarker13@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1175891607622",
-         "customer_email":"aj2ndrow@hotmail.co.uk",
+         "customer_id":"2979668426817",
+         "customer_email":"colleranalicia@gmail.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -1679,98 +1529,8 @@
    },
    {
       "payload":{
-         "customer_id":"1156693000262",
-         "customer_email":"princeowusuafriyie@ymail.com",
-         "fields":{
-            "has_bought_100ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2203062894662",
-         "customer_email":"keithmcleod2@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5696250904772",
-         "customer_email":"maubrey.ma@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1151548948550",
-         "customer_email":"info@slaveltd.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2724815798337",
-         "customer_email":"bluechipuk@hotmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2226348884038",
-         "customer_email":"robseaton11@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2652900327494",
-         "customer_email":"jamie_elliott96@hotmail.co.uk",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5098629693636",
-         "customer_email":"gidzsam001@gmail.com",
-         "fields":{
-            "has_bought_100ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5712673571012",
-         "customer_email":"darylchadwick@hotmail.co.uk",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5709383303364",
-         "customer_email":"ashwalters@me.com",
+         "customer_id":"4509380509892",
+         "customer_email":"omie89@hotmail.co.uk",
          "fields":{
             "has_bought_5ml":1,
             "has_bought_50ml":1
@@ -1780,101 +1540,9 @@
    },
    {
       "payload":{
-         "customer_id":"2244938432582",
-         "customer_email":"ashlyantony2@gmail.com",
+         "customer_id":"2708324384833",
+         "customer_email":"angela.mowles@tiscali.co.uk",
          "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5695116509380",
-         "customer_email":"bobbybox44@hotmail.co.uk",
-         "fields":{
-            "has_bought_100ml":1,
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5709993738436",
-         "customer_email":"safakk786@hotmail.co.uk",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2289953767494",
-         "customer_email":"mhenney@live.co.uk",
-         "fields":{
-            "has_bought_30ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5712673210564",
-         "customer_email":"mylesj77@icloud.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"5710215413956",
-         "customer_email":"kerrytull@aol.com",
-         "fields":{
-            "has_bought_5ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3081997647937",
-         "customer_email":"minnis_14@hotmail.com",
-         "fields":{
-            "has_bought_100ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5710435549380",
-         "customer_email":"johnhobbs140@googlemail.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"2045738909766",
-         "customer_email":"nikki.connolly@btinternet.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5710066843844",
-         "customer_email":"samjeal1994@icloud.com",
-         "fields":{
-            "has_bought_30ml":1,
             "has_bought_5ml":1
          }
       },
@@ -1882,18 +1550,8 @@
    },
    {
       "payload":{
-         "customer_id":"1174501687366",
-         "customer_email":"tashanduncan1994@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5710636220612",
-         "customer_email":"ruby-juchau@hotmail.co.uk",
+         "customer_id":"5724645392580",
+         "customer_email":"mooreeamon59@gmail.com",
          "fields":{
             "has_bought_30ml":1
          }
@@ -1902,29 +1560,18 @@
    },
    {
       "payload":{
-         "customer_id":"5216990625988",
-         "customer_email":"anthonymcgrath1000@hotmail.com",
+         "customer_id":"2930567151681",
+         "customer_email":"scottymac86@hotmail.co.uk",
          "fields":{
-            "has_bought_30ml":1,
-            "has_bought_5ml":1
+            "has_bought_50ml":2
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"2209637793862",
-         "customer_email":"g.ruffini.2010@gmail.com",
-         "fields":{
-            "has_bought_30ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5709326909636",
-         "customer_email":"neil_upland_wales@hotmail.com",
+         "customer_id":"5724677570756",
+         "customer_email":"paulo111@live.com.pt",
          "fields":{
             "has_bought_5ml":1
          }
@@ -1933,88 +1580,18 @@
    },
    {
       "payload":{
-         "customer_id":"2013882581062",
-         "customer_email":"awcaine@hotmail.com",
+         "customer_id":"3087205859393",
+         "customer_email":"westie0701@gmail.com",
          "fields":{
-            "has_bought_100ml":2
+            "has_bought_30ml":1
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"2220743983174",
-         "customer_email":"trev@price-it.co.uk",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5712953868484",
-         "customer_email":"isabellejames@live.co.uk",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5723552907460",
-         "customer_email":"seanvibez@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5714948325572",
-         "customer_email":"idkowiakmaciej@gmail.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"5640146419908",
-         "customer_email":"sophiegardner226@hotmail.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5378656370884",
-         "customer_email":"greg_middleton_92@hotmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2193497817158",
-         "customer_email":"mayowa_arimoro@yahoo.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5709023805636",
-         "customer_email":"magnushutchison@hotmail.co.uk",
+         "customer_id":"3273319874625",
+         "customer_email":"mark918roberts@gmail.com",
          "fields":{
             "has_bought_5ml":1
          }
@@ -2023,28 +1600,8 @@
    },
    {
       "payload":{
-         "customer_id":"5715556368580",
-         "customer_email":"whiffinlee@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5710404092100",
-         "customer_email":"s-rolfe@tiscali.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2985366487105",
-         "customer_email":"beckgrahamxo@icloud.com",
+         "customer_id":"5725936124100",
+         "customer_email":"robert.whichelow.1@gmail.com",
          "fields":{
             "has_bought_5ml":1
          }
@@ -2053,18 +1610,18 @@
    },
    {
       "payload":{
-         "customer_id":"5712891314372",
-         "customer_email":"hjwagstaff@googlemail.com",
+         "customer_id":"2307523248198",
+         "customer_email":"jjandkjj@gmail.com",
          "fields":{
-            "has_bought_100ml":1
+            "has_bought_30ml":1
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"5710067204292",
-         "customer_email":"alexcarey111@hotmail.co.uk",
+         "customer_id":"2714463371329",
+         "customer_email":"jamie.hay@outlook.com",
          "fields":{
             "has_bought_30ml":2,
             "has_bought_5ml":1
@@ -2074,8 +1631,445 @@
    },
    {
       "payload":{
-         "customer_id":"5709783826628",
-         "customer_email":"catherine.wilshaw@outlook.com",
+         "customer_id":"5720125440196",
+         "customer_email":"charliers13@hotmail.co.uk",
+         "fields":{
+            "has_bought_50ml":1,
+            "has_bought_100ml":1,
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5711938126020",
+         "customer_email":"benwell83@hotmail.co.uk",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5159248429252",
+         "customer_email":"charliegraham21@yahoo.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5726800904388",
+         "customer_email":"fernbank21@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"909359743046",
+         "customer_email":"biglummox@ymail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1222089408582",
+         "customer_email":"tautisc@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2760139931713",
+         "customer_email":"muddlefuddle@hotmail.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5717650636996",
+         "customer_email":"kai.sun123@protonmail.com",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5717095121092",
+         "customer_email":"eliasvival@hotmail.com",
+         "fields":{
+            "has_bought_5ml":1,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5719223730372",
+         "customer_email":"scatcat58@live.co.uk",
+         "fields":{
+            "has_bought_5ml":5
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5675538022596",
+         "customer_email":"mrjonarnould@gmail.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1026272493638",
+         "customer_email":"hillis390@gmail.com",
+         "fields":{
+            "has_bought_100ml":1,
+            "has_bought_50ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4527555739844",
+         "customer_email":"emmadacey1@yahoo.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5245639524548",
+         "customer_email":"freelymoving@gmail.com",
+         "fields":{
+            "has_bought_5ml":4
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2207111675974",
+         "customer_email":"gavin@themerchanthotel.com",
+         "fields":{
+            "has_bought_100ml":1,
+            "has_bought_30ml":1,
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2180661477446",
+         "customer_email":"michael.ripley@astrazeneca.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3355973976129",
+         "customer_email":"david.r.h.rice@hotmail.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5684016513220",
+         "customer_email":"m4lik_07@hotmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2591807209542",
+         "customer_email":"marianneturner@hotmail.co.uk",
+         "fields":{
+            "has_bought_100ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2242935881798",
+         "customer_email":"janepyburn@hotmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1285034016838",
+         "customer_email":"danknott@hotmail.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2090587684934",
+         "customer_email":"ashcallan@live.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2225734942790",
+         "customer_email":"mike.lucas.ml28@gmail.com",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2887836041281",
+         "customer_email":"susanbee68@aol.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2885612732481",
+         "customer_email":"cam3392@googlemail.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4626755322052",
+         "customer_email":"virgolina76@hotmail.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2673256005697",
+         "customer_email":"caltug@hotmail.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1249065566278",
+         "customer_email":"kav2@hotmail.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1325792002118",
+         "customer_email":"mda2011@hotmail.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1318977208390",
+         "customer_email":"tomatroberts@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"878140686406",
+         "customer_email":"paulmoses2004@hotmail.com",
+         "fields":{
+            "has_bought_50ml":2,
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"963938091078",
+         "customer_email":"murraycowan22@hotmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4459725553860",
+         "customer_email":"daryledavidson@yahoo.co.uk",
+         "fields":{
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2197082275910",
+         "customer_email":"jimgraham1985@hotmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1311703826502",
+         "customer_email":"keith.westman@icloud.com",
+         "fields":{
+            "has_bought_5ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5648822763716",
+         "customer_email":"remilamjay@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722958135492",
+         "customer_email":"steve_wwwoods@hotmail.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2288157687878",
+         "customer_email":"nathandavies128@googlemail.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722960298180",
+         "customer_email":"leeroyjamesjones@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"961191444550",
+         "customer_email":"keyop69@hotmail.co.uk",
+         "fields":{
+            
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"5722975142084",
+         "customer_email":"darrenmontague99@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5455017935044",
+         "customer_email":"dg1mat@yahoo.com",
+         "fields":{
+            "has_bought_5ml":4
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2847894110273",
+         "customer_email":"meshack1209@yahoo.com",
+         "fields":{
+            "has_bought_30ml":4
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"3101902700609",
+         "customer_email":"jamesmepham@hotmail.co.uk",
          "fields":{
             "has_bought_30ml":1,
             "has_bought_5ml":1
@@ -2085,30 +2079,10 @@
    },
    {
       "payload":{
-         "customer_id":"2194525913158",
-         "customer_email":"tjadeba@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5708979667140",
-         "customer_email":"nader.razak@hotmail.co.uk",
+         "customer_id":"3069475586113",
+         "customer_email":"shabana_01@hotmail.co.uk",
          "fields":{
             "has_bought_50ml":1,
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5698162786500",
-         "customer_email":"askaml@interia.pl",
-         "fields":{
             "has_bought_5ml":3
          }
       },
@@ -2116,38 +2090,48 @@
    },
    {
       "payload":{
-         "customer_id":"5713689084100",
-         "customer_email":"m.dankowycz@gmail.com",
+         "customer_id":"5724120940740",
+         "customer_email":"awoolley.business@gmail.com",
          "fields":{
-            "has_bought_100ml":1
+            
          }
       },
       "toBeUpdated":false
    },
    {
       "payload":{
-         "customer_id":"1299903447110",
-         "customer_email":"tomtccrawford@me.com",
+         "customer_id":"2742031581249",
+         "customer_email":"martin.sorsby@sky.com",
          "fields":{
-            "has_bought_30ml":4
+            "has_bought_30ml":2
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"5653927067844",
-         "customer_email":"momin.a1497@gmail.com",
+         "customer_id":"5724184314052",
+         "customer_email":"matt.dudman@hotmail.co.uk",
          "fields":{
-            "has_bought_30ml":1
+            "has_bought_5ml":1
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"2950522765377",
-         "customer_email":"nij.miller@btinternet.com",
+         "customer_id":"2058850435142",
+         "customer_email":"aasanaha@hotmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5698920775876",
+         "customer_email":"johndanielonline@gmail.com",
          "fields":{
             "has_bought_5ml":6
          }
@@ -2156,139 +2140,8 @@
    },
    {
       "payload":{
-         "customer_id":"3021723402305",
-         "customer_email":"sophiepumpkin@yahoo.com",
-         "fields":{
-            "has_bought_5ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2440017641542",
-         "customer_email":"timsmith.ts430@gmail.com",
-         "fields":{
-            "has_bought_5ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"3005385506881",
-         "customer_email":"simon68.holland@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2680000708673",
-         "customer_email":"jamiejohnson1986@live.co.uk",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"2779073052737",
-         "customer_email":"reece_89@hotmail.co.uk",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5708780798148",
-         "customer_email":"allenjustin@outlook.com",
-         "fields":{
-            "has_bought_5ml":4
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1112787124294",
-         "customer_email":"ojimbathad@yahoo.com",
-         "fields":{
-            "has_bought_50ml":6
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1162425270342",
-         "customer_email":"alexanderbusby44@gmail.com",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"2211365781574",
-         "customer_email":"andypratt88@gmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2983045562433",
-         "customer_email":"jamescousens@hotmail.com",
-         "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5709453099204",
-         "customer_email":"sallyc_mckeown@hotmail.com",
-         "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5712078536900",
-         "customer_email":"martinbarrett99@hotmail.com",
-         "fields":{
-            "has_bought_100ml":1,
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5711696658628",
-         "customer_email":"shamsanammar@icloud.com",
-         "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2826885595201",
-         "customer_email":"dwstonard007@gmail.com",
+         "customer_id":"5517726744772",
+         "customer_email":"richm300@gmail.com",
          "fields":{
             "has_bought_5ml":2,
             "has_bought_30ml":1
@@ -2298,18 +2151,18 @@
    },
    {
       "payload":{
-         "customer_id":"3242599383105",
-         "customer_email":"ajhustler75@gmail.com",
+         "customer_id":"5724435513540",
+         "customer_email":"taikosan@gmail.com",
          "fields":{
-            "has_bought_30ml":3
+            "has_bought_50ml":2
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"2675288342593",
-         "customer_email":"richard.peak@nextbase.co.uk",
+         "customer_id":"5726731993284",
+         "customer_email":"carol.dennehy6@yahoo.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -2318,58 +2171,18 @@
    },
    {
       "payload":{
-         "customer_id":"5712649126084",
-         "customer_email":"jamesharding81@hotmail.com",
+         "customer_id":"2770972672065",
+         "customer_email":"rdmphotosltd@gmail.com",
          "fields":{
-            "has_bought_50ml":1
+            "has_bought_100ml":5
          }
       },
       "toBeUpdated":true
    },
    {
       "payload":{
-         "customer_id":"5659902542020",
-         "customer_email":"cdccambs@hotmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2711122575425",
-         "customer_email":"nothin_2_lose_uk@yahoo.co.uk",
-         "fields":{
-            "has_bought_5ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2840436637761",
-         "customer_email":"kme1976@outlook.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5680176103620",
-         "customer_email":"ce-m@hotmail.co.uk",
-         "fields":{
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2013052403782",
-         "customer_email":"howard244@btinternet.com",
+         "customer_id":"5624505991364",
+         "customer_email":"pamhaddock@icloud.com",
          "fields":{
             "has_bought_100ml":1
          }
@@ -2378,29 +2191,8 @@
    },
    {
       "payload":{
-         "customer_id":"2251581390918",
-         "customer_email":"tris.pead@gmail.com",
-         "fields":{
-            "has_bought_30ml":1,
-            "has_bought_5ml":3
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5720143364292",
-         "customer_email":"peter.hannon@lancashire.pnn.police.uk",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"5720210374852",
-         "customer_email":"prh2k3@gmail.com",
+         "customer_id":"5723024621764",
+         "customer_email":"mohammed_01@hotmail.co.uk",
          "fields":{
             "has_bought_100ml":1
          }
@@ -2409,68 +2201,8 @@
    },
    {
       "payload":{
-         "customer_id":"2289797070918",
-         "customer_email":"cotty.2000@live.co.uk",
-         "fields":{
-            "has_bought_5ml":2
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5685095694532",
-         "customer_email":"chrissienray@gmail.com",
-         "fields":{
-            "has_bought_30ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"5456847601860",
-         "customer_email":"leeprosper@hotmail.com",
-         "fields":{
-            "has_bought_50ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2732588204097",
-         "customer_email":"jojocoker@yahoo.co.uk",
-         "fields":{
-            
-         }
-      },
-      "toBeUpdated":false
-   },
-   {
-      "payload":{
-         "customer_id":"2448018767942",
-         "customer_email":"a.w.lewis@live.co.uk",
-         "fields":{
-            "has_bought_5ml":6
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"2066511757382",
-         "customer_email":"kamilh138@gmail.com",
-         "fields":{
-            "has_bought_100ml":1
-         }
-      },
-      "toBeUpdated":true
-   },
-   {
-      "payload":{
-         "customer_id":"1136103850054",
-         "customer_email":"bobowest@gmail.com",
+         "customer_id":"3139603857473",
+         "customer_email":"mikedunderdale@live.co.uk",
          "fields":{
             "has_bought_100ml":2
          }
@@ -2479,8 +2211,150 @@
    },
    {
       "payload":{
-         "customer_id":"5721659867332",
-         "customer_email":"aoldfield23@googlemail.com",
+         "customer_id":"5152002015428",
+         "customer_email":"chillichap@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2174015766598",
+         "customer_email":"janmcguigan@ymail.com",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2193790730310",
+         "customer_email":"jpspires@hotmail.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4465816502468",
+         "customer_email":"niko.k@live.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5720303501508",
+         "customer_email":"matthew.main@hotmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1284777443398",
+         "customer_email":"olyfrank@live.co.uk",
+         "fields":{
+            "has_bought_5ml":4,
+            "has_bought_30ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5720999723204",
+         "customer_email":"2pompeymat@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2750730633281",
+         "customer_email":"lou_tindal@hotmail.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5721055920324",
+         "customer_email":"finbar192005@yahoo.co.uk",
+         "fields":{
+            "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2192739467334",
+         "customer_email":"bluebird931@hotmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2014037770310",
+         "customer_email":"chrisjosie_may@yahoo.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2811443806273",
+         "customer_email":"kanoozi@gmail.com",
+         "fields":{
+            "has_bought_100ml":1,
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5721786745028",
+         "customer_email":"bondy77@btinternet.com",
+         "fields":{
+            "has_bought_100ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2763791171649",
+         "customer_email":"debbiegraham@talktalk.net",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2629204967494",
+         "customer_email":"mattoliver2@me.com",
          "fields":{
             
          }
@@ -2489,10 +2363,160 @@
    },
    {
       "payload":{
-         "customer_id":"5721684082884",
-         "customer_email":"jackmurray0101@gmail.com",
+         "customer_id":"5439433244868",
+         "customer_email":"hmitchell2567@googlemail.com",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1162955522118",
+         "customer_email":"princesstinkerbell13@hotmail.co.uk",
          "fields":{
             "has_bought_50ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722363068612",
+         "customer_email":"s-kause@live.co.uk",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2748807151681",
+         "customer_email":"ben_inoz2004@yahoo.co.uk",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1250769174598",
+         "customer_email":"mikedarbyshire1@gmail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"920178982982",
+         "customer_email":"grsbkernow@googlemail.com",
+         "fields":{
+            "has_bought_100ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5722954137796",
+         "customer_email":"craigfullilovekeen91@gmail.com",
+         "fields":{
+            
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"5474086650052",
+         "customer_email":"tom@tomjamesrees.com",
+         "fields":{
+            "has_bought_30ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1164068487238",
+         "customer_email":"gungfurikk@yahoo.co.uk",
+         "fields":{
+            "has_bought_100ml":2
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"5359981953220",
+         "customer_email":"moss7772@gmail.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"4505550651588",
+         "customer_email":"tom_burrows@hotmail.co.uk",
+         "fields":{
+            "has_bought_5ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2767204384833",
+         "customer_email":"ianmcleod1@hotmail.com",
+         "fields":{
+            
+         }
+      },
+      "toBeUpdated":false
+   },
+   {
+      "payload":{
+         "customer_id":"1321880289350",
+         "customer_email":"c.bedford84@hotmail.com",
+         "fields":{
+            "has_bought_5ml":3
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"1045451309126",
+         "customer_email":"kevokj@yahoo.co.uk",
+         "fields":{
+            "has_bought_5ml":6
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2120176042054",
+         "customer_email":"coco111282@sky.com",
+         "fields":{
+            "has_bought_30ml":1
+         }
+      },
+      "toBeUpdated":true
+   },
+   {
+      "payload":{
+         "customer_id":"2820764467265",
+         "customer_email":"stephenbrown736@yahoo.co.uk",
+         "fields":{
+            "has_bought_30ml":2
          }
       },
       "toBeUpdated":true
