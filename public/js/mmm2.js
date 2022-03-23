@@ -85,7 +85,7 @@ function update(){
                         console.log("[selected,d.data]: ",[selected,d.data]);
                         let ometriaProperties = d.data.properties;
                         let custom_fields = {}, toBeUpdated = false;
-
+                        
                         switch(selected.title){
                           case "5 ml":
                           case "5ml":
@@ -126,7 +126,7 @@ function update(){
                           case "100 ml":
                           case "100ml":
                               if(ometriaProperties.has_bought_100ml){
-                               // custom_fields['has_bought_100ml'] = ometriaProperties['has_bought_100ml'] + 1;
+                               custom_fields['has_bought_100ml'] = ometriaProperties['has_bought_100ml'] + 1;
                             }
                             else{
                               custom_fields['has_bought_100ml'] = 1;
@@ -142,13 +142,39 @@ function update(){
                             fields: custom_fields
                           };
 
-                         // console.log("[payload, toBeUpdated]: ",[payload,toBeUpdated]);
+                          let existingPayload = payloads.find(x => x.payload.customer_email === selected.email);
+                            console.log("[payload, existingPayload]: ",[payload,existingPayload]);
+
+                        if(existingPayload){
+                           if(payload.fields.has_bought_5ml){
+                               if(existingPayload.payload.fields.has_bought_5ml) ++existingPayload.payload.fields.has_bought_5ml;
+                               else existingPayload.payload.fields.has_bought_5ml = payload.fields.has_bought_5ml;
+                           }
+                           if(payload.fields.has_bought_30ml){
+                            if(existingPayload.payload.fields.has_bought_30ml) ++existingPayload.payload.fields.has_bought_30ml;
+                            else existingPayload.payload.fields.has_bought_30ml = payload.fields.has_bought_30ml;
+                           }
+                           if(payload.fields.has_bought_50ml){
+                            if(existingPayload.payload.fields.has_bought_50ml) ++existingPayload.payload.fields.has_bought_50ml;
+                            else existingPayload.payload.fields.has_bought_50ml = payload.fields.has_bought_50ml;
+                           }
+                           if(payload.fields.has_bought_100ml){
+                            if(existingPayload.payload.fields.has_bought_100ml) ++existingPayload.payload.fields.has_bought_100ml;
+                            else existingPayload.payload.fields.has_bought_100ml = payload.fields.has_bought_100ml;
+                        }
+                        } 
+                        else{
+                            payloads.push({
+                                payload,
+                                toBeUpdated
+                            });  
+                        }
+                        
+
+                        
                         
                         //Step 3 - Populate the appropriate custom field and update Ometria
-                        payloads.push({
-                            payload,
-                            toBeUpdated
-                        });  
+                       
                         
 
                             setTimeout(function(){
